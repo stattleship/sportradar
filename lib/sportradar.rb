@@ -18,4 +18,8 @@ require 'sportradar/mlb/daily_boxscore'
 require 'sportradar/mlb/daily_schedule'
 require 'sportradar/mlb/daily_summary'
 
+require 'sportradar/mlb/league_schedule'
+
+require 'sportradar/mlb/team_rosters'
+
 Dotenv.load
