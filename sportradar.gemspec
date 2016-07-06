@@ -4,15 +4,15 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'sportradar/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sportradar"
+  spec.name          = 'sportradar'
   spec.version       = Sportradar::VERSION
   spec.authors       = ["David Thyresson"]
   spec.email         = ["david@stattleship.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.summary       = %q{Ruby client for the Sportradar.US API.}
+  spec.description   = %q{Fetch sports data from the Sportradar.US API.}
+  spec.homepage      = ""
+  spec.license       = "None"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
@@ -27,7 +27,12 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.10"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec"
+  spec.add_development_dependency 'bundler', '~> 1.10'
+  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_runtime_dependency 'activesupport', '~> 5.0'
+  spec.add_runtime_dependency 'addressable', '~> 2.3', '<= 2.3.8'
+  spec.add_runtime_dependency 'dotenv', '~> 2.0', '>= 2.0.2'
+  spec.add_runtime_dependency 'multi_json', '~> 1.11', '>= 1.11.2'
+  spec.add_runtime_dependency 'oj', '~> 2.14', '>= 2.14.2'
+  spec.add_runtime_dependency 'oj_mimic_json', '~> 1.0', '>= 1.0.1'
 end
