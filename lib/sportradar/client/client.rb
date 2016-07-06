@@ -60,7 +60,7 @@ module Sportradar
     end
 
     def filepath
-      "/Users/dthyresson/Dropbox/stattleship_inc/sports_data/#{sport}/sportradar/#{league}/2016/#{endpoint}"
+      "#{Sportradar.configuration.filepath.freeze}/#{sport}/#{league}/#{endpoint}"
     end
 
     def url

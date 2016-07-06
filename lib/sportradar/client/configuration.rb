@@ -20,6 +20,7 @@ module Sportradar
     attr_writer :access_level
     attr_writer :api_keys
     attr_writer :base_uri
+    attr_writer :filepath
 
     def api_keys
       {
@@ -43,6 +44,10 @@ module Sportradar
         http.use_ssl = true
         http.verify_mode = OpenSSL::SSL::VERIFY_PEER
       end
+    end
+
+    def filepath
+      @filepath ||= ENV['SPORTRADAR_FILE_PATH']
     end
   end
 end
