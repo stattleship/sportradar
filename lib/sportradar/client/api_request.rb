@@ -10,6 +10,10 @@ module Sportradar
       client.fetch
     end
 
+    def save
+      client.save
+    end
+
     def league
       self.class.name.split('::')[1].downcase
     end

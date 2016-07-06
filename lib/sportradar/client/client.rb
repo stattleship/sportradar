@@ -12,6 +12,16 @@ module Sportradar
     end
 
     def fetch
+      Oj.load(Sportradar.configuration.
+                http.
+                request(request).
+                body)
+    rescue StandardError => e
+      puts "HTTP Request failed (#{e.message})"
+      raise e
+    end
+
+    def save
       Sportradar.configuration.http.request(request) do |response|
         File.open filename, 'w' do |io|
           response.read_body do |chunk|
@@ -49,7 +59,12 @@ module Sportradar
     end
 
     def api_version
-      't5'
+      case league
+      when 'mlb'
+        't5'
+      else
+        't5'
+      end
     end
 
     private
