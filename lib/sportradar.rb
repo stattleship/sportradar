@@ -20,6 +20,7 @@ require 'sportradar/mlb/daily_schedule'
 require 'sportradar/mlb/daily_game_summary'
 require 'sportradar/mlb/daily_summary'
 require 'sportradar/mlb/game_summary'
+require 'sportradar/mlb/league_hierarchy'
 require 'sportradar/mlb/play_by_play'
 require 'sportradar/mlb/daily_play_by_play'
 

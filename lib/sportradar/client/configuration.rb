@@ -17,7 +17,22 @@ module Sportradar
 
   class Configuration
     attr_reader :http
+    attr_writer :access_level
+    attr_writer :api_keys
     attr_writer :base_uri
+
+    def api_keys
+      {
+        'mlb' => ENV['SPORTRADAR_API_KEY_MLB'],
+        'nba' => ENV['SPORTRADAR_API_KEY_NBA'],
+        'nfl' => ENV['SPORTRADAR_API_KEY_NFL'],
+        'nhl' => ENV['SPORTRADAR_API_KEY_NHL'],
+      }
+    end
+
+    def access_level
+      @access_level || ENV['SPORTRADAR_ACCESS_LEVEL'] || 't'
+    end
 
     def base_uri
       @base_uri ||= URI('https://api.sportradar.us')

@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Configuration
+
+In your `.env`:
+
+```
+SPORTRADAR_ACCESS_LEVEL=t
+SPORTRADAR_API_KEY_MLB=YOUR_API_KEY
+SPORTRADAR_API_KEY_NBA=YOUR_API_KEY
+SPORTRADAR_API_KEY_NFL=YOUR_API_KEY
+SPORTRADAR_API_KEY_NHL=YOUR_API_KEY
+```
 
 ## Development
 
