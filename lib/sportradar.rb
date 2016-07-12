@@ -27,10 +27,9 @@ require 'sportradar/mlb/league_hierarchy'
 require 'sportradar/mlb/play_by_play'
 require 'sportradar/mlb/player_profile'
 require 'sportradar/mlb/daily_play_by_play'
-
 require 'sportradar/mlb/league_schedule'
-
 require 'sportradar/mlb/team_active_rosters'
+require 'sportradar/mlb/team_profile'
 require 'sportradar/mlb/team_rosters'
 require 'sportradar/mlb/venues'
 
