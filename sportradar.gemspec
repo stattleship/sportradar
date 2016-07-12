@@ -6,12 +6,12 @@ require 'sportradar/version'
 Gem::Specification.new do |spec|
   spec.name          = 'sportradar'
   spec.version       = Sportradar::VERSION
-  spec.authors       = ["David Thyresson"]
+  spec.authors       = ['Stattleship', 'David Thyresson']
   spec.email         = ["david@stattleship.com"]
 
   spec.summary       = %q{Ruby client for the Sportradar.US API.}
   spec.description   = %q{Fetch sports data from the Sportradar.US API.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/stattleship/sportradar"
   spec.license       = "None"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
