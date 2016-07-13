@@ -8,7 +8,7 @@ module Sportradar
       end
 
       it 'parsers a scoring play' do
-        expect(scoring_plays.all.first).to be_a Models::ScoringPlay
+        expect(scoring_plays.first).to be_a Models::ScoringPlay
       end
 
       it 'has a game' do
@@ -41,6 +41,30 @@ module Sportradar
 
       it 'has runner_ids' do
         expect(scoring_plays.runner_ids).to_not be_blank
+      end
+
+      it 'has away_team_pitcher_ids' do
+        expect(scoring_plays.away_team_pitcher_ids).to_not be_blank
+      end
+
+      it 'has away_team_hitter_ids' do
+        expect(scoring_plays.away_team_hitter_ids).to_not be_blank
+      end
+
+      it 'has away_team_runner_ids' do
+        expect(scoring_plays.away_team_runner_ids).to_not be_blank
+      end
+
+      it 'has home_team_pitcher_ids' do
+        expect(scoring_plays.home_team_pitcher_ids).to_not be_blank
+      end
+
+      it 'has home_team_hitter_ids' do
+        expect(scoring_plays.home_team_hitter_ids).to_not be_blank
+      end
+
+      it 'has home_team_runner_ids' do
+        expect(scoring_plays.home_team_runner_ids).to_not be_blank
       end
 
       private

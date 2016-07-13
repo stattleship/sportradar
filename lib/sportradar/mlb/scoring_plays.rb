@@ -55,6 +55,38 @@ module Sportradar
         away_team_plays + home_team_plays
       end
 
+      def away_team_hitter_ids
+        away_team_plays.map(&:hitter_id).
+          uniq
+      end
+
+      def home_team_hitter_ids
+        home_team_plays.map(&:pitcher_id).
+          uniq
+      end
+
+      def away_team_pitcher_ids
+        away_team_plays.map(&:pitcher_id).
+          uniq
+      end
+
+      def home_team_pitcher_ids
+        home_team_plays.map(&:pitcher_id).
+          uniq
+      end
+
+      def away_team_runner_ids
+        away_team_plays.map(&:runner_ids).
+          flatten.
+          uniq
+      end
+
+      def home_team_runner_ids
+        home_team_plays.map(&:runner_ids).
+          flatten.
+          uniq
+      end
+
       def pitcher_ids
         all.map(&:pitcher_id)
       end
@@ -67,6 +99,16 @@ module Sportradar
         all.map(&:runner_ids).
           flatten.
           uniq
+      end
+
+      def first
+        all.
+          first
+      end
+
+      def last
+        all.
+          last
       end
 
       private

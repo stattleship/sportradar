@@ -100,8 +100,57 @@ Some helpers will call `.save` for each response as separate items.
 
 * `Sportradar::Mlb::ScoringPlays.new(game_boxscore: {})`
 
-Given game boxscore JSON, makes it eash to get the events and runners as scoring plays and players.
+Given game boxscore JSON, makes it easy to get the events and runners as scoring plays and players via a set of convenience methods.
 
+For example:
+
+```
+sp = Sportradar::Mlb::ScoringPlays.new(game_boxscore: g.game_boxscore)
+
+sp.first.scoring_players
+=> [{:player_id=>"66c43b7f-760a-446c-9f50-671915570227", :player_info=>nil, :role=>"pitcher"},
+ {:player_id=>"e1633ff9-8c46-4698-9bea-3eecd478fa94", :player_info=>nil, :role=>"hitter"},
+ {:player_id=>"e1633ff9-8c46-4698-9bea-3eecd478fa94",
+  :player_info=>
+   #<Sportradar::Mlb::Models::Runner:0x007fabc82ba748
+    @runner=
+     {"id"=>"e1633ff9-8c46-4698-9bea-3eecd478fa94",
+      "starting_base"=>0,
+      "first_name"=>"Kristopher",
+      "last_name"=>"Bryant",
+      "preferred_name"=>"Kris",
+      "jersey_number"=>"17"}>,
+  :role=>"runner"}]
+
+sp.runner_ids
+=> ["e1633ff9-8c46-4698-9bea-3eecd478fa94",
+ "898c62b6-95bf-4973-a435-c6cb42a52158",
+ "6ef878e2-1f2d-4855-a250-2ec7c97f961c",
+ "9baf07d4-b1cb-4494-8c95-600d9e8de1a9",
+ "084d2514-9ffb-414e-ae16-3bc690aaad51",
+ "8ec56596-5b8b-41f8-88a7-384f20b8b6a7"]
+
+sp.first.runner_ids
+=> ["e1633ff9-8c46-4698-9bea-3eecd478fa94"]
+
+sp.first.inning_label
+=> "Top of 1st"
+
+sp.first.scoring_method
+=> "Homerun"
+
+sp.away_team_hitter_ids
+=> ["e1633ff9-8c46-4698-9bea-3eecd478fa94", "57f0a40f-e0f5-4e76-bd59-b8c4de7a680c"]
+
+sp.home_team_pitcher_ids
+=> ["1a574c70-eb33-4202-ab97-548645a4d15e", "29e9830d-b31a-4246-998c-6ca6f5a73ee8"]
+
+sp.home_team_runner_ids
+=> ["6ef878e2-1f2d-4855-a250-2ec7c97f961c",
+ "9baf07d4-b1cb-4494-8c95-600d9e8de1a9",
+ "084d2514-9ffb-414e-ae16-3bc690aaad51",
+ "8ec56596-5b8b-41f8-88a7-384f20b8b6a7"]
+```
 
 ## Development
 
