@@ -3,39 +3,32 @@ require 'spec_helper'
 module Sportradar
   module Mlb
     RSpec.describe ScoringPlays do
-      it 'does something useful' do
-        puts scoring_plays.events
+      it 'parses events' do
+        expect(scoring_plays.events).to_not be_blank
       end
 
-      it 'does something useful' do
-        puts scoring_plays.events.first
+      it 'parsers a scoring play' do
+        expect(scoring_plays.all.first).to be_a Models::ScoringPlay
       end
 
-      it 'does something useful' do
-        puts scoring_plays.all.first.hitter_id
+      it 'has a game' do
+        expect(scoring_plays.game_id).to eq('ce048047-4105-42fa-8140-0da2147d1314')
       end
 
-      it 'does something useful' do
-        puts scoring_plays.all.first.runners.first.last_name
+      it 'has an away team' do
+        expect(scoring_plays.away_team_id).to eq('d52d5339-cbdd-43f3-9dfa-a42fd588b9a3')
       end
 
-      it 'does something useful' do
-        puts scoring_plays.game_id
+      it 'has away team playes' do
+        expect(scoring_plays.away_team_plays).to_not be_blank
       end
 
-      it 'does something useful' do
-        puts scoring_plays.away_team_id
+      it 'has a home team' do
+        expect(scoring_plays.home_team_id).to eq('25507be1-6a68-4267-bd82-e097d94b359b')
       end
 
-      it 'does something useful' do
-        puts scoring_plays.home_team_id
-      end
-
-      it 'does something useful' do
-        scoring_plays.all.each do |sp|
-          puts sp.scoring_method
-          puts sp.time_code
-        end
+      it 'has home team plays' do
+        expect(scoring_plays.home_team_plays).to_not be_blank
       end
 
       private
@@ -45,7 +38,7 @@ module Sportradar
       end
 
       def mlb_game_boxscore
-        @mlb_game_boxscore ||= mlb_boxscore_games.sample['game']
+        @mlb_game_boxscore ||= mlb_boxscore_games.first['game']
       end
 
       def mlb_boxscore_games
