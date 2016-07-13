@@ -15,6 +15,9 @@ require 'sportradar/client/daily_api_request'
 require 'sportradar/client/client'
 require 'sportradar/client/configuration'
 
+require 'sportradar/mlb/models/scoring_play'
+require 'sportradar/mlb/scoring_plays'
+
 require 'sportradar/mlb/boxscore'
 require 'sportradar/mlb/daily_boxscore'
 require 'sportradar/mlb/daily_schedule'
