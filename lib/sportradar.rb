@@ -39,4 +39,6 @@ require 'sportradar/mlb/team_profile'
 require 'sportradar/mlb/team_rosters'
 require 'sportradar/mlb/venues'
 
+Oj.default_options = {}
+
 Dotenv.load

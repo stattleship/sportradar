@@ -113,6 +113,41 @@ module Sportradar
         def conversion_points
         end
 
+        def pitcher_role
+          {
+            player_id: pitcher_id,
+            player_info: nil,
+            role: 'pitcher',
+          }
+        end
+
+        def hitter_role
+          {
+            player_id: hitter_id,
+            player_info: nil,
+            role: 'hitter',
+          }
+        end
+
+        def runner_roles
+          runners.map do |runner|
+            {
+              player_id: runner.id,
+              player_info: runner,
+              role: 'runner',
+            }
+          end
+        end
+
+        def scoring_players
+          [
+            pitcher_role,
+            hitter_role,
+            runner_roles,
+          ].compact.
+            flatten
+        end
+
         private
 
         attr_reader :event

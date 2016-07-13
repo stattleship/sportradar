@@ -7,7 +7,7 @@ module Sportradar
         end
 
         def to_s
-          outcomes[outcome]
+          outcomes[outcome] || ''
         end
 
         private

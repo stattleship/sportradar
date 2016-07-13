@@ -38,6 +38,10 @@ module Sportradar
           expect(scoring_play).to be_pitch
         end
 
+        it 'has scoring players' do
+          expect(scoring_play.scoring_players.count).to eq(3)
+        end
+
         private
 
         def scoring_play
