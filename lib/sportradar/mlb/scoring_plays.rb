@@ -2,7 +2,7 @@ module Sportradar
   module Mlb
     class ScoringPlays
       def initialize(game_boxscore: {})
-        @game_boxscore = game_boxscore
+        @game_boxscore = game_boxscore['game'] || game_boxscore
       end
 
       def game_id
@@ -53,6 +53,20 @@ module Sportradar
 
       def all
         away_team_plays + home_team_plays
+      end
+
+      def pitcher_ids
+        all.map(&:pitcher_id)
+      end
+
+      def hitter_ids
+        all.map(&:hitter_id)
+      end
+
+      def runner_ids
+        all.map(&:runner_ids).
+          flatten.
+          uniq
       end
 
       private

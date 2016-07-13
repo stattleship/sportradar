@@ -59,6 +59,10 @@ module Sportradar
           end
         end
 
+        def runner_ids
+          (runners || []).map(&:id)
+        end
+
         def play_type
           event['type']
         end

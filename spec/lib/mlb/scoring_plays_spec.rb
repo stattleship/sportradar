@@ -31,6 +31,18 @@ module Sportradar
         expect(scoring_plays.home_team_plays).to_not be_blank
       end
 
+      it 'has pitcher_ids' do
+        expect(scoring_plays.pitcher_ids).to_not be_blank
+      end
+
+      it 'has hitter_ids' do
+        expect(scoring_plays.hitter_ids).to_not be_blank
+      end
+
+      it 'has runner_ids' do
+        expect(scoring_plays.runner_ids).to_not be_blank
+      end
+
       private
 
       def scoring_plays
