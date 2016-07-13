@@ -152,9 +152,7 @@ module Sportradar
             flatten
         end
 
-        private
-
-        attr_reader :event
+        attr_reader :event, :game_id, :team_id
       end
     end
   end

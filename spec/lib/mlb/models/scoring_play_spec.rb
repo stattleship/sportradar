@@ -4,6 +4,18 @@ module Sportradar
   module Mlb
     module Models
       RSpec.describe ScoringPlay do
+        it 'has an id' do
+          expect(scoring_play.id).to eq('8bc326f0-76ee-442c-8952-a91b69712fdb')
+        end
+
+        it 'has a game id' do
+          expect(scoring_play.game_id).to eq('ce048047-4105-42fa-8140-0da2147d1314')
+        end
+
+        it 'has a team id' do
+          expect(scoring_play.team_id).to eq('d52d5339-cbdd-43f3-9dfa-a42fd588b9a3')
+        end
+
         it 'has a hitter' do
           expect(scoring_play.hitter_id).to eq('8b5827ef-6325-4183-8b40-fe30e50e20cd')
         end
