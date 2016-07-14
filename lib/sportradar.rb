@@ -18,6 +18,7 @@ require 'sportradar/client/configuration'
 require 'sportradar/mlb/models/at_bat'
 require 'sportradar/mlb/models/pitch'
 require 'sportradar/mlb/models/pitch_outcome'
+require 'sportradar/mlb/models/pitch_type'
 require 'sportradar/mlb/models/runner'
 require 'sportradar/mlb/models/scoring_play'
 

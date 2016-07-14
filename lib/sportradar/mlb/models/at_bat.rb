@@ -18,6 +18,10 @@ module Sportradar
           attributes['events'] || []
         end
 
+        def game_id
+          attributes['game_id']
+        end
+
         def hitter_id
           attributes['hitter_id']
         end
@@ -46,13 +50,14 @@ module Sportradar
           time_code['sequence']
         end
 
-        def self.from_innings(innings:)
+        def self.from_innings(game_id:, innings:)
           [].tap do |at_bats|
             innings.each do |inning|
               (inning['halfs'] || []).each do |halfs|
                 (halfs['events'] || []).each do |event|
                   if event.has_key?('at_bat')
                     at_bats << new(attributes: (event['at_bat'] || {}).
+                                 merge('game_id' => game_id).
                                  merge('time_code' => { 'number' => inning['number'],
                                                         'inning' => inning['sequence'],
                                                         'half' => halfs['half'],

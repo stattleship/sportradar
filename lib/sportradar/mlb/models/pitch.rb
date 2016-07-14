@@ -7,7 +7,7 @@ module Sportradar
         end
 
         def to_s
-          pitch_outcome
+          "#{pitch_name} = #{pitch_outcome}"
         end
 
         def at_bat_balls
@@ -49,6 +49,11 @@ module Sportradar
         def event_id
           attributes['event_id']
         end
+
+        def game_id
+          attributes['game_id']
+        end
+
 
         def pitcher_id
           attributes['pitcher_id']
@@ -134,12 +139,22 @@ module Sportradar
           attributes['pitch_outcome']
         end
 
-        def self.from_at_bats(at_bats: [])
+        def pitch_type
+          attributes['pitch_type']
+        end
+
+        def pitch_name
+          PitchType.new(pitch_type: pitch_type).
+            name
+        end
+
+        def self.from_at_bats(game_id:, at_bats: [])
           [].tap do |pitches|
             at_bats.each do |at_bat|
               at_bat.events.each do |event|
                 if event['type'] == 'pitch' && event['status'] == 'official'
                   pitches << new(attributes: event['pitcher'].
+                                               merge('game_id' => game_id).
                                                merge('at_bat_id' => at_bat.id,
                                                      'event_id' => event['id'],
                                                      'pitched_at' => event['created_at'],

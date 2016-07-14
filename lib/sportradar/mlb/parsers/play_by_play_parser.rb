@@ -27,7 +27,7 @@ module Sportradar
         end
 
         def at_bats
-          Models::AtBat.from_innings(innings: innings)
+          Models::AtBat.from_innings(game_id: game_id, innings: innings)
         end
 
         def at_bat_summary
@@ -35,7 +35,7 @@ module Sportradar
         end
 
         def pitches
-          Models::Pitch.from_at_bats(at_bats: at_bats)
+          Models::Pitch.from_at_bats(game_id: game_id, at_bats: at_bats)
         end
 
         def pitch_summary

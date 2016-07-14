@@ -5,7 +5,7 @@ module Sportradar
     module Parsers
       RSpec.describe PlayByPlayParser do
         it 'has a game' do
-          expect(mlb_play_by_play.game_id).to eq('bca04056-a48f-489e-8244-0dd85481b730')
+          expect(mlb_play_by_play.game_id).to eq('d00abb72-f605-4dbd-8959-c70d1d7fd7c2')
         end
 
         it 'parses at_bats' do
