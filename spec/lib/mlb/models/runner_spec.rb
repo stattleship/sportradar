@@ -51,7 +51,7 @@ module Sportradar
         end
 
         def scoring_plays
-          ScoringPlays.new(game_boxscore: mlb_game_boxscore)
+          Parsers::ScoringPlaysParser.new(game_boxscore: mlb_game_boxscore)
         end
 
         def mlb_game_boxscore

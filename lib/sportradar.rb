@@ -19,7 +19,8 @@ require 'sportradar/mlb/models/pitch_outcome'
 require 'sportradar/mlb/models/runner'
 require 'sportradar/mlb/models/scoring_play'
 
-require 'sportradar/mlb/scoring_plays'
+require 'sportradar/mlb/parsers/play_by_play_parser'
+require 'sportradar/mlb/parsers/scoring_plays_parser'
 
 require 'sportradar/mlb/boxscore'
 require 'sportradar/mlb/daily_boxscore'

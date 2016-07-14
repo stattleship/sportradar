@@ -98,14 +98,14 @@ Some helpers will call `.save` for each response as separate items.
 
 #### Boxscore and Scoring Plays
 
-* `Sportradar::Mlb::ScoringPlays.new(game_boxscore: {})`
+* `Sportradar::Mlb::Parsers::ScoringPlays.new(game_boxscore: {})`
 
 Given game boxscore JSON, makes it easy to get the events and runners as scoring plays and players via a set of convenience methods.
 
 For example:
 
 ```
-sp = Sportradar::Mlb::ScoringPlays.new(game_boxscore: g.game_boxscore)
+sp = Sportradar::Mlb::Parsers::ScoringPlays.new(game_boxscore: g.game_boxscore)
 
 sp.first.scoring_players
 => [{:player_id=>"66c43b7f-760a-446c-9f50-671915570227", :player_info=>nil, :role=>"pitcher"},
