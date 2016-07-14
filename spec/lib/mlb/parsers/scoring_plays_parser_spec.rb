@@ -8,7 +8,7 @@ module Sportradar
           expect(scoring_plays.events).to_not be_blank
         end
 
-        it 'parsers a scoring play' do
+        it 'parses a scoring play' do
           expect(scoring_plays.first).to be_a Models::ScoringPlay
         end
 

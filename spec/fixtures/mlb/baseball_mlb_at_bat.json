@@ -1,0 +1,92 @@
+{
+    "at_bat": {
+        "description": "Javier Baez grounds out to third base, Ed Lucas to Adam Lind.",
+        "events": [
+            {
+                "count": {
+                    "balls": 0,
+                    "outs": 0,
+                    "pitch_count": 1,
+                    "strikes": 1
+                },
+                "created_at": "2016-03-10T20:10:10Z",
+                "flags": {
+                    "is_ab": false,
+                    "is_ab_over": false,
+                    "is_bunt": false,
+                    "is_bunt_shown": false,
+                    "is_double_play": false,
+                    "is_hit": false,
+                    "is_on_base": false,
+                    "is_passed_ball": false,
+                    "is_triple_play": false,
+                    "is_wild_pitch": false
+                },
+                "id": "54c8920c-dffc-4012-9a6a-2d65dbb311e8",
+                "outcome_id": "kKL",
+                "pitcher": {
+                    "id": "d8326a8e-0f8a-49dc-b3a9-610ddfdc53b7",
+                    "pitch_count": 1,
+                    "pitch_type": "FA",
+                    "pitch_zone": 4
+                },
+                "status": "official",
+                "type": "pitch",
+                "updated_at": "2016-03-10T20:10:13Z"
+            },
+            {
+                "count": {
+                    "balls": 0,
+                    "outs": 1,
+                    "pitch_count": 2,
+                    "strikes": 1
+                },
+                "created_at": "2016-03-10T20:10:22Z",
+                "fielders": [
+                    {
+                        "first_name": "Adam",
+                        "id": "36edf276-6c47-43aa-931c-ca4fd10e1025",
+                        "jersey_number": "26",
+                        "last_name": "Lind",
+                        "preferred_name": "Adam",
+                        "type": "putout"
+                    },
+                    {
+                        "first_name": "Edward",
+                        "id": "793a1221-15c6-4126-8fb0-015805590666",
+                        "jersey_number": "5",
+                        "last_name": "Lucas",
+                        "preferred_name": "Ed",
+                        "type": "assist"
+                    }
+                ],
+                "flags": {
+                    "is_ab": true,
+                    "is_ab_over": true,
+                    "is_bunt": false,
+                    "is_bunt_shown": false,
+                    "is_double_play": false,
+                    "is_hit": false,
+                    "is_on_base": false,
+                    "is_passed_ball": false,
+                    "is_triple_play": false,
+                    "is_wild_pitch": false
+                },
+                "hit_location": "21",
+                "id": "e08c45b6-0149-4360-8b21-eebc15289218",
+                "outcome_id": "oGO",
+                "pitcher": {
+                    "id": "d8326a8e-0f8a-49dc-b3a9-610ddfdc53b7",
+                    "pitch_count": 2,
+                    "pitch_type": "CH",
+                    "pitch_zone": 8
+                },
+                "status": "official",
+                "type": "pitch",
+                "updated_at": "2016-03-10T20:12:15Z"
+            }
+        ],
+        "hitter_id": "497c4595-bd0f-4a9e-b9cf-cb2eacb735bb",
+        "id": "6c120c4d-4e63-41b3-9ecf-b89533b4b36e"
+    }
+}
