@@ -106,15 +106,22 @@ module Sportradar
         end
 
         def period_seconds
+          0
         end
 
         def empty_net
+          false
         end
 
         def conversion
         end
 
         def conversion_points
+          0
+        end
+
+        def yards
+          0
         end
 
         def pitcher_role
