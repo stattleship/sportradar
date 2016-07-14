@@ -17,7 +17,8 @@ module Sportradar
         end
 
         it 'parses pitches' do
-          puts mlb_play_by_play.pitches.map(&:pitch_outcome)
+          puts mlb_play_by_play.pitches.map(&:at_bat_strikes)
+          puts mlb_play_by_play.pitches.map(&:at_bat_outs)
           puts mlb_play_by_play.pitches.count
         end
 

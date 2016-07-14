@@ -10,6 +10,22 @@ module Sportradar
           pitch_outcome
         end
 
+        def at_bat_balls
+          attributes['at_bat_balls']
+        end
+
+        def at_bat_outs
+          attributes['at_bat_outs']
+        end
+
+        def at_bat_pitch_count
+          attributes['at_bat_pitch_count']
+        end
+
+        def at_bat_strikes
+          attributes['at_bat_strikes']
+        end
+
         def pitch_count
           attributes['pitch_count']
         end
@@ -54,43 +70,47 @@ module Sportradar
           attributes['hit_location']
         end
 
-        def is_ab?
+        def pitched_at
+          attributes['pitched_at']
+        end
+
+        def at_bat?
           attributes['is_ab']
         end
 
-        def is_ab_over?
+        def at_bat_over?
           attributes['is_ab_over']
         end
 
-        def is_bunt?
+        def bunt?
           attributes['is_bunt']
         end
 
-        def is_bunt_shown?
+        def bunt_shown?
           attributes['is_bunt_shown']
         end
 
-        def is_double_play?
+        def double_play?
           attributes['is_double_play']
         end
 
-        def is_hit?
+        def hit?
           attributes['is_hit']
         end
 
-        def is_on_base?
+        def on_base?
           attributes['is_on_base']
         end
 
-        def is_passed_ball?
+        def passed_ball?
           attributes['is_passed_ball']
         end
 
-        def is_triple_play?
+        def triple_play?
           attributes['is_triple_play']
         end
 
-        def is_wild_pitch?
+        def wild_pitch?
           attributes['is_wild_pitch']
         end
 
@@ -118,15 +138,17 @@ module Sportradar
           [].tap do |pitches|
             at_bats.each do |at_bat|
               at_bat.events.each do |event|
-                if event['type'] == 'pitch'
+                if event['type'] == 'pitch' && event['status'] == 'official'
                   pitches << new(attributes: event['pitcher'].
                                                merge('at_bat_id' => at_bat.id,
                                                      'event_id' => event['id'],
+                                                     'pitched_at' => event['created_at'],
                                                      'pitcher_id' => event['pitcher']['id'],
                                                      'pitch_outcome_type' => event['outcome_id'],
                                                      'hitter_id' => at_bat.hitter_id,
-                                                     'hit_type:' => event['hit_type'],
+                                                     'hit_type' => event['hit_type'],
                                                      'hit_location' => event['hit_location']).
+                                               merge((event['count'] || {}).transform_keys { |key| key.dup.to_s.prepend('at_bat_') }).
                                                merge(event['flags']).
                                                merge(at_bat.time_code).
                                                merge('pitch_outcome' => PitchOutcome.new(outcome: event['outcome_id']).
