@@ -27,39 +27,19 @@ module Sportradar
         end
 
         def at_bats
-          @at_bats = []
+          Models::AtBat.from_innings(innings: innings)
+        end
 
-          innings.each do |inning|
-            (inning['halfs'] || []).each do |halfs|
-              (halfs['events'] || []).each do |event|
-                if event.has_key?('at_bat')
-                  @at_bats << (event['at_bat'] || {}).merge('time_code' => { 'number' => inning['number'],
-                                                                             'inning' => inning['sequence'],
-                                                                             'half' => halfs['half'],
-                                                                             'sequence' => inning['sequence'] })
-                end
-              end
-            end
-          end
-
-          @at_bats
+        def at_bat_summary
+          at_bats.map(&:to_s)
         end
 
         def pitches
-          @pitches = []
-          at_bats.each do |at_bat|
-            (at_bat['events'] || []).each do |event|
-              if event['type'] == 'pitch'
-                pitch = event['pitcher'].merge(hitter_id: at_bat['hitter_id'],
-                                               pitch_outcome_type: event['outcome_id']).
-                          merge(at_bat['time_code']).
-                          merge(pitch_outcome: Models::PitchOutcome.new(outcome: event['outcome_id']).to_s)
-                @pitches << pitch
-              end
-            end
-          end
+          Models::Pitch.from_at_bats(at_bats: at_bats)
+        end
 
-          @pitches
+        def pitch_summary
+          pitches.map(&:to_s)
         end
 
         def putouts

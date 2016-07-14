@@ -9,12 +9,20 @@ module Sportradar
         end
 
         it 'parses at_bats' do
-          mlb_play_by_play.at_bats
+          puts mlb_play_by_play.at_bats.map(&:to_s)
+        end
+
+        it 'summarizes at bats' do
+          puts mlb_play_by_play.at_bat_summary
         end
 
         it 'parses pitches' do
-          puts mlb_play_by_play.pitches
+          puts mlb_play_by_play.pitches.map(&:pitch_outcome)
           puts mlb_play_by_play.pitches.count
+        end
+
+        it 'summarizes pitches' do
+          puts mlb_play_by_play.pitch_summary
         end
 
         private
