@@ -11,7 +11,7 @@ module Sportradar
         end
 
         def description
-          attributes['description']
+          attributes['description'] || ''
         end
 
         def events
@@ -35,19 +35,19 @@ module Sportradar
         end
 
         def half
-          time_code['half']
+          time_code['half'] || ''
         end
 
         def inning
-          time_code['inning']
+          time_code['inning'] || 0
         end
 
         def number
-          time_code['number']
+          time_code['number'] || 0
         end
 
         def sequence
-          time_code['sequence']
+          time_code['sequence'] || 0
         end
 
         def self.from_innings(game_id:, innings:)
