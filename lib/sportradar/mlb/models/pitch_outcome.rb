@@ -6,13 +6,17 @@ module Sportradar
           @outcome = outcome
         end
 
+        def self.all
+          new(outcome: nil).outcomes
+        end
+
+        def self.to_json
+          Oj.dump('pitch_outcome_types' => all)
+        end
+
         def to_s
           outcomes[outcome] || ''
         end
-
-        private
-
-        attr_reader :outcome
 
         def outcomes
           {
@@ -98,6 +102,10 @@ module Sportradar
             "oTT4" => "Triple - Out at Home",
           }
         end
+
+        private
+
+        attr_reader :outcome
       end
     end
   end

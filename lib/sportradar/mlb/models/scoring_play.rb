@@ -24,7 +24,7 @@ module Sportradar
           event['inning']
         end
 
-        def oridinal_inning
+        def ordinal_inning
           ActiveSupport::Inflector.ordinalize(inning)
         end
 
@@ -45,7 +45,7 @@ module Sportradar
 
         def inning_label
           if inning
-            "#{inning_half_label} #{oridinal_inning}"
+            "#{inning_half_label} #{ordinal_inning}"
           end
         end
 

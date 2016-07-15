@@ -54,13 +54,12 @@ module Sportradar
           attributes['game_id']
         end
 
-
         def pitcher_id
           attributes['pitcher_id']
         end
 
         def pitch_outcome_type
-          attributes['pitch_outcome_type'] || ''
+          attributes['pitch_outcome_type']
         end
 
         def hitter_id
@@ -72,7 +71,7 @@ module Sportradar
         end
 
         def hit_location
-          attributes['hit_location'] || ''
+          attributes['hit_location']
         end
 
         def pitched_at
