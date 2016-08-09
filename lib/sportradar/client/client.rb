@@ -82,7 +82,7 @@ module Sportradar
 
     def access_level
       Sportradar.configuration.
-        access_level.
+        access_levels[league].
         freeze
     end
 

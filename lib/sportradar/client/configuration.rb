@@ -31,8 +31,13 @@ module Sportradar
       }
     end
 
-    def access_level
-      @access_level || ENV['SPORTRADAR_ACCESS_LEVEL'] || 't'
+    def access_levels
+      {
+        'mlb' => ENV['SPORTRADAR_ACCESS_LEVEL_MLB'],
+        'nba' => ENV['SPORTRADAR_ACCESS_LEVEL_NBA'],
+        'nfl' => ENV['SPORTRADAR_ACCESS_LEVEL_NFL'],
+        'nhl' => ENV['SPORTRADAR_ACCESS_LEVEL_NHL'],
+      }
     end
 
     def base_uri

@@ -9,7 +9,7 @@ Currently supports a subset of [Major League Baseball API](http://developer.spor
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sportradar', '>= 0.0.3'
+gem 'sportradar', '>= 0.0.4'
 ```
 
 And then execute:
@@ -27,15 +27,24 @@ Or install it yourself as:
 In your `.env`:
 
 ```
-SPORTRADAR_ACCESS_LEVEL=t
+SPORTRADAR_ACCESS_LEVEL_MLB=t
 SPORTRADAR_API_KEY_MLB=YOUR_API_KEY
+
+SPORTRADAR_ACCESS_LEVEL_NBA=t
 SPORTRADAR_API_KEY_NBA=YOUR_API_KEY
+
+SPORTRADAR_ACCESS_LEVEL_NFL=t
 SPORTRADAR_API_KEY_NFL=YOUR_API_KEY
+
+SPORTRADAR_ACCESS_LEVEL_NHL=t
 SPORTRADAR_API_KEY_NHL=YOUR_API_KEY
+
 SPORTRADAR_FILE_PATH=/path/to/save/responses
 ```
 
-`SPORTRADAR_ACCESS_LEVEL` is `t` or 'p'
+`SPORTRADAR_ACCESS_LEVEL` is `t` or 'p' (or 'rt')
+
+Note: Currently only MLB and NFL support.
 
 ### Console
 
