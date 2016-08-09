@@ -2,7 +2,10 @@
 
 Simple API client for [Sportradar API](http://developer.sportradar.us/).
 
-Currently supports a subset of [Major League Baseball API](http://developer.sportradar.us/docs/MLB_API) endpoints.
+Currently supports
+
+* a subset of [Major League Baseball API](http://developer.sportradar.us/docs/MLB_API) endpoints
+* complete set of [NFL Classic Feed API](http://developer.sportradar.us/docs/read/NFL_Classic) endpoints
 
 ## Installation
 
