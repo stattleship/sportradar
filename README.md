@@ -112,6 +112,7 @@ Defaults to and supports NFL Classic API feed version 1 only (not Official).
 * `Sportradar::Nfl::WeeklyLeaders.new(week: 1, year: 2015).fetch`
 * `Sportradar::Nfl::Standings.new(year: 2015, interval_type: <reg|pre|pst>).fetch`
 * `Sportradar::Nfl::Rankings.new(year: 2015).fetch`
+* `Sportradar::Nfl::TeamStatistics.new(year: 2015, interval_type: 'reg', team_abbreviation: 'NE').fetch`
 
 #### Bulk Saves
 
