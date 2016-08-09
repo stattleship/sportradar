@@ -46,6 +46,8 @@ SPORTRADAR_FILE_PATH=/path/to/save/responses
 
 Note: Currently only MLB and NFL support.
 
+Important: This is a breaking change from version 0.0.3 that had a global access level.
+
 ### Console
 
 `bin/console`
