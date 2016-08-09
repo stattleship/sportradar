@@ -100,12 +100,18 @@ Defaults to and supports NFL Classic API feed version 1 only (not Official).
 * `Sportradar::Nfl::Boxscore.new(week: 1,
                                  year: 2015,
                                  away_team_abbreviation: 'PIT',
-                                 home_team_abbreviation: 'NE').save`
+                                 home_team_abbreviation: 'NE').fetch`
 * `Sportradar::Nfl::ExtendedBoxscore.new(week: 1,
                                          year: 2015,
                                          away_team_abbreviation: 'PIT',
-                                         home_team_abbreviation: 'NE').save`
-* `Sportradar::Nfl::WeeklyBoxscore.new(week: 1, year: 2015).save`
+                                         home_team_abbreviation: 'NE').fetch`
+* `Sportradar::Nfl::WeeklyBoxscore.new(week: 1, year: 2015).fetch`
+* `Sportradar::Nfl::TeamRoster.new(team_abbreviation: 'NE').fetch`
+* `Sportradar::Nfl::GameDepthChart.new(week: 1, year: 2015, away_team_abbreviation: 'PIT', home_team_abbreviation: 'NE').fetch`
+* `Sportradar::Nfl::TeamDepthChart.new(team_abbreviation: 'NE').fetch`
+* `Sportradar::Nfl::WeeklyLeaders.new(week: 1, year: 2015).fetch`
+* `Sportradar::Nfl::Standings.new(year: 2015, interval_type: <reg|pre|pst>).fetch`
+* `Sportradar::Nfl::Rankings.new(year: 2015).fetch`
 
 #### Bulk Saves
 
