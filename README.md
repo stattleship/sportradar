@@ -67,6 +67,13 @@ Defaults to and supports API version 5 only.
 
 Note: `.save` vs `.fetch` will store in the path specified in `SPORTRADAR_FILE_PATH`.
 
+#### Bulk Saves
+
+Some helpers will call .save for each response as separate items.
+
+* `Sportradar::Mlb::DailyGameSummary.new(date: Date.today).perform`
+* `Sportradar::Mlb::DailyPlayByPlay.new(date: Date.today).perform`
+
 ### Football/NFL
 
 Defaults to and supports NFL Classic API feed version 1 only (not Official).
@@ -118,7 +125,14 @@ Defaults to and supports NFL Classic API feed version 1 only (not Official).
 
 Some helpers will call `.save` for each response as separate items.
 
-* TODO
+* `Sportradar::Nfl::TeamRosters.perform`
+* `Sportradar::Nfl::TeamDepthCharts.perform`
+* `Sportradar::Nfl::WeeklyExtendedBoxscores.perform(year: 2015, interval_type: 'reg', week: 1)`
+* `Sportradar::Nfl::WeeklyGameDepthCharts.perform(year: 2015, interval_type: 'reg', week: 1)`
+* `Sportradar::Nfl::WeeklyGameStatistics.perform(year: 2015, interval_type: 'reg', week: 2)`
+* `Sportradar::Nfl::WeeklyGameSummary.perform(year: 2015, interval_type: 'reg', week: 2)`
+* `Sportradar::Nfl::WeeklyPlayByPlay.perform(year: 2015, interval_type: 'reg', week: 1)`
+* `Sportradar::Nfl::SeasonStatistics.perform(year: 2015, interval_type: 'reg')`
 
 ### Model Helpers
 

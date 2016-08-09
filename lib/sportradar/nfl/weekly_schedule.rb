@@ -17,6 +17,10 @@ module Sportradar
       private
 
       attr_reader :week
+
+      def games
+        fetch['games'] || []
+      end
     end
   end
 end
