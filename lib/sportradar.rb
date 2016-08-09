@@ -55,6 +55,9 @@ require 'sportradar/nfl/game_statistics'
 require 'sportradar/nfl/game_summary'
 require 'sportradar/nfl/play_by_play'
 require 'sportradar/nfl/play_summary'
+require 'sportradar/nfl/boxscore'
+require 'sportradar/nfl/extended_boxscore'
+require 'sportradar/nfl/weekly_boxscore'
 
 Oj.default_options = {}
 

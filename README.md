@@ -65,27 +65,7 @@ Defaults to and supports API version 5 only.
 * `Sportradar::Mlb::TeamRosters.new().fetch`
 * `Sportradar::Mlb::Venues.new().fetch`
 
-Note: `.save` vs `.fetch` will store in the path specified in `SPORTRADAR_FILE_PATH`. However, you need to have a directory created for each request within that path.
-
-For example:
-
-* `boxscore`
-* `daily_boxscore`
-* `daily_game_summary`
-* `daily_play_by_play`
-* `daily_schedule`
-* `daily_summary`
-* `game_summary`
-* `glossary`
-* `injuries`
-* `league_hierarchy`
-* `league_schedule`
-* `play_by_play`
-* `player_profile`
-* `team_active_rosters`
-* `team_profile`
-* `team_rosters`
-* `venues`
+Note: `.save` vs `.fetch` will store in the path specified in `SPORTRADAR_FILE_PATH`.
 
 ### Football/NFL
 
@@ -96,14 +76,42 @@ Defaults to and supports NFL Classic API feed version 1 only (not Official).
 * `Sportradar::Nfl::LeagueHierarchy.new().fetch`
 * `Sportradar::Nfl::WeeklySchedule.new(year: '2016', interval_type: <reg|pre|pst>, week: <0..17>).fetch`
 * `Sportradar::Nfl::LeagueSchedule.new(year: '2016', interval_type: <reg|pre|pst>).fetch`
-
+* `Sportradar::Nfl::GameStatistics.new(week: 1,
+                                       year: 2015,
+                                       interval_type: 'reg',
+                                       away_team_abbreviation: 'PIT',
+                                       home_team_abbreviation: 'NE').fetch`
+* `Sportradar::Nfl::GameSummary.new(week: 1,
+                                    year: 2015,
+                                    interval_type: 'reg',
+                                    away_team_abbreviation: 'PIT',
+                                    home_team_abbreviation: 'NE').fetch`
+* `Sportradar::Nfl::PlayByPlay.new(week: 1,
+                                   year: 2015,
+                                   interval_type: 'reg',
+                                   away_team_abbreviation: 'PIT',
+                                   home_team_abbreviation: 'NE').fetch`
+* `Sportradar::Nfl::PlaySummary.new(week: 1,
+                                    year: 2015,
+                                    interval_type: 'reg',
+                                    away_team_abbreviation: 'PIT',
+                                    home_team_abbreviation: 'NE',
+                                    play_id: '4788eac3-c59e-4f82-94ef-d449ac6d6fca').fetch`
+* `Sportradar::Nfl::Boxscore.new(week: 1,
+                                 year: 2015,
+                                 away_team_abbreviation: 'PIT',
+                                 home_team_abbreviation: 'NE').save`
+* `Sportradar::Nfl::ExtendedBoxscore.new(week: 1,
+                                         year: 2015,
+                                         away_team_abbreviation: 'PIT',
+                                         home_team_abbreviation: 'NE').save`
+* `Sportradar::Nfl::WeeklyBoxscore.new(week: 1, year: 2015).save`
 
 #### Bulk Saves
 
 Some helpers will call `.save` for each response as separate items.
 
-* `Sportradar::Mlb::DailyGameSummary.new(date: Date.today).perform`
-* `Sportradar::Mlb::DailyPlayByPlay.new(date: Date.today).perform`
+* TODO
 
 ### Model Helpers
 

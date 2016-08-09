@@ -6,8 +6,12 @@ module Sportradar
         @week = week
       end
 
+      def week_path
+        "#{year}/#{interval_type}/#{week}"
+      end
+
       def path
-        "#{year}/#{interval_type}/#{week}/schedule.json"
+        "#{week_path}/schedule.json"
       end
 
       private
