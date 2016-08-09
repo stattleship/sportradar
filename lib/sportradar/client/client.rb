@@ -21,7 +21,7 @@ module Sportradar
         when '403'
           raise 'Forbidden'
         else
-          raise 'Error in HTTP request'
+          raise "#{res.code} Error in HTTP request"
         end
       end
     rescue StandardError => e
@@ -60,7 +60,9 @@ module Sportradar
     end
 
     def filepath
-      "#{Sportradar.configuration.filepath.freeze}/#{sport}/#{league}/#{endpoint}"
+      "#{Sportradar.configuration.filepath.freeze}/#{sport}/#{league}/#{endpoint}".tap do |path|
+        FileUtils.mkpath(path)
+      end
     end
 
     def url
@@ -94,6 +96,8 @@ module Sportradar
       case league
       when 'mlb'
         '5'
+      when 'nfl'
+        '1'
       else
         '5'
       end
@@ -107,6 +111,8 @@ module Sportradar
       case league
       when 'mlb'
         'baseball'
+      when 'nfl'
+        'football'
       else
         'baseball'
       end

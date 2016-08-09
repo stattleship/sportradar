@@ -5,6 +5,7 @@ require 'addressable/uri'
 require 'addressable/template'
 
 require 'dotenv'
+require 'fileutils'
 require 'net/https'
 require 'oj'
 
@@ -14,6 +15,9 @@ require 'sportradar/client/api_request'
 require 'sportradar/client/daily_api_request'
 require 'sportradar/client/client'
 require 'sportradar/client/configuration'
+
+require 'sportradar/feeds/league_schedule'
+require 'sportradar/feeds/league_hierarchy'
 
 require 'sportradar/mlb/models/at_bat'
 require 'sportradar/mlb/models/pitch'
@@ -42,6 +46,10 @@ require 'sportradar/mlb/team_active_rosters'
 require 'sportradar/mlb/team_profile'
 require 'sportradar/mlb/team_rosters'
 require 'sportradar/mlb/venues'
+
+require 'sportradar/nfl/league_schedule'
+require 'sportradar/nfl/weekly_schedule'
+require 'sportradar/nfl/league_hierarchy'
 
 Oj.default_options = {}
 

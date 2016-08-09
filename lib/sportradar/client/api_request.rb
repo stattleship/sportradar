@@ -6,8 +6,16 @@ module Sportradar
                              endpoint: endpoint)
     end
 
+    def self.fetch
+      new.fetch
+    end
+
     def fetch
       client.fetch
+    end
+
+    def self.save
+      new.save
     end
 
     def save
