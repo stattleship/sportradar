@@ -87,6 +87,17 @@ For example:
 * `team_rosters`
 * `venues`
 
+### Football/NFL
+
+Defaults to and supports NFL Classic API feed version 1 only (not Official).
+
+#### API Requests
+
+* `Sportradar::Nfl::LeagueHierarchy.new().fetch`
+* `Sportradar::Nfl::WeeklySchedule.new(year: '2016', interval_type: <reg|pre|pst>, week: <0..17>).fetch`
+* `Sportradar::Nfl::LeagueSchedule.new(year: '2016', interval_type: <reg|pre|pst>).fetch`
+
+
 #### Bulk Saves
 
 Some helpers will call `.save` for each response as separate items.

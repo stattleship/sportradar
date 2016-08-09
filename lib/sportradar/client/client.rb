@@ -25,7 +25,7 @@ module Sportradar
         end
       end
     rescue StandardError => e
-      puts "HTTP Request failed (#{e.message})"
+      puts "HTTP Request for #{url} failed (#{e.message})"
       raise e
     end
 

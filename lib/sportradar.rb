@@ -47,9 +47,14 @@ require 'sportradar/mlb/team_profile'
 require 'sportradar/mlb/team_rosters'
 require 'sportradar/mlb/venues'
 
+require 'sportradar/nfl/league_hierarchy'
 require 'sportradar/nfl/league_schedule'
 require 'sportradar/nfl/weekly_schedule'
-require 'sportradar/nfl/league_hierarchy'
+require 'sportradar/nfl/game_request'
+require 'sportradar/nfl/game_statistics'
+require 'sportradar/nfl/game_summary'
+require 'sportradar/nfl/play_by_play'
+require 'sportradar/nfl/play_summary'
 
 Oj.default_options = {}
 
