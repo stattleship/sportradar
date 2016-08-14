@@ -21,11 +21,11 @@ module Sportradar
         when '403'
           raise 'Forbidden'
         else
-          raise "#{res.code} Error in HTTP request"
+          raise "#{res.code} Error in HTTP request for #{path}"
         end
       end
     rescue StandardError => e
-      puts "HTTP Request for #{url} failed (#{e.message})"
+      puts "HTTP Request for #{path} failed (#{e.message})"
       raise e
     end
 

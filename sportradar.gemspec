@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Ruby client for the Sportradar.US API.}
   spec.description   = %q{Fetch sports data from the Sportradar.US API.}
   spec.homepage      = "https://github.com/stattleship/sportradar"
-  spec.license       = "None"
+  spec.license       = "GPL-3.0"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

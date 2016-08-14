@@ -1,0 +1,252 @@
+{
+    "away_team": {
+        "id": "PIT",
+        "market": "Pittsburgh",
+        "name": "Steelers",
+        "points": 21,
+        "remaining_challenges": 2,
+        "remaining_timeouts": 2,
+        "scoring": [
+            {
+                "points": 0,
+                "quarter": 1
+            },
+            {
+                "points": 3,
+                "quarter": 2
+            },
+            {
+                "points": 8,
+                "quarter": 3
+            },
+            {
+                "points": 10,
+                "quarter": 4
+            }
+        ]
+    },
+    "clock": "1:21",
+    "completed": "2015-09-11T03:40:49+00:00",
+    "home_team": {
+        "id": "NE",
+        "market": "New England",
+        "name": "Patriots",
+        "points": 28,
+        "remaining_challenges": 1,
+        "remaining_timeouts": 2,
+        "scoring": [
+            {
+                "points": 0,
+                "quarter": 1
+            },
+            {
+                "points": 14,
+                "quarter": 2
+            },
+            {
+                "points": 7,
+                "quarter": 3
+            },
+            {
+                "points": 7,
+                "quarter": 4
+            }
+        ]
+    },
+    "id": "acbb3001-6bb6-41ce-9e91-942abd284e4c",
+    "quarter": 4,
+    "scheduled": "2015-09-11T00:30:00+00:00",
+    "scoring_drives": [
+        {
+            "clock": "03:14",
+            "quarter": 1,
+            "scores": [
+                {
+                    "clock": "11:16",
+                    "id": "3400e272-1aac-42a7-8097-e0178d42bd79",
+                    "points": 6,
+                    "quarter": 2,
+                    "summary": "12-T.Brady complete to 87-R.Gronkowski. 87-R.Gronkowski runs 16 yards for a touchdown.",
+                    "team": "NE",
+                    "type": "touchdown"
+                },
+                {
+                    "clock": "11:11",
+                    "id": "e78fa8ed-b36e-4d35-bd51-6979fba7d56c",
+                    "points": 1,
+                    "quarter": 2,
+                    "summary": "3-S.Gostkowski extra point is good.",
+                    "team": "NE",
+                    "type": "extrapoint"
+                }
+            ],
+            "sequence": 1,
+            "team": "NE"
+        },
+        {
+            "clock": "08:38",
+            "quarter": 2,
+            "scores": [
+                {
+                    "clock": "04:06",
+                    "id": "f90dafa3-bbd1-422f-8fb2-c213803903fa",
+                    "points": 6,
+                    "quarter": 2,
+                    "summary": "12-T.Brady complete to 87-R.Gronkowski. 87-R.Gronkowski runs 6 yards for a touchdown.",
+                    "team": "NE",
+                    "type": "touchdown"
+                },
+                {
+                    "clock": "04:01",
+                    "id": "06b92441-aa94-468d-9f46-2e7dc9df71d4",
+                    "points": 1,
+                    "quarter": 2,
+                    "summary": "3-S.Gostkowski extra point is good.",
+                    "team": "NE",
+                    "type": "extrapoint"
+                }
+            ],
+            "sequence": 2,
+            "team": "NE"
+        },
+        {
+            "clock": "04:01",
+            "quarter": 2,
+            "scores": [
+                {
+                    "clock": ":08",
+                    "id": "91730d15-0d3a-47a0-994a-a0c1405a6a83",
+                    "points": 3,
+                    "quarter": 2,
+                    "summary": "8-J.Scobee 44 yards Field Goal is Good.",
+                    "team": "PIT",
+                    "type": "fieldgoal"
+                }
+            ],
+            "sequence": 3,
+            "team": "PIT"
+        },
+        {
+            "clock": "15:00",
+            "quarter": 3,
+            "scores": [
+                {
+                    "clock": "10:41",
+                    "id": "5f706a1f-22e1-46c3-817d-a272fda42b77",
+                    "points": 6,
+                    "quarter": 3,
+                    "summary": "12-T.Brady complete to 88-S.Chandler. 88-S.Chandler runs 1 yard for a touchdown.",
+                    "team": "NE",
+                    "type": "touchdown"
+                },
+                {
+                    "clock": "10:37",
+                    "id": "e1141238-4bc6-4805-b7e2-20efe6a84d16",
+                    "points": 1,
+                    "quarter": 3,
+                    "summary": "3-S.Gostkowski extra point is good.",
+                    "team": "NE",
+                    "type": "extrapoint"
+                }
+            ],
+            "sequence": 4,
+            "team": "NE"
+        },
+        {
+            "clock": "10:37",
+            "quarter": 3,
+            "scores": [
+                {
+                    "clock": "06:48",
+                    "id": "85ded147-a09f-442b-ba2a-75f79bc22b23",
+                    "points": 6,
+                    "quarter": 3,
+                    "summary": "46-W.Johnson runs 1 yard for a touchdown.",
+                    "team": "PIT",
+                    "type": "touchdown"
+                },
+                {
+                    "clock": "06:43",
+                    "id": "a076d570-f5e2-4f78-a116-3066924ea53a",
+                    "points": 2,
+                    "quarter": 3,
+                    "summary": "7-B.Roethlisberger complete to 11-M.Wheaton. 11-M.Wheaton to NE End Zone for 2 yards. Conversion is good.",
+                    "team": "PIT",
+                    "type": "conversion"
+                }
+            ],
+            "sequence": 5,
+            "team": "PIT"
+        },
+        {
+            "clock": "04:15",
+            "quarter": 3,
+            "scores": [
+                {
+                    "clock": "11:42",
+                    "id": "1cb771e8-e190-4f64-8530-308649f60225",
+                    "points": 3,
+                    "quarter": 4,
+                    "summary": "8-J.Scobee 24 yards Field Goal is Good.",
+                    "team": "PIT",
+                    "type": "fieldgoal"
+                }
+            ],
+            "sequence": 6,
+            "team": "PIT"
+        },
+        {
+            "clock": "11:39",
+            "quarter": 4,
+            "scores": [
+                {
+                    "clock": "09:24",
+                    "id": "a86c0f19-2cb0-4d18-9587-9d91f96349cb",
+                    "points": 6,
+                    "quarter": 4,
+                    "summary": "12-T.Brady complete to 87-R.Gronkowski. 87-R.Gronkowski runs 1 yard for a touchdown.",
+                    "team": "NE",
+                    "type": "touchdown"
+                },
+                {
+                    "clock": "09:20",
+                    "id": "80ae3a99-eab5-48d7-9c5a-e38ffb532e05",
+                    "points": 1,
+                    "quarter": 4,
+                    "summary": "3-S.Gostkowski extra point is good.",
+                    "team": "NE",
+                    "type": "extrapoint"
+                }
+            ],
+            "sequence": 7,
+            "team": "NE"
+        },
+        {
+            "clock": "02:59",
+            "quarter": 4,
+            "scores": [
+                {
+                    "clock": ":07",
+                    "id": "0b7244ed-4277-4c6a-92f5-c4ec89c9c0aa",
+                    "points": 6,
+                    "quarter": 4,
+                    "summary": "7-B.Roethlisberger complete to 84-A.Brown. 84-A.Brown runs 11 yards for a touchdown.",
+                    "team": "PIT",
+                    "type": "touchdown"
+                },
+                {
+                    "clock": ":02",
+                    "id": "2579bc23-b358-40df-9725-f4f52aed1586",
+                    "points": 1,
+                    "quarter": 4,
+                    "summary": "8-J.Scobee extra point is good.",
+                    "team": "PIT",
+                    "type": "extrapoint"
+                }
+            ],
+            "sequence": 8,
+            "team": "PIT"
+        }
+    ],
+    "status": "closed"
+}

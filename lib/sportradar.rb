@@ -1,3 +1,4 @@
+require 'active_support/core_ext/hash'
 require 'active_support/core_ext/string'
 require 'active_support/inflector'
 
@@ -46,6 +47,8 @@ require 'sportradar/mlb/team_active_rosters'
 require 'sportradar/mlb/team_profile'
 require 'sportradar/mlb/team_rosters'
 require 'sportradar/mlb/venues'
+
+require 'sportradar/nfl/parsers/boxscore_parser'
 
 require 'sportradar/nfl/league_hierarchy'
 require 'sportradar/nfl/league_schedule'
