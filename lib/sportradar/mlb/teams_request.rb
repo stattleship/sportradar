@@ -1,5 +1,5 @@
 module Sportradar
-  module Nfl
+  module Mlb
     class TeamsRequest
       private
 
@@ -11,15 +11,15 @@ module Sportradar
         _hierarchy ||= LeagueHierarchy.new.fetch
       end
 
-      def conferences
-        conferences ||= hierarchy['conferences']
+      def leagues
+        leagues ||= hierarchy['leagues']
       end
 
       def divisions
         @divisions = []
 
-        conferences.each do |conference|
-          @divisions << conference['divisions']
+        leagues.each do |league|
+          @divisions << league['divisions']
         end
 
         @divisions.flatten

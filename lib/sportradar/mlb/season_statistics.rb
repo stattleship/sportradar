@@ -1,6 +1,6 @@
 module Sportradar
-  module Nfl
-    class SeasonStatistics < Sportradar::Nfl::TeamsRequest
+  module Mlb
+    class SeasonStatistics < Sportradar::Mlb::TeamsRequest
       def initialize(year:, interval_type:)
         @year = year || Date.today.strftime('%Y')
         @interval_type = interval_type || 'reg'

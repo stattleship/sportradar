@@ -12,7 +12,7 @@ Currently supports
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sportradar', '>= 0.0.4'
+gem 'sportradar', '>= 0.0.5'
 ```
 
 And then execute:
@@ -77,9 +77,16 @@ Defaults to and supports API version 5 only.
 * `Sportradar::Mlb::TeamActiveRosters.new().fetch`
 * `Sportradar::Mlb::TeamProfile.new(player_id: '<team_guid>').fetch`
 * `Sportradar::Mlb::TeamRosters.new().fetch`
+* `Sportradar::Mlb::TeamStatistics.new(year: 2015, interval_type: 'reg', team_id: '<team_uuid>').fetch`
 * `Sportradar::Mlb::Venues.new().fetch`
 
 Note: `.save` vs `.fetch` will store in the path specified in `SPORTRADAR_FILE_PATH`.
+
+#### Bulk Fetches
+
+Some helpers will call `.fetch` for each response and return a collection.
+
+* `Sportradar::Mlb::SeasonStatistics.perform(year: 2015, interval_type: 'reg').fetch`
 
 #### Bulk Saves
 
@@ -133,7 +140,14 @@ Defaults to and supports NFL Classic API feed version 1 only (not Official).
 * `Sportradar::Nfl::WeeklyLeaders.new(week: 1, year: 2015).fetch`
 * `Sportradar::Nfl::Standings.new(year: 2015, interval_type: <reg|pre|pst>).fetch`
 * `Sportradar::Nfl::Rankings.new(year: 2015).fetch`
-* `Sportradar::Nfl::TeamStatistics.new(year: 2015, interval_type: 'reg', team_abbreviation: 'NE').fetch`
+* `Sportradar::Nfl::TeamStatistics.new(year: 2015, interval_type: 'reg', team_id: 'NE').fetch`
+
+#### Bulk Fetches
+
+Some helpers will call `.fetch` for each response and return a collection.
+
+* `Sportradar::Nfl::TeamRosters.fetch`
+* `Sportradar::Nfl::SeasonStatistics.perform(year: 2015, interval_type: 'reg').fetch`
 
 #### Bulk Saves
 
@@ -141,12 +155,12 @@ Some helpers will call `.save` for each response as separate items.
 
 * `Sportradar::Nfl::TeamRosters.perform`
 * `Sportradar::Nfl::TeamDepthCharts.perform`
-* `Sportradar::Nfl::WeeklyExtendedBoxscores.perform(year: 2015, interval_type: 'reg', week: 1)`
-* `Sportradar::Nfl::WeeklyGameDepthCharts.perform(year: 2015, interval_type: 'reg', week: 1)`
-* `Sportradar::Nfl::WeeklyGameStatistics.perform(year: 2015, interval_type: 'reg', week: 2)`
-* `Sportradar::Nfl::WeeklyGameSummary.perform(year: 2015, interval_type: 'reg', week: 2)`
-* `Sportradar::Nfl::WeeklyPlayByPlay.perform(year: 2015, interval_type: 'reg', week: 1)`
-* `Sportradar::Nfl::SeasonStatistics.perform(year: 2015, interval_type: 'reg')`
+* `Sportradar::Nfl::WeeklyExtendedBoxscores.perform(year: 2015, interval_type: 'reg', week: 1).perform`
+* `Sportradar::Nfl::WeeklyGameDepthCharts.perform(year: 2015, interval_type: 'reg', week: 1).perform`
+* `Sportradar::Nfl::WeeklyGameStatistics.perform(year: 2015, interval_type: 'reg', week: 2).perform`
+* `Sportradar::Nfl::WeeklyGameSummary.perform(year: 2015, interval_type: 'reg', week: 2).perform`
+* `Sportradar::Nfl::WeeklyPlayByPlay.perform(year: 2015, interval_type: 'reg', week: 1).perform`
+* `Sportradar::Nfl::SeasonStatistics.perform(year: 2015, interval_type: 'reg').perform`
 
 ### Model Helpers
 
