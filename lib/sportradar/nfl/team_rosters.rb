@@ -8,8 +8,8 @@ module Sportradar
       def fetch
         team_rosters = []
 
-        team_abbreviations.each do |team_abbreviation|
-          team_rosters << TeamRoster.new(team_abbreviation: team_abbreviation).fetch
+        team_ids.each do |team_ids|
+          team_rosters << TeamRoster.new(team_abbreviation: team_ids).fetch
         end
 
         { 'teams' => team_rosters }
@@ -20,8 +20,8 @@ module Sportradar
       end
 
       def perform
-        team_abbreviations.each do |team_abbreviation|
-          rosters << TeamRoster.new(team_abbreviation: team_abbreviation).save
+        team_ids.each do |team_ids|
+          rosters << TeamRoster.new(team_abbreviation: team_ids).save
         end
       end
     end
