@@ -96,8 +96,12 @@ module Sportradar
       case league
       when 'mlb'
         '5'
+      when 'nba'
+        '3'
       when 'nfl'
         '1'
+      when 'nhl'
+        '3'
       else
         '5'
       end
@@ -111,8 +115,12 @@ module Sportradar
       case league
       when 'mlb'
         'baseball'
+      when 'nba'
+        'basketball'
       when 'nfl'
         'football'
+      when 'nhl'
+        'hockey'
       else
         'baseball'
       end

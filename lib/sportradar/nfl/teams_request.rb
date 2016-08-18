@@ -3,7 +3,7 @@ module Sportradar
     class TeamsRequest
       private
 
-      def team_ids
+      def team_abbreviations
         teams.map { |team| team['id'] }.sort
       end
 

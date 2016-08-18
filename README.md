@@ -5,6 +5,8 @@ Simple API client for [Sportradar API](http://developer.sportradar.us/).
 Currently supports
 
 * a subset of [Major League Baseball API](http://developer.sportradar.us/docs/MLB_API) endpoints
+* a subset of [NBA Feed API](http://developer.sportradar.us/docs/read/NBA_API) endpoints
+* a subset of [NHL Classic Feed API](http://developer.sportradar.us/docs/read/NHL_Classic) endpoints
 * complete set of [NFL Classic Feed API](http://developer.sportradar.us/docs/read/NFL_Classic) endpoints
 
 ## Installation
@@ -12,7 +14,7 @@ Currently supports
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sportradar', '>= 0.0.5'
+gem 'sportradar', '>= 0.0.6'
 ```
 
 And then execute:
@@ -95,6 +97,16 @@ Some helpers will call .save for each response as separate items.
 * `Sportradar::Mlb::DailyGameSummary.new(date: Date.today).perform`
 * `Sportradar::Mlb::DailyPlayByPlay.new(date: Date.today).perform`
 
+### Basketball/NBA
+
+Defaults to and supports NBA Classic API feed version 3 only (not Official).
+
+#### API Requests
+
+* `Sportradar::Nba::LeagueHierarchy.new().fetch`
+* `Sportradar::Nba::LeagueSchedule.new(year: '2016', interval_type: <reg|pre|pst>).fetch`
+* `Sportradar::Nba::PlayByPlay.new(event_id: '<game_guid>').fetch`
+
 ### Football/NFL
 
 Defaults to and supports NFL Classic API feed version 1 only (not Official).
@@ -162,9 +174,19 @@ Some helpers will call `.save` for each response as separate items.
 * `Sportradar::Nfl::WeeklyPlayByPlay.perform(year: 2015, interval_type: 'reg', week: 1).perform`
 * `Sportradar::Nfl::SeasonStatistics.perform(year: 2015, interval_type: 'reg').perform`
 
+### Hockey/NHL
+
+Defaults to and supports NHL Classic API feed version 3 only (not Official).
+
+#### API Requests
+
+* `Sportradar::Nhl::LeagueHierarchy.new().fetch`
+* `Sportradar::Nhl::LeagueSchedule.new(year: '2016', interval_type: <reg|pre|pst>).fetch`
+* `Sportradar::Nhl::PlayByPlay.new(event_id: '<game_guid>').fetch`
+
 ### Model Helpers
 
-#### Boxscore and Scoring Plays
+#### Baseball Boxscore and Scoring Plays
 
 * `Sportradar::Mlb::Parsers::ScoringPlays.new(game_boxscore: {})`
 

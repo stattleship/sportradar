@@ -52,6 +52,10 @@ require 'sportradar/mlb/team_rosters'
 require 'sportradar/mlb/team_statistics'
 require 'sportradar/mlb/venues'
 
+require 'sportradar/nba/league_hierarchy'
+require 'sportradar/nba/league_schedule'
+require 'sportradar/nba/play_by_play'
+
 require 'sportradar/nfl/parsers/boxscore_parser'
 
 require 'sportradar/nfl/league_hierarchy'
@@ -83,6 +87,10 @@ require 'sportradar/nfl/weekly_leaders'
 require 'sportradar/nfl/rankings'
 require 'sportradar/nfl/standings'
 require 'sportradar/nfl/season_statistics'
+
+require 'sportradar/nhl/league_hierarchy'
+require 'sportradar/nhl/league_schedule'
+require 'sportradar/nhl/play_by_play'
 
 Oj.default_options = {}
 
