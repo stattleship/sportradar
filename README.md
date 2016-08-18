@@ -14,7 +14,7 @@ Currently supports
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sportradar', '>= 0.0.6'
+gem 'sportradar', '>= 0.0.7'
 ```
 
 And then execute:
@@ -88,7 +88,7 @@ Note: `.save` vs `.fetch` will store in the path specified in `SPORTRADAR_FILE_P
 
 Some helpers will call `.fetch` for each response and return a collection.
 
-* `Sportradar::Mlb::SeasonStatistics.perform(year: 2015, interval_type: 'reg').fetch`
+* `Sportradar::Mlb::SeasonStatistics.fetch(year: 2015, interval_type: 'reg').fetch`
 
 #### Bulk Saves
 
@@ -159,7 +159,7 @@ Defaults to and supports NFL Classic API feed version 1 only (not Official).
 Some helpers will call `.fetch` for each response and return a collection.
 
 * `Sportradar::Nfl::TeamRosters.fetch`
-* `Sportradar::Nfl::SeasonStatistics.perform(year: 2015, interval_type: 'reg').fetch`
+* `Sportradar::Nfl::SeasonStatistics.fetch(year: 2015, interval_type: 'reg').fetch`
 
 #### Bulk Saves
 

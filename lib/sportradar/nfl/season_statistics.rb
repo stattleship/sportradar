@@ -6,8 +6,8 @@ module Sportradar
         @interval_type = interval_type || 'reg'
       end
 
-      def self.fetch
-        new.fetch
+      def self.fetch(year:, interval_type:)
+        new(year: year, interval_type: interval_type).fetch
       end
 
       def fetch
