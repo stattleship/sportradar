@@ -17,7 +17,7 @@ module Sportradar
         end
 
         def hitter_outcome
-          event['hitter_outcome']
+          event['hitter_outcome'] || 'NA'
         end
 
         def inning
@@ -68,7 +68,7 @@ module Sportradar
         end
 
         def pitch?
-            play_type == 'pitch'
+          play_type == 'pitch'
         end
 
         def period_number

@@ -15,11 +15,12 @@ module Sportradar
         end
 
         def to_s
-          outcomes[outcome] || ''
+          outcomes[outcome] || 'NA'
         end
 
         def outcomes
           {
+            "NA" => "NA",
             "aBK" => "Balk",
             "aCI" => "Catcher Interference",
             "aD" => "Double",

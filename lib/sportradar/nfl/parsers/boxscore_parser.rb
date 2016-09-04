@@ -22,12 +22,17 @@ module Sportradar
           json['completed'] && json['completed'].to_datetime
         end
 
+        def status
+          json['status']
+        end
+
         def clock_attributes
           {
             clock: clock,
             clock_secs: clock_secs,
             period: quarter,
             ended_at: completed,
+            status: status,
           }.compact
         end
 
