@@ -14,7 +14,7 @@ Currently supports
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sportradar', '>= 0.0.9'
+gem 'sportradar', '>= 0.0.11'
 ```
 
 And then execute:
