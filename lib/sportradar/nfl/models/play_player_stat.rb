@@ -42,10 +42,18 @@ module Sportradar
 
         def stats
           {
+            'blocked_field_goal_return_returns' => blocked_field_goal_return_returns,
+            'blocked_field_goal_return_touchdown' => blocked_field_goal_return_touchdown,
+            'blocked_field_goal_return_yards' => blocked_field_goal_return_yards,
+            'blocked_punt_return_returns' => blocked_punt_return_returns,
+            'blocked_punt_return_touchdown' => blocked_punt_return_touchdown,
+            'blocked_punt_return_yards' => blocked_punt_return_yards,
             'defense_assist' => defense_assist,
             'defense_category' => defense_category,
             'defense_forced_fumble' => defense_forced_fumble,
             'defense_interception' => defense_interception,
+            'defense_interception_touchdown' => defense_interception_touchdown,
+            'defense_interception_yards' => defense_interception_yards,
             'defense_sack' => defense_sack,
             'defense_sack_yards' => defense_sack_yards,
             'defense_safety' => defense_safety,
@@ -59,6 +67,9 @@ module Sportradar
             'field_goal_blocked' => field_goal_blocked,
             'field_goal_made' => field_goal_made,
             'field_goal_return' => field_goal_return,
+            'field_goal_return_returns' => field_goal_return_returns,
+            'field_goal_return_touchdown' => field_goal_return_touchdown,
+            'field_goal_return_yards' => field_goal_return_yards,
             'field_goal_yards' => field_goal_yards,
             'fumble_category' => fumble_category,
             'fumble_fumble' => fumble_fumble,
@@ -70,6 +81,10 @@ module Sportradar
             'fumble_return_returned' => fumble_return_returned,
             'fumble_return_touchdown' => fumble_return_touchdown,
             'fumble_return_yards' => fumble_return_yards,
+            'kick_return_fair_catch' => kick_return_fair_catch,
+            'kick_return_returns' => kick_return_returns,
+            'kick_return_touchdown' => kick_return_touchdown,
+            'kick_return_yards' => kick_return_yards,
             'kickoffs_endzone' => kickoffs_endzone,
             'kickoffs_inside_20' => kickoffs_inside_20,
             'kickoffs_kicks' => kickoffs_kicks,
@@ -123,6 +138,7 @@ module Sportradar
             'two_point_conversion_pass' => two_point_conversion_pass,
             'two_point_conversion_rececption' => two_point_conversion_rececption,
             'two_point_conversion_rush' => two_point_conversion_rush,
+
           }.compact
         end
 
@@ -140,6 +156,14 @@ module Sportradar
 
         def defense_interception
           @attributes.dig('defense', 'int')
+        end
+
+        def defense_interception_touchdown
+          @attributes.dig('defense', 'int_td')
+        end
+
+        def defense_interception_yards
+          @attributes.dig('defense', 'int_yds')
         end
 
         def defense_sack
@@ -448,6 +472,58 @@ module Sportradar
 
         def two_point_conversion_rush
           @attributes.dig('two_point_conversion', 'rush')
+        end
+
+        def blocked_field_goal_return_returns
+          @attributes.dig('blocked_field_goal_return', 'returns')
+        end
+
+        def blocked_field_goal_return_yards
+          @attributes.dig('blocked_field_goal_return', 'yds')
+        end
+
+        def blocked_field_goal_return_touchdown
+          @attributes.dig('blocked_field_goal_return', 'td')
+        end
+
+        def blocked_punt_return_returns
+          @attributes.dig('blocked_punt_return', 'returns')
+        end
+
+        def blocked_punt_return_yards
+          @attributes.dig('blocked_punt_return', 'yds')
+        end
+
+        def blocked_punt_return_touchdown
+          @attributes.dig('blocked_punt_return', 'td')
+        end
+
+        def field_goal_return_returns
+          @attributes.dig('field_goal_return', 'returns')
+        end
+
+        def field_goal_return_yards
+          @attributes.dig('field_goal_return', 'yds')
+        end
+
+        def field_goal_return_touchdown
+          @attributes.dig('field_goal_return', 'td')
+        end
+
+        def kick_return_returns
+          @attributes.dig('kick_return', 'returns')
+        end
+
+        def kick_return_yards
+          @attributes.dig('kick_return', 'yds')
+        end
+
+        def kick_return_fair_catch
+          @attributes.dig('kick_return', 'fc')
+        end
+
+        def kick_return_touchdown
+          @attributes.dig('kick_return', 'td')
         end
       end
     end
