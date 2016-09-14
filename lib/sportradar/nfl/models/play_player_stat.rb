@@ -65,7 +65,7 @@ module Sportradar
             'fumble_lost' => fumble_lost,
             'fumble_out_of_bounds' => fumble_out_of_bounds,
             'fumble_return_category' => fumble_return_category,
-            'fumble_return_opp_rec' => fumble_return_opp_recovered,
+            'fumble_return_opp_recovered' => fumble_return_opp_recovered,
             'fumble_return_own_recovered' => fumble_return_own_recovered,
             'fumble_return_returned' => fumble_return_returned,
             'fumble_return_touchdown' => fumble_return_touchdown,
