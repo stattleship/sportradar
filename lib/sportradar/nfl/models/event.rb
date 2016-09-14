@@ -28,7 +28,7 @@ module Sportradar
         end
 
         def clock
-          @attributes['clock']
+          @attributes['clock'] || '0'
         end
 
         def id
@@ -36,7 +36,7 @@ module Sportradar
         end
 
         def sequence
-          @attributes['sequence']
+          @attributes['sequence'] || 0
         end
 
         def event_type

@@ -1,0 +1,77 @@
+{
+    "advancements": [
+        {
+            "from": {
+                "side": "ARI",
+                "yard_line": 25
+            },
+            "sequence": 1,
+            "team": "ARI",
+            "to": {
+                "side": "ARI",
+                "yard_line": 27
+            },
+            "type": "progression"
+        }
+    ],
+    "clock": "15:00",
+    "controller": "ARI",
+    "direction": "Left",
+    "end_situation": {
+        "down": 2,
+        "side": "ARI",
+        "team": "ARI",
+        "yard_line": 27,
+        "yfd": 8
+    },
+    "game": "568d84eb-874f-49f4-b77d-dc23412fb87c",
+    "id": "4c578712-3589-416c-90aa-76064830fa7e",
+    "official": true,
+    "players": [
+        {
+            "defense": {
+                "ast": 0,
+                "category": "defense",
+                "force_fum": 0,
+                "int": 0,
+                "sack": 0,
+                "sack_yds": 0.0,
+                "sfty": 0,
+                "tackle": 1,
+                "tlost": 0
+            },
+            "id": "eb02d9d3-87a1-4e50-9809-094946c73c46",
+            "jersey": 97,
+            "name": "Alan Branch",
+            "position": "DT",
+            "team": "NE"
+        },
+        {
+            "id": "2c8670ae-0c23-4d20-9d2b-f4c3e25f8938",
+            "jersey": 31,
+            "name": "David Johnson",
+            "position": "RB",
+            "rushing": {
+                "att": 1,
+                "fd": 0,
+                "fum": 0,
+                "rz_att": 0,
+                "sfty": 0,
+                "td": 0,
+                "yds": 2
+            },
+            "team": "ARI"
+        }
+    ],
+    "quarter": 1,
+    "start_situation": {
+        "down": 1,
+        "side": "ARI",
+        "team": "ARI",
+        "yard_line": 25,
+        "yfd": 10
+    },
+    "summary": "31-D.Johnson to ARI 27 for 2 yards (97-A.Branch).",
+    "type": "rush",
+    "updated": "2016-09-12T00:37:14+00:00"
+}

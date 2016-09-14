@@ -1,0 +1,55 @@
+{
+    "advancements": [
+        {
+            "from": {
+                "side": "CAR",
+                "yard_line": 23
+            },
+            "sequence": 1,
+            "team": "DEN",
+            "to": {
+                "side": "CAR",
+                "yard_line": 23
+            },
+            "type": "progression"
+        }
+    ],
+    "clock": "09:30",
+    "controller": "DEN",
+    "end_situation": {
+        "side": "DEN",
+        "team": "DEN",
+        "yard_line": 35
+    },
+    "game": "5619ac19-8fea-4de2-9ce3-88c97a54bfea",
+    "id": "394c332f-f8a2-49dd-b483-4fdd2da04d8c",
+    "official": true,
+    "players": [
+        {
+            "extra_point": {
+                "att": 1,
+                "blk": 0,
+                "made": 1
+            },
+            "id": "6444feb1-f5a4-4b45-9a45-79308a4445fd",
+            "jersey": 8,
+            "name": "Brandon McManus",
+            "position": "K",
+            "team": "DEN"
+        }
+    ],
+    "quarter": 4,
+    "score": {
+        "points": 1,
+        "team": "DEN",
+        "type": "extrapoint"
+    },
+    "start_situation": {
+        "side": "CAR",
+        "team": "DEN",
+        "yard_line": 23
+    },
+    "summary": "8-B.McManus extra point is good.",
+    "type": "extrapoint",
+    "updated": "2016-09-09T03:14:58+00:00"
+}

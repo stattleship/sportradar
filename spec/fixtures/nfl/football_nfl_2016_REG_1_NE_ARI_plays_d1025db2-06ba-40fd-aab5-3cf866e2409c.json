@@ -1,0 +1,56 @@
+{
+    "advancements": [
+        {
+            "from": {
+                "side": "NE",
+                "yard_line": 35
+            },
+            "sequence": 1,
+            "team": "NE",
+            "to": {
+                "side": "ARI",
+                "yard_line": 0
+            },
+            "type": "progression"
+        }
+    ],
+    "clock": "15:00",
+    "controller": "NE",
+    "end_situation": {
+        "down": 1,
+        "side": "ARI",
+        "team": "ARI",
+        "yard_line": 25,
+        "yfd": 10
+    },
+    "game": "568d84eb-874f-49f4-b77d-dc23412fb87c",
+    "id": "d1025db2-06ba-40fd-aab5-3cf866e2409c",
+    "official": true,
+    "players": [
+        {
+            "id": "a527b7db-0b52-4379-9e4c-2e08c1fe1bed",
+            "jersey": 3,
+            "kickoffs": {
+                "endzone": 1,
+                "in20": 0,
+                "kicks": 1,
+                "net_yds": 40,
+                "ret": 0,
+                "tb": 1,
+                "yds": 65
+            },
+            "name": "Stephen Gostkowski",
+            "position": "K",
+            "team": "NE"
+        }
+    ],
+    "quarter": 1,
+    "start_situation": {
+        "side": "NE",
+        "team": "NE",
+        "yard_line": 35
+    },
+    "summary": "3-S.Gostkowski kicks 65 yards from NE 35 to ARI End Zone. touchback.",
+    "type": "kick",
+    "updated": "2016-09-12T00:35:18+00:00"
+}

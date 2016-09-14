@@ -137,6 +137,8 @@ Defaults to and supports NFL Classic API feed version 1 only (not Official).
                                     away_team_abbreviation: 'PIT',
                                     home_team_abbreviation: 'NE',
                                     play_id: '4788eac3-c59e-4f82-94ef-d449ac6d6fca').fetch`
+* `Sportradar::Nfl::PlaySummary.new(details: '/2016/REG/1/NE/ARI/plays/4c578712-3589-416c-90aa-76064830fa7e.json').fetch`
+
 * `Sportradar::Nfl::Boxscore.new(week: 1,
                                  year: 2015,
                                  away_team_abbreviation: 'PIT',

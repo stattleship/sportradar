@@ -45,7 +45,7 @@ module Sportradar
         def build_quarters
           game_play_by_play.
             dig('quarters').
-            map { |attributes| Models::Quarter.new(attributes: attributes) }
+            map { |attributes| Models::Quarter.new(attributes: attributes.merge(game_id: game_id)) }
         end
       end
     end

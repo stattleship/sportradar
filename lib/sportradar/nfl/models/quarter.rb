@@ -14,8 +14,12 @@ module Sportradar
           "Q#{number}"
         end
 
+        def game_id
+          @attributes['game_id']
+        end
+
         def number
-          @attributes['number']
+          @attributes['number'] || 0
         end
 
         def pbp
@@ -29,13 +33,9 @@ module Sportradar
         private
 
         def build_drives
-          sequence = 1
-
           pbp.each_with_object([]) do |event, _drives|
             if event['type'] == 'drive'
-              event.merge!('sequence' => sequence)
               _drives << Models::Drive.new(quarter: self, attributes: event)
-              sequence = sequence + 1
             end
           end
         end

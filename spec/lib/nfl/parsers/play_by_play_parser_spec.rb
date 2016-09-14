@@ -20,12 +20,14 @@ module Sportradar
           puts nfl_play_by_play.drives
         end
 
-        it 'has drives number_of_plays' do
-          puts nfl_play_by_play.quarters.first.drives.first.number_of_plays
+        it 'has plays' do
+          puts nfl_play_by_play.plays
         end
 
         it 'has plays' do
-          puts nfl_play_by_play.plays
+          nfl_play_by_play.quarters.first.drives.first.plays.each do |play|
+            puts play.details
+          end
         end
 
         it 'has events' do

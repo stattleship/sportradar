@@ -11,6 +11,10 @@ module Sportradar
           summary
         end
 
+        def game_id
+          @drive.game_id
+        end
+
         def team
           @drive.team
         end
@@ -75,7 +79,7 @@ module Sportradar
           @attributes['yard_line']
         end
 
-        def yfd
+        def yards_to_first_down
           @attributes['yfd']
         end
 
@@ -91,7 +95,7 @@ module Sportradar
           @attributes['formation']
         end
 
-        def official
+        def official?
           @attributes['official']
         end
 
