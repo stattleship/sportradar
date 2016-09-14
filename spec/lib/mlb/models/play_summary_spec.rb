@@ -44,6 +44,22 @@ module Sportradar
           it 'has an update timestamp' do
             expect(nfl_play_summary.updated_at).to eq('2016-09-12T00:37:14+00:00')
           end
+
+          it 'has advancements' do
+            expect(nfl_play_summary).to have_advancements
+          end
+
+          it 'builds advancements' do
+            nfl_play_summary.advancements.each do |advancement|
+              puts advancement.to_s
+            end
+          end
+
+          it 'builds player stats' do
+            nfl_play_summary.player_stats.each do |player_stat|
+              puts player_stat.to_s
+            end
+          end
         end
 
         context 'with a scoring play' do
@@ -61,6 +77,22 @@ module Sportradar
 
           it 'has a score_type' do
             expect(nfl_scoring_play_summary.score_type).to eq('extrapoint')
+          end
+
+          it 'has advancements' do
+            expect(nfl_scoring_play_summary).to have_advancements
+          end
+
+          it 'builds advancements' do
+            nfl_scoring_play_summary.advancements.each do |advancement|
+              puts advancement.to_s
+            end
+          end
+
+          it 'builds player stats' do
+            nfl_scoring_play_summary.player_stats.each do |player_stat|
+              puts player_stat.to_s
+            end
           end
         end
 

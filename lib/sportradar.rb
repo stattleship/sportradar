@@ -60,6 +60,8 @@ require 'sportradar/nfl/models/quarter'
 require 'sportradar/nfl/models/drive'
 require 'sportradar/nfl/models/event'
 require 'sportradar/nfl/models/play'
+require 'sportradar/nfl/models/play_player_stat'
+require 'sportradar/nfl/models/play_advancement'
 require 'sportradar/nfl/models/play_summary'
 
 require 'sportradar/nfl/parsers/boxscore_parser'

@@ -82,6 +82,28 @@ module Sportradar
           @attributes.dig('score', 'points')
         end
 
+        def advancements
+          @advancements ||= (@attributes['advancements'] || []).
+                              each_with_object([]) do |attributes, _advancements|
+                                _advancements << PlayAdvancement.new(play: self, attributes: attributes)
+                            end
+        end
+
+        def has_advancements?
+          advancements.count > 0
+        end
+
+        def player_stats
+          @player_stats ||= (@attributes['players'] || []).
+                              each_with_object([]) do |attributes, _player_stats|
+                                _player_stats << PlayPlayerStat.new(play: self, attributes: attributes)
+                            end
+        end
+
+        def has_player_stats?
+          player_stats.count > 0
+        end
+
         def is_current_drive_team?
           if controller && team
             controller == team
