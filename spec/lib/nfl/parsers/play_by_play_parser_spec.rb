@@ -34,6 +34,16 @@ module Sportradar
           puts nfl_play_by_play.events
         end
 
+        it 'has quarters' do
+          expect(nfl_play_by_play).to have_quarters
+        end
+
+        it 'has quarters with the game id' do
+          nfl_play_by_play.quarters.each do |q|
+            expect(q.game_id).to eq('568d84eb-874f-49f4-b77d-dc23412fb87c')
+          end
+        end
+
         private
 
         def nfl_play_by_play

@@ -23,7 +23,11 @@ module Sportradar
         end
 
         def quarters
-          build_quarters || []
+          @quarters ||= build_quarters || []
+        end
+
+        def has_quarters?
+          quarters.count > 0
         end
 
         def drives
@@ -45,7 +49,7 @@ module Sportradar
         def build_quarters
           game_play_by_play.
             dig('quarters').
-            map { |attributes| Models::Quarter.new(attributes: attributes.merge(game_id: game_id)) }
+              map { |attributes| Models::Quarter.new(game_id: game_id, attributes: attributes) }
         end
       end
     end

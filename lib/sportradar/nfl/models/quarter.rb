@@ -2,7 +2,8 @@ module Sportradar
   module Nfl
     module Models
       class Quarter
-        def initialize(attributes:)
+        def initialize(game_id:, attributes:)
+          @game_id = game_id
           @attributes = attributes
         end
 
@@ -15,7 +16,7 @@ module Sportradar
         end
 
         def game_id
-          @attributes['game_id']
+          @game_id
         end
 
         def number

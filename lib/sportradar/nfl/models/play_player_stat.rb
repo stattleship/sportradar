@@ -79,7 +79,7 @@ module Sportradar
             'kickoffs_yards' => kickoffs_yards,
             'passing_attempt' => passing_attempt,
             'passing_completion' => passing_completion,
-            'passing_firt_down' => passing_firt_down,
+            'passing_first_down' => passing_first_down,
             'passing_interception' => passing_interception,
             'passing_red_zone_attempt' => passing_red_zone_attempt,
             'passing_sacked' => passing_sacked,
@@ -101,7 +101,7 @@ module Sportradar
             'punting_returned' => punting_returned,
             'punting_safety' => punting_safety,
             'punting_touchback' => punting_touchback,
-            'punting_yardds' => punting_yardds,
+            'punting_yards' => punting_yards,
             'receiving_first_down' => receiving_first_down,
             'receiving_fumble' => receiving_fumble,
             'receiving_reception' => receiving_reception,
@@ -222,7 +222,7 @@ module Sportradar
           @attributes.dig('passing', 'cmp')
         end
 
-        def passing_firt_down
+        def passing_first_down
           @attributes.dig('passing', 'fd')
         end
 
@@ -366,7 +366,7 @@ module Sportradar
           @attributes.dig('punting', 'tb')
         end
 
-        def punting_yardds
+        def punting_yards
           @attributes.dig('punting', 'yds')
         end
 
