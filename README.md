@@ -138,7 +138,6 @@ Defaults to and supports NFL Classic API feed version 1 only (not Official).
                                     home_team_abbreviation: 'NE',
                                     play_id: '4788eac3-c59e-4f82-94ef-d449ac6d6fca').fetch`
 * `Sportradar::Nfl::PlaySummary.new(details: '/2016/REG/1/NE/ARI/plays/4c578712-3589-416c-90aa-76064830fa7e.json').fetch`
-
 * `Sportradar::Nfl::Boxscore.new(week: 1,
                                  year: 2015,
                                  away_team_abbreviation: 'PIT',
@@ -726,7 +725,25 @@ Curveball = Ball
 Fastball = Foul Ball
 Fastball = Ball
 Curveball = Strike Swinging
+
 ```
+#### Football Play by Play
+
+* `Sportradar::Nfl::Parsers::PlayByPlayParser.new(game_play_by_play: {})`
+
+Given game NFL Play by Play JSON, makes it easy to get the drives, quarters, and plays via a set of convenience methods.
+
+ * quarters - game, number, drives
+
+ * drives - game, quarter, clock, team, plays
+
+ * plays - game, drive, team, participants, summary, yardage, etc.
+
+#### Play Summary Model
+
+Given game NFL Play Summary JSON, makes it easy to get at the start and end situations, players, scroing info for each play summmary.
+
+* `Sportradar::Nfl::Models::PlaySummary.new(attributes: {})`
 
 ## Development
 
