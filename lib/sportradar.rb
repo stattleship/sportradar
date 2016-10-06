@@ -99,6 +99,7 @@ require 'sportradar/nfl/standings'
 require 'sportradar/nfl/season_statistics'
 
 require 'sportradar/nhl/league_hierarchy'
+require 'sportradar/nhl/daily_schedule'
 require 'sportradar/nhl/league_schedule'
 require 'sportradar/nhl/play_by_play'
 require 'sportradar/nhl/teams_request'

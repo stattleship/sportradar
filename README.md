@@ -182,6 +182,7 @@ Defaults to and supports NHL Classic API feed version 3 only (not Official).
 #### API Requests
 
 * `Sportradar::Nhl::LeagueHierarchy.new().fetch`
+* `Sportradar::Nhl::DailySchedule.new(date: Date.today).fetch`
 * `Sportradar::Nhl::LeagueSchedule.new(year: '2016', interval_type: <reg|pre|pst>).fetch`
 * `Sportradar::Nhl::PlayByPlay.new(event_id: '<game_guid>').fetch`
 * `Sportradar::Nhl::TeamRoster.perform`
