@@ -184,6 +184,14 @@ Defaults to and supports NHL Classic API feed version 3 only (not Official).
 * `Sportradar::Nhl::LeagueHierarchy.new().fetch`
 * `Sportradar::Nhl::LeagueSchedule.new(year: '2016', interval_type: <reg|pre|pst>).fetch`
 * `Sportradar::Nhl::PlayByPlay.new(event_id: '<game_guid>').fetch`
+* `Sportradar::Nhl::TeamRoster.perform`
+* `Sportradar::Nhl::TeamRoster.new(team_id: '44151f7a-0f24-11e2-8525-18a905767e44').fetch`
+
+#### Bulk Saves
+
+Some helpers will call `.save` for each response as separate items.
+
+* `Sportradar::Nhl::TeamRosters.perform`
 
 ### Model Helpers
 

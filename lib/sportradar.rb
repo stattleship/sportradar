@@ -101,6 +101,9 @@ require 'sportradar/nfl/season_statistics'
 require 'sportradar/nhl/league_hierarchy'
 require 'sportradar/nhl/league_schedule'
 require 'sportradar/nhl/play_by_play'
+require 'sportradar/nhl/teams_request'
+require 'sportradar/nhl/team_roster'
+require 'sportradar/nhl/team_rosters'
 
 Oj.default_options = {}
 

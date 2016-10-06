@@ -1,6 +1,6 @@
 module Sportradar
-  module Nfl
-    class TeamRosters < Sportradar::Nfl::TeamsRequest
+  module Nhl
+    class TeamRosters < Sportradar::Nhl::TeamsRequest
       def self.fetch
         new.fetch
       end
@@ -9,7 +9,7 @@ module Sportradar
         team_rosters = []
 
         team_ids.each do |team_ids|
-          team_rosters << TeamRoster.new(team_abbreviation: team_ids).fetch
+          team_rosters << TeamRoster.new(team_id: team_ids).fetch
         end
 
         { 'teams' => team_rosters }
@@ -21,7 +21,7 @@ module Sportradar
 
       def perform
         team_ids.each do |team_id|
-          TeamRoster.new(team_abbreviation: team_id).save
+          TeamRoster.new(team_id: team_id).save
         end
       end
     end
