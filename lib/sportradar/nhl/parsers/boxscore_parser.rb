@@ -10,6 +10,10 @@ module Sportradar
           json['id']
         end
 
+        def attendance
+          json['attendance']
+        end
+
         def period
           json['period'].to_i
         end
@@ -26,6 +30,10 @@ module Sportradar
           json['end_time'] && json['end_time'].to_datetime
         end
         alias_method :completed, :ended_at
+
+        def over?
+          status == 'closed'
+        end
 
         def status
           json['status']
@@ -152,6 +160,57 @@ module Sportradar
             end
             scoring_periods[:goals_overtime] = overtime_points
           end
+        end
+
+        def game_scoring_attributes
+          {
+            attendance: attendance,
+            home_team_outcome: home_team_outcome,
+            home_team_score: home_team_score,
+            away_team_outcome: away_team_outcome,
+            away_team_score: away_team_score,
+          }
+        end
+
+        def home_team_score
+          home_team_scoring[:goals] || 0
+        end
+
+        def home_team_outcome
+          if over?
+            if home_team_score > away_team_score
+              'win'
+            elsif home_team_score < away_team_score
+              'loss'
+            else
+              'tie'
+            end
+          else
+            'undecided'
+          end
+        end
+
+        def away_team_score
+          away_team_scoring[:goals] || 0
+        end
+
+        def away_team_outcome
+          if over?
+            if home_team_score < away_team_score
+              'win'
+            elsif home_team_score > away_team_score
+              'loss'
+            else
+              'tie'
+            end
+          else
+            'undecided'
+          end
+        end
+
+        def game_attributes
+          clock_attributes.merge(game_scoring_attributes).
+            compact
         end
 
         private

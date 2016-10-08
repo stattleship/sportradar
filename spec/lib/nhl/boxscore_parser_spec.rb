@@ -72,6 +72,61 @@ module Sportradar
           expect(nhl_boxscore.duration_secs).to eq(3900)
         end
 
+        it 'has clock_attributes' do
+          clock_attributes = nhl_boxscore.clock_attributes
+
+          expect(clock_attributes[:clock]).to eq('00:00')
+          expect(clock_attributes[:clock_secs]).to eq(0)
+          expect(clock_attributes[:duration]).to eq(3900)
+          expect(clock_attributes[:ended_at]).to eq('2016-09-27T01:45:06+00:00'.to_datetime)
+          expect(clock_attributes[:status]).to eq('closed')
+        end
+
+        it 'has a attendance' do
+          expect(nhl_boxscore.attendance).to eq(16285)
+        end
+
+        it 'has a home_team_outcome' do
+          expect(nhl_boxscore.home_team_outcome).to eq('loss')
+        end
+
+        it 'has a home_team_score' do
+          expect(nhl_boxscore.home_team_score).to eq(2)
+        end
+
+        it 'has a away_team_outcome' do
+          expect(nhl_boxscore.away_team_outcome).to eq('win')
+        end
+
+        it 'has a away_team_score' do
+          expect(nhl_boxscore.away_team_score).to eq(3)
+        end
+
+        it 'has game_scoring_attributes' do
+          game_scoring_attributes = nhl_boxscore.game_scoring_attributes
+
+          expect(game_scoring_attributes[:attendance]).to eq(16285)
+          expect(game_scoring_attributes[:home_team_outcome]).to eq('loss')
+          expect(game_scoring_attributes[:home_team_score]).to eq(2)
+          expect(game_scoring_attributes[:away_team_outcome]).to eq('win')
+          expect(game_scoring_attributes[:away_team_score]).to eq(3)
+        end
+
+        it 'has game_attributes' do
+          game_attributes = nhl_boxscore.game_attributes
+
+          expect(game_attributes[:clock]).to eq('00:00')
+          expect(game_attributes[:clock_secs]).to eq(0)
+          expect(game_attributes[:duration]).to eq(3900)
+          expect(game_attributes[:ended_at]).to eq('2016-09-27T01:45:06+00:00'.to_datetime)
+          expect(game_attributes[:status]).to eq('closed')
+          expect(game_attributes[:attendance]).to eq(16285)
+          expect(game_attributes[:home_team_outcome]).to eq('loss')
+          expect(game_attributes[:home_team_score]).to eq(2)
+          expect(game_attributes[:away_team_outcome]).to eq('win')
+          expect(game_attributes[:away_team_score]).to eq(3)
+        end
+
         private
 
         def nhl_boxscore
