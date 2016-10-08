@@ -1,0 +1,3015 @@
+{
+    "games": [
+        {
+            "away": {
+                "alias": "CBJ",
+                "id": "44167db4-0f24-11e2-8525-18a905767e44",
+                "name": "Columbus Blue Jackets"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "STL",
+                "id": "441660ea-0f24-11e2-8525-18a905767e44",
+                "name": "St. Louis Blues"
+            },
+            "id": "31afc69c-4ae5-4d8a-b80c-28b36029107b",
+            "scheduled": "2016-09-25T17:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1401 Clark Ave.",
+                "capacity": 19150,
+                "city": "St. Louis",
+                "country": "USA",
+                "id": "14e923b7-a636-476f-b810-b15967787e3c",
+                "name": "Scottrade Center",
+                "state": "MO",
+                "time_zone": "US/Eastern",
+                "zip": "63103"
+            }
+        },
+        {
+            "away": {
+                "alias": "STL",
+                "id": "441660ea-0f24-11e2-8525-18a905767e44",
+                "name": "St. Louis Blues"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CBJ",
+                "id": "44167db4-0f24-11e2-8525-18a905767e44",
+                "name": "Columbus Blue Jackets"
+            },
+            "id": "5564741a-aaa3-443d-8ef7-086e62aafb9c",
+            "scheduled": "2016-09-25T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "200 W. Nationwide Blvd.",
+                "capacity": 18144,
+                "city": "Columbus",
+                "country": "USA",
+                "id": "41a57fc9-a04b-43db-b1f8-87f34f21459b",
+                "name": "Nationwide Arena",
+                "state": "OH",
+                "time_zone": "US/Eastern",
+                "zip": "43215"
+            }
+        },
+        {
+            "away": {
+                "alias": "OTT",
+                "id": "4416f5e2-0f24-11e2-8525-18a905767e44",
+                "name": "Ottawa Senators"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "TOR",
+                "id": "441730a9-0f24-11e2-8525-18a905767e44",
+                "name": "Toronto Maple Leafs"
+            },
+            "id": "44f4585f-58ee-441c-be9e-8420d65d5793",
+            "scheduled": "2016-09-26T22:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1800 Argyle Street",
+                "capacity": 10595,
+                "city": "Halifax",
+                "country": "CAN",
+                "id": "17f99cf6-9fe1-44e1-9fba-02d3f1187f94",
+                "name": "Scotiabank Centre",
+                "state": "NS",
+                "time_zone": "US/Eastern",
+                "zip": "B3H 1C2"
+            }
+        },
+        {
+            "away": {
+                "alias": "PHI",
+                "id": "44179d47-0f24-11e2-8525-18a905767e44",
+                "name": "Philadelphia Flyers"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NYI",
+                "id": "441766b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Islanders"
+            },
+            "id": "2af1c161-fdae-470a-bf70-725bc72dce6a",
+            "scheduled": "2016-09-26T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "620 Atlantic Ave.",
+                "capacity": 15813,
+                "city": "Brooklyn",
+                "country": "USA",
+                "id": "a675f98f-4d98-4586-baab-a7ca05904870",
+                "name": "Barclays Center",
+                "state": "NY",
+                "time_zone": "US/Eastern",
+                "zip": "11217"
+            }
+        },
+        {
+            "away": {
+                "alias": "CBJ",
+                "id": "44167db4-0f24-11e2-8525-18a905767e44",
+                "name": "Columbus Blue Jackets"
+            },
+            "broadcast": {
+                "network": "NESN",
+                "satellite": "628"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "BOS",
+                "id": "4416ba1a-0f24-11e2-8525-18a905767e44",
+                "name": "Boston Bruins"
+            },
+            "id": "48a82e91-12e9-419b-938c-8a3051dd1e21",
+            "scheduled": "2016-09-26T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "100 Legends Way",
+                "capacity": 17565,
+                "city": "Boston",
+                "country": "USA",
+                "id": "854ca968-b25f-44f9-abc5-52bcf8825f15",
+                "name": "TD Garden",
+                "state": "MA",
+                "time_zone": "US/Eastern",
+                "zip": "02114"
+            }
+        },
+        {
+            "away": {
+                "alias": "PHI",
+                "id": "44179d47-0f24-11e2-8525-18a905767e44",
+                "name": "Philadelphia Flyers"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NJ",
+                "id": "44174b0c-0f24-11e2-8525-18a905767e44",
+                "name": "New Jersey Devils"
+            },
+            "id": "7b597eff-0846-4142-ac41-bb7e1bcb2d7a",
+            "scheduled": "2016-09-26T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "165 Mulberry St.",
+                "capacity": 17625,
+                "city": "Newark",
+                "country": "USA",
+                "id": "c970f791-c3bf-411e-89c6-952695afd414",
+                "name": "Prudential Center",
+                "state": "NJ",
+                "time_zone": "US/Eastern",
+                "zip": "07102"
+            }
+        },
+        {
+            "away": {
+                "alias": "CAR",
+                "id": "44182a9d-0f24-11e2-8525-18a905767e44",
+                "name": "Carolina Hurricanes"
+            },
+            "broadcast": {
+                "network": "CSN-DC",
+                "satellite": "642"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "WSH",
+                "id": "4417eede-0f24-11e2-8525-18a905767e44",
+                "name": "Washington Capitals"
+            },
+            "id": "a2c9c733-d149-4ac7-8202-48fc0748a35f",
+            "scheduled": "2016-09-26T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "601 F St. N.W.",
+                "capacity": 18506,
+                "city": "Washington",
+                "country": "USA",
+                "id": "48f092ed-ce49-4a08-97c6-def284ba6721",
+                "name": "Verizon Center",
+                "state": "DC",
+                "time_zone": "US/Eastern",
+                "zip": "20004"
+            }
+        },
+        {
+            "away": {
+                "alias": "MIN",
+                "id": "4416091c-0f24-11e2-8525-18a905767e44",
+                "name": "Minnesota Wild"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "BUF",
+                "id": "4416d559-0f24-11e2-8525-18a905767e44",
+                "name": "Buffalo Sabres"
+            },
+            "id": "f5e10799-14e8-4bdc-a70e-d360b57bcc54",
+            "scheduled": "2016-09-26T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "University Drive",
+                "capacity": 6014,
+                "city": "State College",
+                "country": "USA",
+                "id": "9602b640-d176-452d-841b-f2ed53bbfa5c",
+                "name": "Pegula Ice Arena",
+                "state": "PA",
+                "time_zone": "US/Eastern",
+                "zip": "16802"
+            }
+        },
+        {
+            "away": {
+                "alias": "NJ",
+                "id": "44174b0c-0f24-11e2-8525-18a905767e44",
+                "name": "New Jersey Devils"
+            },
+            "broadcast": {
+                "network": "RDS"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "MTL",
+                "id": "441713b7-0f24-11e2-8525-18a905767e44",
+                "name": "Montreal Canadiens"
+            },
+            "id": "de6cb245-02c9-45d8-8294-edfe75bab46e",
+            "scheduled": "2016-09-26T23:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1909 Avenue des Canadiens-de-Montreal",
+                "capacity": 21273,
+                "city": "Montreal",
+                "country": "CAN",
+                "id": "2ee8c0bf-dfd1-480c-80df-4d5f66a9dc76",
+                "name": "Bell Centre",
+                "state": "QC",
+                "time_zone": "US/Eastern",
+                "zip": "H3B 5E8"
+            }
+        },
+        {
+            "away": {
+                "alias": "STL",
+                "id": "441660ea-0f24-11e2-8525-18a905767e44",
+                "name": "St. Louis Blues"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "DAL",
+                "id": "44157522-0f24-11e2-8525-18a905767e44",
+                "name": "Dallas Stars"
+            },
+            "id": "c0491b9e-11f5-4fea-950b-341c26a3200b",
+            "scheduled": "2016-09-27T00:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "2500 Victory Ave.",
+                "capacity": 18532,
+                "city": "Dallas",
+                "country": "USA",
+                "id": "adbd1acb-a053-4944-ba15-383eda91c12e",
+                "name": "American Airlines Center",
+                "state": "TX",
+                "time_zone": "US/Eastern",
+                "zip": "75219"
+            }
+        },
+        {
+            "away": {
+                "alias": "CGY",
+                "id": "44159241-0f24-11e2-8525-18a905767e44",
+                "name": "Calgary Flames"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "EDM",
+                "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+                "name": "Edmonton Oilers"
+            },
+            "id": "44ed02ff-961f-4d0a-8089-002ce93b2464",
+            "scheduled": "2016-09-27T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "10220 104 Avenue NW",
+                "capacity": 18641,
+                "city": "Edmonton",
+                "country": "CAN",
+                "id": "5d6670d2-01ea-4bc2-ae88-93563620328d",
+                "name": "Rogers Place",
+                "state": "AB",
+                "time_zone": "US/Eastern",
+                "zip": "T5J 4Y8"
+            }
+        },
+        {
+            "away": {
+                "alias": "EDM",
+                "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+                "name": "Edmonton Oilers"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CGY",
+                "id": "44159241-0f24-11e2-8525-18a905767e44",
+                "name": "Calgary Flames"
+            },
+            "id": "dfd41740-cb16-4fcc-89c9-1aa5ea818643",
+            "scheduled": "2016-09-27T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "555 Saddledome Rise S.E.",
+                "capacity": 19289,
+                "city": "Calgary",
+                "country": "CAN",
+                "id": "152d63d2-825f-4928-a08a-70564268b405",
+                "name": "Scotiabank Saddledome",
+                "state": "AB",
+                "time_zone": "US/Eastern",
+                "zip": "T2G 2W1"
+            }
+        },
+        {
+            "away": {
+                "alias": "LA",
+                "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+                "name": "Los Angeles Kings"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "ARI",
+                "id": "44153da1-0f24-11e2-8525-18a905767e44",
+                "name": "Arizona Coyotes"
+            },
+            "id": "d57d8773-d4a0-4073-8bad-8973136d790e",
+            "scheduled": "2016-09-27T02:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "9400 W. Maryland Ave.",
+                "capacity": 17125,
+                "city": "Glendale",
+                "country": "USA",
+                "id": "71ca386d-fbaa-479f-b9b6-7858ef2d3cc7",
+                "name": "Gila River Arena",
+                "state": "AZ",
+                "time_zone": "US/Eastern",
+                "zip": "85305"
+            }
+        },
+        {
+            "away": {
+                "alias": "ARI",
+                "id": "44153da1-0f24-11e2-8525-18a905767e44",
+                "name": "Arizona Coyotes"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "LA",
+                "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+                "name": "Los Angeles Kings"
+            },
+            "id": "481e7448-2ae8-49f0-b7de-514a376fc1e1",
+            "scheduled": "2016-09-27T02:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1111 S. Figueroa St.",
+                "capacity": 18118,
+                "city": "Los Angeles",
+                "country": "USA",
+                "id": "dec253d4-68df-470b-b8fc-d663a7fa4704",
+                "name": "Staples Center",
+                "state": "CA",
+                "time_zone": "US/Eastern",
+                "zip": "90015"
+            }
+        },
+        {
+            "away": {
+                "alias": "NSH",
+                "id": "441643b7-0f24-11e2-8525-18a905767e44",
+                "name": "Nashville Predators"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "FLA",
+                "id": "4418464d-0f24-11e2-8525-18a905767e44",
+                "name": "Florida Panthers"
+            },
+            "id": "6b262a54-2ed6-4c75-8f3e-279b7d9b46e2",
+            "scheduled": "2016-09-27T19:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "One Panther Parkway",
+                "capacity": 17040,
+                "city": "Sunrise",
+                "country": "USA",
+                "id": "7cc8e88f-9196-4dbc-aa6a-d6f1a0550673",
+                "name": "BB&T Center",
+                "state": "FL",
+                "time_zone": "US/Eastern",
+                "zip": "33323"
+            }
+        },
+        {
+            "away": {
+                "alias": "NSH",
+                "id": "441643b7-0f24-11e2-8525-18a905767e44",
+                "name": "Nashville Predators"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "FLA",
+                "id": "4418464d-0f24-11e2-8525-18a905767e44",
+                "name": "Florida Panthers"
+            },
+            "id": "1c834f8b-520c-451b-a17a-317de578e35e",
+            "scheduled": "2016-09-27T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "One Panther Parkway",
+                "capacity": 17040,
+                "city": "Sunrise",
+                "country": "USA",
+                "id": "7cc8e88f-9196-4dbc-aa6a-d6f1a0550673",
+                "name": "BB&T Center",
+                "state": "FL",
+                "time_zone": "US/Eastern",
+                "zip": "33323"
+            }
+        },
+        {
+            "away": {
+                "alias": "NYI",
+                "id": "441766b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Islanders"
+            },
+            "broadcast": {
+                "network": "MSG",
+                "satellite": "635"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NYR",
+                "id": "441781b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Rangers"
+            },
+            "id": "47f02b28-dfc1-4a41-8eee-0593c8851570",
+            "scheduled": "2016-09-27T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "Four Pennsylvania Plaza",
+                "capacity": 18200,
+                "city": "New York",
+                "country": "USA",
+                "id": "bd8053e4-3bdf-4a70-914f-9f6d0051d66d",
+                "name": "Madison Square Garden",
+                "state": "NY",
+                "time_zone": "US/Eastern",
+                "zip": "10001"
+            }
+        },
+        {
+            "away": {
+                "alias": "OTT",
+                "id": "4416f5e2-0f24-11e2-8525-18a905767e44",
+                "name": "Ottawa Senators"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "BUF",
+                "id": "4416d559-0f24-11e2-8525-18a905767e44",
+                "name": "Buffalo Sabres"
+            },
+            "id": "7300a8f4-7760-413c-aec8-5fc879a77863",
+            "scheduled": "2016-09-27T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "One Seymour H. Knox III Plaza",
+                "capacity": 18690,
+                "city": "Buffalo",
+                "country": "USA",
+                "id": "bd7b42fa-19bb-4b91-8615-214ccc3ff987",
+                "name": "KeyBank Center",
+                "state": "NY",
+                "time_zone": "US/Eastern",
+                "zip": "14203"
+            }
+        },
+        {
+            "away": {
+                "alias": "NYI",
+                "id": "441766b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Islanders"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "PHI",
+                "id": "44179d47-0f24-11e2-8525-18a905767e44",
+                "name": "Philadelphia Flyers"
+            },
+            "id": "fbeb8ecd-ae46-4698-877d-68c93ba8fb46",
+            "scheduled": "2016-09-27T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "3601 S. Broad St.",
+                "capacity": 19537,
+                "city": "Philadelphia",
+                "country": "USA",
+                "id": "0a162e5b-8d59-42d8-b173-a131bf632ffb",
+                "name": "Wells Fargo Center",
+                "state": "PA",
+                "time_zone": "US/Eastern",
+                "zip": "19148"
+            }
+        },
+        {
+            "away": {
+                "alias": "CAR",
+                "id": "44182a9d-0f24-11e2-8525-18a905767e44",
+                "name": "Carolina Hurricanes"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "TB",
+                "id": "4417d3cb-0f24-11e2-8525-18a905767e44",
+                "name": "Tampa Bay Lightning"
+            },
+            "id": "60d39563-cfeb-495b-ad49-3a2f35726cf4",
+            "scheduled": "2016-09-27T23:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "401 Channelside Drive",
+                "capacity": 19204,
+                "city": "Tampa",
+                "country": "USA",
+                "id": "05aa49b2-f72d-4d42-ab30-f219d32ed97b",
+                "name": "Amalie Arena",
+                "state": "FL",
+                "time_zone": "US/Eastern",
+                "zip": "33602"
+            }
+        },
+        {
+            "away": {
+                "alias": "WSH",
+                "id": "4417eede-0f24-11e2-8525-18a905767e44",
+                "name": "Washington Capitals"
+            },
+            "broadcast": {
+                "network": "CSN-DC",
+                "satellite": "642"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "MTL",
+                "id": "441713b7-0f24-11e2-8525-18a905767e44",
+                "name": "Montreal Canadiens"
+            },
+            "id": "afd4a5c0-58b7-43d6-8ed2-ba7a770fdb4c",
+            "scheduled": "2016-09-27T23:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1909 Avenue des Canadiens-de-Montreal",
+                "capacity": 21273,
+                "city": "Montreal",
+                "country": "CAN",
+                "id": "2ee8c0bf-dfd1-480c-80df-4d5f66a9dc76",
+                "name": "Bell Centre",
+                "state": "QC",
+                "time_zone": "US/Eastern",
+                "zip": "H3B 5E8"
+            }
+        },
+        {
+            "away": {
+                "alias": "PIT",
+                "id": "4417b7d7-0f24-11e2-8525-18a905767e44",
+                "name": "Pittsburgh Penguins"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "DET",
+                "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+                "name": "Detroit Red Wings"
+            },
+            "id": "cac80862-6a4f-4dc7-adfc-3a2b4cdb743c",
+            "scheduled": "2016-09-27T23:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "600 Civic Center Drive",
+                "capacity": 20066,
+                "city": "Detroit",
+                "country": "USA",
+                "id": "ab7ddf4d-77aa-44cf-aaf9-9566218af38d",
+                "name": "Joe Louis Arena",
+                "state": "MI",
+                "time_zone": "US/Eastern",
+                "zip": "48226"
+            }
+        },
+        {
+            "away": {
+                "alias": "CGY",
+                "id": "44159241-0f24-11e2-8525-18a905767e44",
+                "name": "Calgary Flames"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "WPG",
+                "id": "44180e55-0f24-11e2-8525-18a905767e44",
+                "name": "Winnipeg Jets"
+            },
+            "id": "afd7ff10-7d9b-494b-a9a0-8cbcbd807bb2",
+            "scheduled": "2016-09-28T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "300 Portage Ave.",
+                "capacity": 15015,
+                "city": "Winnipeg",
+                "country": "CAN",
+                "id": "900327b2-73d0-4e44-a138-fbf4fcbb058f",
+                "name": "MTS Centre",
+                "state": "MB",
+                "time_zone": "US/Eastern",
+                "zip": "R3C 5S5"
+            }
+        },
+        {
+            "away": {
+                "alias": "COL",
+                "id": "4415ce44-0f24-11e2-8525-18a905767e44",
+                "name": "Colorado Avalanche"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "MIN",
+                "id": "4416091c-0f24-11e2-8525-18a905767e44",
+                "name": "Minnesota Wild"
+            },
+            "id": "e553617d-f7a9-4b70-8f7a-62c92bdc4cc8",
+            "scheduled": "2016-09-28T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "199 W. Kellogg Blvd.",
+                "capacity": 18064,
+                "city": "St. Paul",
+                "country": "USA",
+                "id": "7e6f808b-eff8-42fd-a8e2-d35219f565bd",
+                "name": "Xcel Energy Center",
+                "state": "MN",
+                "time_zone": "US/Eastern",
+                "zip": "55102"
+            }
+        },
+        {
+            "away": {
+                "alias": "ARI",
+                "id": "44153da1-0f24-11e2-8525-18a905767e44",
+                "name": "Arizona Coyotes"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "ANA",
+                "id": "441862de-0f24-11e2-8525-18a905767e44",
+                "name": "Anaheim Ducks"
+            },
+            "id": "876e0146-c0b9-4d14-8020-4ecf8c3c392c",
+            "scheduled": "2016-09-28T02:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "2695 E. Katella Ave.",
+                "capacity": 17174,
+                "city": "Anaheim",
+                "country": "USA",
+                "id": "eb3866a7-4163-4517-bd42-d24e8c2522fe",
+                "name": "Honda Center",
+                "state": "CA",
+                "time_zone": "US/Eastern",
+                "zip": "92806"
+            }
+        },
+        {
+            "away": {
+                "alias": "VAN",
+                "id": "4415b0a7-0f24-11e2-8525-18a905767e44",
+                "name": "Vancouver Canucks"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "SJ",
+                "id": "44155909-0f24-11e2-8525-18a905767e44",
+                "name": "San Jose Sharks"
+            },
+            "id": "ca0a0ee0-5838-4db3-ba7c-b801e449ee04",
+            "scheduled": "2016-09-28T02:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "525 W. Santa Clara St.",
+                "capacity": 17562,
+                "city": "San Jose",
+                "country": "USA",
+                "id": "1da65282-af4c-4b81-a9de-344b76bb20b0",
+                "name": "SAP Center at San Jose",
+                "state": "CA",
+                "time_zone": "US/Eastern",
+                "zip": "95113"
+            }
+        },
+        {
+            "away": {
+                "alias": "DET",
+                "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+                "name": "Detroit Red Wings"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "BOS",
+                "id": "4416ba1a-0f24-11e2-8525-18a905767e44",
+                "name": "Boston Bruins"
+            },
+            "id": "49c57a49-2c07-4186-97e3-72a8d2c039e1",
+            "scheduled": "2016-09-28T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "100 Legends Way",
+                "capacity": 17565,
+                "city": "Boston",
+                "country": "USA",
+                "id": "854ca968-b25f-44f9-abc5-52bcf8825f15",
+                "name": "TD Garden",
+                "state": "MA",
+                "time_zone": "US/Eastern",
+                "zip": "02114"
+            }
+        },
+        {
+            "away": {
+                "alias": "NJ",
+                "id": "44174b0c-0f24-11e2-8525-18a905767e44",
+                "name": "New Jersey Devils"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "PHI",
+                "id": "44179d47-0f24-11e2-8525-18a905767e44",
+                "name": "Philadelphia Flyers"
+            },
+            "id": "e16dc520-0c50-4396-b12e-c49244a007fc",
+            "scheduled": "2016-09-28T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "701 Hamilton Street",
+                "capacity": 8420,
+                "city": "Allentown",
+                "country": "USA",
+                "id": "ece9d171-3722-437b-9c90-8711d8f2323a",
+                "name": "PPL Center",
+                "state": "PA",
+                "time_zone": "US/Eastern",
+                "zip": "18101"
+            }
+        },
+        {
+            "away": {
+                "alias": "PIT",
+                "id": "4417b7d7-0f24-11e2-8525-18a905767e44",
+                "name": "Pittsburgh Penguins"
+            },
+            "broadcast": {
+                "network": "CSN-CH+",
+                "satellite": "665-1"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CHI",
+                "id": "4416272f-0f24-11e2-8525-18a905767e44",
+                "name": "Chicago Blackhawks"
+            },
+            "id": "81b7953b-4759-45d4-a5fc-6632b750a7ca",
+            "scheduled": "2016-09-29T00:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1901 W. Madison St.",
+                "capacity": 19717,
+                "city": "Chicago",
+                "country": "USA",
+                "id": "bbdf58db-fd65-44de-90b9-fcf523c2d764",
+                "name": "United Center",
+                "state": "IL",
+                "time_zone": "US/Eastern",
+                "zip": "60612"
+            }
+        },
+        {
+            "away": {
+                "alias": "DAL",
+                "id": "44157522-0f24-11e2-8525-18a905767e44",
+                "name": "Dallas Stars"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "COL",
+                "id": "4415ce44-0f24-11e2-8525-18a905767e44",
+                "name": "Colorado Avalanche"
+            },
+            "id": "94dd5bb1-c20c-49ef-8c4a-fd7bb4f1f218",
+            "scheduled": "2016-09-29T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1000 Chopper Circle",
+                "capacity": 18007,
+                "city": "Denver",
+                "country": "USA",
+                "id": "a75eea49-c384-4edb-99f1-d5252773ec83",
+                "name": "Pepsi Center",
+                "state": "CO",
+                "time_zone": "US/Eastern",
+                "zip": "80204"
+            }
+        },
+        {
+            "away": {
+                "alias": "EDM",
+                "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+                "name": "Edmonton Oilers"
+            },
+            "broadcast": {
+                "network": "SN1"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "VAN",
+                "id": "4415b0a7-0f24-11e2-8525-18a905767e44",
+                "name": "Vancouver Canucks"
+            },
+            "id": "6bfa6388-6fb5-4c00-9e0a-bae734abbca0",
+            "scheduled": "2016-09-29T02:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "800 Griffiths Way",
+                "capacity": 18890,
+                "city": "Vancouver",
+                "country": "CAN",
+                "id": "3b8e1099-8050-42c9-b545-2aa74e93b2e8",
+                "name": "Rogers Arena",
+                "state": "BC",
+                "time_zone": "US/Eastern",
+                "zip": "V6B 6G1"
+            }
+        },
+        {
+            "away": {
+                "alias": "ANA",
+                "id": "441862de-0f24-11e2-8525-18a905767e44",
+                "name": "Anaheim Ducks"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "LA",
+                "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+                "name": "Los Angeles Kings"
+            },
+            "id": "144d08fd-ff64-48d8-9134-7ef600628574",
+            "scheduled": "2016-09-29T02:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1111 S. Figueroa St.",
+                "capacity": 18118,
+                "city": "Los Angeles",
+                "country": "USA",
+                "id": "dec253d4-68df-470b-b8fc-d663a7fa4704",
+                "name": "Staples Center",
+                "state": "CA",
+                "time_zone": "US/Eastern",
+                "zip": "90015"
+            }
+        },
+        {
+            "away": {
+                "alias": "NSH",
+                "id": "441643b7-0f24-11e2-8525-18a905767e44",
+                "name": "Nashville Predators"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CBJ",
+                "id": "44167db4-0f24-11e2-8525-18a905767e44",
+                "name": "Columbus Blue Jackets"
+            },
+            "id": "52c5d436-709c-41bb-bb24-043ab58d97a7",
+            "scheduled": "2016-09-29T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "200 W. Nationwide Blvd.",
+                "capacity": 18144,
+                "city": "Columbus",
+                "country": "USA",
+                "id": "41a57fc9-a04b-43db-b1f8-87f34f21459b",
+                "name": "Nationwide Arena",
+                "state": "OH",
+                "time_zone": "US/Eastern",
+                "zip": "43215"
+            }
+        },
+        {
+            "away": {
+                "alias": "BUF",
+                "id": "4416d559-0f24-11e2-8525-18a905767e44",
+                "name": "Buffalo Sabres"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "TOR",
+                "id": "441730a9-0f24-11e2-8525-18a905767e44",
+                "name": "Toronto Maple Leafs"
+            },
+            "id": "a5b6f02a-59d3-4efb-b141-62af9136b477",
+            "scheduled": "2016-09-29T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1 IceDogs Way",
+                "capacity": 5300,
+                "city": "St. Catharines",
+                "country": "CAN",
+                "id": "846ef81b-1e6a-4db6-adbe-53d57e834c7d",
+                "name": "Meridian Centre",
+                "state": "ON",
+                "time_zone": "US/Eastern",
+                "zip": "L2R 0B3"
+            }
+        },
+        {
+            "away": {
+                "alias": "NJ",
+                "id": "44174b0c-0f24-11e2-8525-18a905767e44",
+                "name": "New Jersey Devils"
+            },
+            "broadcast": {
+                "network": "MSG",
+                "satellite": "634"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NYR",
+                "id": "441781b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Rangers"
+            },
+            "id": "f43e922a-6e79-4b3f-8e80-0135a4c2bdd8",
+            "scheduled": "2016-09-29T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "Four Pennsylvania Plaza",
+                "capacity": 18200,
+                "city": "New York",
+                "country": "USA",
+                "id": "bd8053e4-3bdf-4a70-914f-9f6d0051d66d",
+                "name": "Madison Square Garden",
+                "state": "NY",
+                "time_zone": "US/Eastern",
+                "zip": "10001"
+            }
+        },
+        {
+            "away": {
+                "alias": "OTT",
+                "id": "4416f5e2-0f24-11e2-8525-18a905767e44",
+                "name": "Ottawa Senators"
+            },
+            "broadcast": {
+                "network": "RDS"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "MTL",
+                "id": "441713b7-0f24-11e2-8525-18a905767e44",
+                "name": "Montreal Canadiens"
+            },
+            "id": "184aff3d-eaf8-4ab1-be64-c23343d57560",
+            "scheduled": "2016-09-29T23:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1909 Avenue des Canadiens-de-Montreal",
+                "capacity": 21273,
+                "city": "Montreal",
+                "country": "CAN",
+                "id": "2ee8c0bf-dfd1-480c-80df-4d5f66a9dc76",
+                "name": "Bell Centre",
+                "state": "QC",
+                "time_zone": "US/Eastern",
+                "zip": "H3B 5E8"
+            }
+        },
+        {
+            "away": {
+                "alias": "FLA",
+                "id": "4418464d-0f24-11e2-8525-18a905767e44",
+                "name": "Florida Panthers"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "TB",
+                "id": "4417d3cb-0f24-11e2-8525-18a905767e44",
+                "name": "Tampa Bay Lightning"
+            },
+            "id": "fb4a6b03-07ef-452d-822a-71fdc609000a",
+            "scheduled": "2016-09-29T23:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "401 Channelside Drive",
+                "capacity": 19204,
+                "city": "Tampa",
+                "country": "USA",
+                "id": "05aa49b2-f72d-4d42-ab30-f219d32ed97b",
+                "name": "Amalie Arena",
+                "state": "FL",
+                "time_zone": "US/Eastern",
+                "zip": "33602"
+            }
+        },
+        {
+            "away": {
+                "alias": "MIN",
+                "id": "4416091c-0f24-11e2-8525-18a905767e44",
+                "name": "Minnesota Wild"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "WPG",
+                "id": "44180e55-0f24-11e2-8525-18a905767e44",
+                "name": "Winnipeg Jets"
+            },
+            "id": "435afa68-a1ca-4177-9226-a8ccf99785c4",
+            "scheduled": "2016-09-30T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "300 Portage Ave.",
+                "capacity": 15015,
+                "city": "Winnipeg",
+                "country": "CAN",
+                "id": "900327b2-73d0-4e44-a138-fbf4fcbb058f",
+                "name": "MTS Centre",
+                "state": "MB",
+                "time_zone": "US/Eastern",
+                "zip": "R3C 5S5"
+            }
+        },
+        {
+            "away": {
+                "alias": "TOR",
+                "id": "441730a9-0f24-11e2-8525-18a905767e44",
+                "name": "Toronto Maple Leafs"
+            },
+            "broadcast": {
+                "network": "MSG-B",
+                "satellite": "635"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "BUF",
+                "id": "4416d559-0f24-11e2-8525-18a905767e44",
+                "name": "Buffalo Sabres"
+            },
+            "id": "0c58a17e-e174-4d2a-bb9a-4d2f98f9b888",
+            "scheduled": "2016-09-30T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "One Seymour H. Knox III Plaza",
+                "capacity": 18690,
+                "city": "Buffalo",
+                "country": "USA",
+                "id": "bd7b42fa-19bb-4b91-8615-214ccc3ff987",
+                "name": "KeyBank Center",
+                "state": "NY",
+                "time_zone": "US/Eastern",
+                "zip": "14203"
+            }
+        },
+        {
+            "away": {
+                "alias": "CHI",
+                "id": "4416272f-0f24-11e2-8525-18a905767e44",
+                "name": "Chicago Blackhawks"
+            },
+            "broadcast": {
+                "network": "WGN"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "PIT",
+                "id": "4417b7d7-0f24-11e2-8525-18a905767e44",
+                "name": "Pittsburgh Penguins"
+            },
+            "id": "355ed7d1-a0a6-4474-8d69-29eae26f900d",
+            "scheduled": "2016-09-30T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1001 Fifth Ave.",
+                "capacity": 18387,
+                "city": "Pittsburgh",
+                "country": "USA",
+                "id": "09cab1a6-16ee-4ed9-aefa-c6cc24681b3b",
+                "name": "PPG Paints Arena",
+                "state": "PA",
+                "time_zone": "US/Eastern",
+                "zip": "15219"
+            }
+        },
+        {
+            "away": {
+                "alias": "BOS",
+                "id": "4416ba1a-0f24-11e2-8525-18a905767e44",
+                "name": "Boston Bruins"
+            },
+            "broadcast": {
+                "network": "FS-DET+",
+                "satellite": "663-1"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "DET",
+                "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+                "name": "Detroit Red Wings"
+            },
+            "id": "8e34541b-6a72-498e-b03b-3263d9210f09",
+            "scheduled": "2016-09-30T23:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "600 Civic Center Drive",
+                "capacity": 20066,
+                "city": "Detroit",
+                "country": "USA",
+                "id": "ab7ddf4d-77aa-44cf-aaf9-9566218af38d",
+                "name": "Joe Louis Arena",
+                "state": "MI",
+                "time_zone": "US/Eastern",
+                "zip": "48226"
+            }
+        },
+        {
+            "away": {
+                "alias": "TB",
+                "id": "4417d3cb-0f24-11e2-8525-18a905767e44",
+                "name": "Tampa Bay Lightning"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CAR",
+                "id": "44182a9d-0f24-11e2-8525-18a905767e44",
+                "name": "Carolina Hurricanes"
+            },
+            "id": "eb19c92f-b8d6-4237-92ee-70a3d5e54aec",
+            "scheduled": "2016-09-30T23:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1400 Edwards Mill Road",
+                "capacity": 18680,
+                "city": "Raleigh",
+                "country": "USA",
+                "id": "1ea58cb6-6a28-4619-b010-747ecbc30aa7",
+                "name": "PNC Arena",
+                "state": "NC",
+                "time_zone": "US/Eastern",
+                "zip": "27607"
+            }
+        },
+        {
+            "away": {
+                "alias": "EDM",
+                "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+                "name": "Edmonton Oilers"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "WPG",
+                "id": "44180e55-0f24-11e2-8525-18a905767e44",
+                "name": "Winnipeg Jets"
+            },
+            "id": "be5bb60e-46b8-4702-86b9-4d2a5d1624fd",
+            "scheduled": "2016-10-01T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "300 Portage Ave.",
+                "capacity": 15015,
+                "city": "Winnipeg",
+                "country": "CAN",
+                "id": "900327b2-73d0-4e44-a138-fbf4fcbb058f",
+                "name": "MTS Centre",
+                "state": "MB",
+                "time_zone": "US/Eastern",
+                "zip": "R3C 5S5"
+            }
+        },
+        {
+            "away": {
+                "alias": "DAL",
+                "id": "44157522-0f24-11e2-8525-18a905767e44",
+                "name": "Dallas Stars"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "STL",
+                "id": "441660ea-0f24-11e2-8525-18a905767e44",
+                "name": "St. Louis Blues"
+            },
+            "id": "f6381c86-7af2-454d-9397-815733771976",
+            "scheduled": "2016-10-01T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1401 Clark Ave.",
+                "capacity": 19150,
+                "city": "St. Louis",
+                "country": "USA",
+                "id": "14e923b7-a636-476f-b810-b15967787e3c",
+                "name": "Scottrade Center",
+                "state": "MO",
+                "time_zone": "US/Eastern",
+                "zip": "63103"
+            }
+        },
+        {
+            "away": {
+                "alias": "LA",
+                "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+                "name": "Los Angeles Kings"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "COL",
+                "id": "4415ce44-0f24-11e2-8525-18a905767e44",
+                "name": "Colorado Avalanche"
+            },
+            "id": "8881d1db-2c2d-42b0-bc4c-141570be9748",
+            "scheduled": "2016-10-01T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1000 Chopper Circle",
+                "capacity": 18007,
+                "city": "Denver",
+                "country": "USA",
+                "id": "a75eea49-c384-4edb-99f1-d5252773ec83",
+                "name": "Pepsi Center",
+                "state": "CO",
+                "time_zone": "US/Eastern",
+                "zip": "80204"
+            }
+        },
+        {
+            "away": {
+                "alias": "VAN",
+                "id": "4415b0a7-0f24-11e2-8525-18a905767e44",
+                "name": "Vancouver Canucks"
+            },
+            "broadcast": {
+                "network": "SN1"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CGY",
+                "id": "44159241-0f24-11e2-8525-18a905767e44",
+                "name": "Calgary Flames"
+            },
+            "id": "c03ff4ed-98ff-435c-865a-a0824b76b802",
+            "scheduled": "2016-10-01T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "555 Saddledome Rise S.E.",
+                "capacity": 19289,
+                "city": "Calgary",
+                "country": "CAN",
+                "id": "152d63d2-825f-4928-a08a-70564268b405",
+                "name": "Scotiabank Saddledome",
+                "state": "AB",
+                "time_zone": "US/Eastern",
+                "zip": "T2G 2W1"
+            }
+        },
+        {
+            "away": {
+                "alias": "ARI",
+                "id": "44153da1-0f24-11e2-8525-18a905767e44",
+                "name": "Arizona Coyotes"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "SJ",
+                "id": "44155909-0f24-11e2-8525-18a905767e44",
+                "name": "San Jose Sharks"
+            },
+            "id": "70d4155d-7812-4135-9f6f-a39a632e5b0c",
+            "scheduled": "2016-10-01T02:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "525 W. Santa Clara St.",
+                "capacity": 17562,
+                "city": "San Jose",
+                "country": "USA",
+                "id": "1da65282-af4c-4b81-a9de-344b76bb20b0",
+                "name": "SAP Center at San Jose",
+                "state": "CA",
+                "time_zone": "US/Eastern",
+                "zip": "95113"
+            }
+        },
+        {
+            "away": {
+                "alias": "MTL",
+                "id": "441713b7-0f24-11e2-8525-18a905767e44",
+                "name": "Montreal Canadiens"
+            },
+            "broadcast": {
+                "network": "RDS"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "OTT",
+                "id": "4416f5e2-0f24-11e2-8525-18a905767e44",
+                "name": "Ottawa Senators"
+            },
+            "id": "22050357-d5a8-4ca2-a5dd-05cb8c24ec13",
+            "scheduled": "2016-10-01T19:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1000 Palladium Drive",
+                "capacity": 19153,
+                "city": "Ottawa",
+                "country": "CAN",
+                "id": "e1e675a3-9c13-48b3-9e22-4c063dd9905d",
+                "name": "Canadian Tire Centre",
+                "state": "ON",
+                "time_zone": "US/Eastern",
+                "zip": "K2V 1A5"
+            }
+        },
+        {
+            "away": {
+                "alias": "NYR",
+                "id": "441781b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Rangers"
+            },
+            "broadcast": {
+                "network": "MSG+",
+                "satellite": "635"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NJ",
+                "id": "44174b0c-0f24-11e2-8525-18a905767e44",
+                "name": "New Jersey Devils"
+            },
+            "id": "6b0e43db-cee3-4f2b-b032-0ea02b3bf611",
+            "scheduled": "2016-10-01T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "165 Mulberry St.",
+                "capacity": 17625,
+                "city": "Newark",
+                "country": "USA",
+                "id": "c970f791-c3bf-411e-89c6-952695afd414",
+                "name": "Prudential Center",
+                "state": "NJ",
+                "time_zone": "US/Eastern",
+                "zip": "07102"
+            }
+        },
+        {
+            "away": {
+                "alias": "WSH",
+                "id": "4417eede-0f24-11e2-8525-18a905767e44",
+                "name": "Washington Capitals"
+            },
+            "broadcast": {
+                "network": "CSN-DC",
+                "satellite": "642"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "NYI",
+                "id": "441766b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Islanders"
+            },
+            "id": "86702dea-b727-4099-b8b5-65b6501449f7",
+            "scheduled": "2016-10-01T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "600 Main St.",
+                "capacity": 10000,
+                "city": "Bridgeport",
+                "country": "USA",
+                "id": "08d1a321-a2af-4b71-994b-ba829b7a922d",
+                "name": "Webster Bank Arena",
+                "state": "CT",
+                "time_zone": "US/Eastern",
+                "zip": "06604"
+            }
+        },
+        {
+            "away": {
+                "alias": "BOS",
+                "id": "4416ba1a-0f24-11e2-8525-18a905767e44",
+                "name": "Boston Bruins"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "PHI",
+                "id": "44179d47-0f24-11e2-8525-18a905767e44",
+                "name": "Philadelphia Flyers"
+            },
+            "id": "9defb4a8-e917-4160-b9c5-81e4a3251e45",
+            "scheduled": "2016-10-01T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "3601 S. Broad St.",
+                "capacity": 19537,
+                "city": "Philadelphia",
+                "country": "USA",
+                "id": "0a162e5b-8d59-42d8-b173-a131bf632ffb",
+                "name": "Wells Fargo Center",
+                "state": "PA",
+                "time_zone": "US/Eastern",
+                "zip": "19148"
+            }
+        },
+        {
+            "away": {
+                "alias": "TB",
+                "id": "4417d3cb-0f24-11e2-8525-18a905767e44",
+                "name": "Tampa Bay Lightning"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NSH",
+                "id": "441643b7-0f24-11e2-8525-18a905767e44",
+                "name": "Nashville Predators"
+            },
+            "id": "e947fe02-345d-43e1-b752-15f5317f5db9",
+            "scheduled": "2016-10-02T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "501 Broadway",
+                "capacity": 17113,
+                "city": "Nashville",
+                "country": "USA",
+                "id": "cc4e7a62-fae8-4ebb-9a64-f4384385d0b6",
+                "name": "Bridgestone Arena",
+                "state": "TN",
+                "time_zone": "US/Eastern",
+                "zip": "37203"
+            }
+        },
+        {
+            "away": {
+                "alias": "STL",
+                "id": "441660ea-0f24-11e2-8525-18a905767e44",
+                "name": "St. Louis Blues"
+            },
+            "broadcast": {
+                "network": "CSN-CH",
+                "satellite": "665"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CHI",
+                "id": "4416272f-0f24-11e2-8525-18a905767e44",
+                "name": "Chicago Blackhawks"
+            },
+            "id": "dee4c69b-b4d4-49f4-ada3-c79d1cc5093d",
+            "scheduled": "2016-10-02T00:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1901 W. Madison St.",
+                "capacity": 19717,
+                "city": "Chicago",
+                "country": "USA",
+                "id": "bbdf58db-fd65-44de-90b9-fcf523c2d764",
+                "name": "United Center",
+                "state": "IL",
+                "time_zone": "US/Eastern",
+                "zip": "60612"
+            }
+        },
+        {
+            "away": {
+                "alias": "ANA",
+                "id": "441862de-0f24-11e2-8525-18a905767e44",
+                "name": "Anaheim Ducks"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "ARI",
+                "id": "44153da1-0f24-11e2-8525-18a905767e44",
+                "name": "Arizona Coyotes"
+            },
+            "id": "65f55fa7-dad0-4e9a-b088-c4e779d0e921",
+            "scheduled": "2016-10-02T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "9400 W. Maryland Ave.",
+                "capacity": 17125,
+                "city": "Glendale",
+                "country": "USA",
+                "id": "71ca386d-fbaa-479f-b9b6-7858ef2d3cc7",
+                "name": "Gila River Arena",
+                "state": "AZ",
+                "time_zone": "US/Eastern",
+                "zip": "85305"
+            }
+        },
+        {
+            "away": {
+                "alias": "DAL",
+                "id": "44157522-0f24-11e2-8525-18a905767e44",
+                "name": "Dallas Stars"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "FLA",
+                "id": "4418464d-0f24-11e2-8525-18a905767e44",
+                "name": "Florida Panthers"
+            },
+            "id": "0394dd13-8cd8-4f98-8811-29b23f8eb4fc",
+            "scheduled": "2016-10-02T19:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "99 Dundas St.",
+                "capacity": 9046,
+                "city": "London",
+                "country": "CAN",
+                "id": "73ea8eea-b4aa-4753-85d3-b44ba6f06c65",
+                "name": "Budweiser Gardens",
+                "state": "ON",
+                "time_zone": "US/Eastern",
+                "zip": "N6A 6K1"
+            }
+        },
+        {
+            "away": {
+                "alias": "PIT",
+                "id": "4417b7d7-0f24-11e2-8525-18a905767e44",
+                "name": "Pittsburgh Penguins"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CBJ",
+                "id": "44167db4-0f24-11e2-8525-18a905767e44",
+                "name": "Columbus Blue Jackets"
+            },
+            "id": "819149ff-3ec5-4a28-b4d3-77f32d7d6581",
+            "scheduled": "2016-10-02T20:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "200 W. Nationwide Blvd.",
+                "capacity": 18144,
+                "city": "Columbus",
+                "country": "USA",
+                "id": "41a57fc9-a04b-43db-b1f8-87f34f21459b",
+                "name": "Nationwide Arena",
+                "state": "OH",
+                "time_zone": "US/Eastern",
+                "zip": "43215"
+            }
+        },
+        {
+            "away": {
+                "alias": "CAR",
+                "id": "44182a9d-0f24-11e2-8525-18a905767e44",
+                "name": "Carolina Hurricanes"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "MIN",
+                "id": "4416091c-0f24-11e2-8525-18a905767e44",
+                "name": "Minnesota Wild"
+            },
+            "id": "8ee0806f-ab4f-4375-9d36-90cb77e11d2f",
+            "scheduled": "2016-10-02T22:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "199 W. Kellogg Blvd.",
+                "capacity": 18064,
+                "city": "St. Paul",
+                "country": "USA",
+                "id": "7e6f808b-eff8-42fd-a8e2-d35219f565bd",
+                "name": "Xcel Energy Center",
+                "state": "MN",
+                "time_zone": "US/Eastern",
+                "zip": "55102"
+            }
+        },
+        {
+            "away": {
+                "alias": "CHI",
+                "id": "4416272f-0f24-11e2-8525-18a905767e44",
+                "name": "Chicago Blackhawks"
+            },
+            "broadcast": {
+                "network": "CSN-CH+",
+                "satellite": "665-1"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "DET",
+                "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+                "name": "Detroit Red Wings"
+            },
+            "id": "b686363d-b2e5-46d2-9e24-da91b1cfa1df",
+            "scheduled": "2016-10-02T22:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "600 Civic Center Drive",
+                "capacity": 20066,
+                "city": "Detroit",
+                "country": "USA",
+                "id": "ab7ddf4d-77aa-44cf-aaf9-9566218af38d",
+                "name": "Joe Louis Arena",
+                "state": "MI",
+                "time_zone": "US/Eastern",
+                "zip": "48226"
+            }
+        },
+        {
+            "away": {
+                "alias": "MTL",
+                "id": "441713b7-0f24-11e2-8525-18a905767e44",
+                "name": "Montreal Canadiens"
+            },
+            "broadcast": {
+                "network": "SN1"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "TOR",
+                "id": "441730a9-0f24-11e2-8525-18a905767e44",
+                "name": "Toronto Maple Leafs"
+            },
+            "id": "e2578342-adb5-433c-8aec-56a69c6689f3",
+            "scheduled": "2016-10-02T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "40 Bay St.",
+                "capacity": 18819,
+                "city": "Toronto",
+                "country": "CAN",
+                "id": "a84c7004-18b2-4c5d-a036-f0c368c08bc5",
+                "name": "Air Canada Centre",
+                "state": "ON",
+                "time_zone": "US/Eastern",
+                "zip": "M5J 2X2"
+            }
+        },
+        {
+            "away": {
+                "alias": "LA",
+                "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+                "name": "Los Angeles Kings"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "ANA",
+                "id": "441862de-0f24-11e2-8525-18a905767e44",
+                "name": "Anaheim Ducks"
+            },
+            "id": "76f0c586-87c2-453c-a039-30185d41b96a",
+            "scheduled": "2016-10-03T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "2695 E. Katella Ave.",
+                "capacity": 17174,
+                "city": "Anaheim",
+                "country": "USA",
+                "id": "eb3866a7-4163-4517-bd42-d24e8c2522fe",
+                "name": "Honda Center",
+                "state": "CA",
+                "time_zone": "US/Eastern",
+                "zip": "92806"
+            }
+        },
+        {
+            "away": {
+                "alias": "SJ",
+                "id": "44155909-0f24-11e2-8525-18a905767e44",
+                "name": "San Jose Sharks"
+            },
+            "broadcast": {
+                "network": "SN360"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "VAN",
+                "id": "4415b0a7-0f24-11e2-8525-18a905767e44",
+                "name": "Vancouver Canucks"
+            },
+            "id": "7c91b275-4181-46a6-babb-8db8605e61c8",
+            "scheduled": "2016-10-03T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "800 Griffiths Way",
+                "capacity": 18890,
+                "city": "Vancouver",
+                "country": "CAN",
+                "id": "3b8e1099-8050-42c9-b545-2aa74e93b2e8",
+                "name": "Rogers Arena",
+                "state": "BC",
+                "time_zone": "US/Eastern",
+                "zip": "V6B 6G1"
+            }
+        },
+        {
+            "away": {
+                "alias": "LA",
+                "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+                "name": "Los Angeles Kings"
+            },
+            "broadcast": {
+                "network": "SN"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "EDM",
+                "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+                "name": "Edmonton Oilers"
+            },
+            "id": "b1c12876-6baf-4888-ad02-000bed543e70",
+            "scheduled": "2016-10-03T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "2270 Shields St",
+                "city": "Lumby",
+                "country": "CAN",
+                "id": "e3a5eb1e-e5db-4522-94d5-c114a5087dcd",
+                "name": "Pat Duke Memorial Arena",
+                "state": "BC",
+                "time_zone": "US/Eastern",
+                "zip": "V0E 2G0"
+            }
+        },
+        {
+            "away": {
+                "alias": "WPG",
+                "id": "44180e55-0f24-11e2-8525-18a905767e44",
+                "name": "Winnipeg Jets"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CGY",
+                "id": "44159241-0f24-11e2-8525-18a905767e44",
+                "name": "Calgary Flames"
+            },
+            "id": "e868374c-0ce0-4e91-96a9-3c75a47e013d",
+            "scheduled": "2016-10-03T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "555 Saddledome Rise S.E.",
+                "capacity": 19289,
+                "city": "Calgary",
+                "country": "CAN",
+                "id": "152d63d2-825f-4928-a08a-70564268b405",
+                "name": "Scotiabank Saddledome",
+                "state": "AB",
+                "time_zone": "US/Eastern",
+                "zip": "T2G 2W1"
+            }
+        },
+        {
+            "away": {
+                "alias": "NYR",
+                "id": "441781b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Rangers"
+            },
+            "broadcast": {
+                "network": "MSG"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "PHI",
+                "id": "44179d47-0f24-11e2-8525-18a905767e44",
+                "name": "Philadelphia Flyers"
+            },
+            "id": "6d2cd29e-c7ae-4c55-b224-a450ffdffc6f",
+            "scheduled": "2016-10-03T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "3601 S. Broad St.",
+                "capacity": 19537,
+                "city": "Philadelphia",
+                "country": "USA",
+                "id": "0a162e5b-8d59-42d8-b173-a131bf632ffb",
+                "name": "Wells Fargo Center",
+                "state": "PA",
+                "time_zone": "US/Eastern",
+                "zip": "19148"
+            }
+        },
+        {
+            "away": {
+                "alias": "NJ",
+                "id": "44174b0c-0f24-11e2-8525-18a905767e44",
+                "name": "New Jersey Devils"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NYI",
+                "id": "441766b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Islanders"
+            },
+            "id": "92a19df2-67a8-4446-b64b-e981214ef9f5",
+            "scheduled": "2016-10-03T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "620 Atlantic Ave.",
+                "capacity": 15813,
+                "city": "Brooklyn",
+                "country": "USA",
+                "id": "a675f98f-4d98-4586-baab-a7ca05904870",
+                "name": "Barclays Center",
+                "state": "NY",
+                "time_zone": "US/Eastern",
+                "zip": "11217"
+            }
+        },
+        {
+            "away": {
+                "alias": "STL",
+                "id": "441660ea-0f24-11e2-8525-18a905767e44",
+                "name": "St. Louis Blues"
+            },
+            "broadcast": {
+                "network": "CSN-DC",
+                "satellite": "642"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "WSH",
+                "id": "4417eede-0f24-11e2-8525-18a905767e44",
+                "name": "Washington Capitals"
+            },
+            "id": "e5af96de-4e40-415d-8e42-921841079152",
+            "scheduled": "2016-10-03T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "601 F St. N.W.",
+                "capacity": 18506,
+                "city": "Washington",
+                "country": "USA",
+                "id": "48f092ed-ce49-4a08-97c6-def284ba6721",
+                "name": "Verizon Center",
+                "state": "DC",
+                "time_zone": "US/Eastern",
+                "zip": "20004"
+            }
+        },
+        {
+            "away": {
+                "alias": "OTT",
+                "id": "4416f5e2-0f24-11e2-8525-18a905767e44",
+                "name": "Ottawa Senators"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "WPG",
+                "id": "44180e55-0f24-11e2-8525-18a905767e44",
+                "name": "Winnipeg Jets"
+            },
+            "id": "cd0e1b65-9270-40ea-b303-e9ecb41dac7b",
+            "scheduled": "2016-10-04T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "300 Portage Ave.",
+                "capacity": 15015,
+                "city": "Winnipeg",
+                "country": "CAN",
+                "id": "900327b2-73d0-4e44-a138-fbf4fcbb058f",
+                "name": "MTS Centre",
+                "state": "MB",
+                "time_zone": "US/Eastern",
+                "zip": "R3C 5S5"
+            }
+        },
+        {
+            "away": {
+                "alias": "ARI",
+                "id": "44153da1-0f24-11e2-8525-18a905767e44",
+                "name": "Arizona Coyotes"
+            },
+            "broadcast": {
+                "network": "SN1"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "VAN",
+                "id": "4415b0a7-0f24-11e2-8525-18a905767e44",
+                "name": "Vancouver Canucks"
+            },
+            "id": "a8fdcda1-b8b2-4ce8-a8a0-617b4a23abac",
+            "scheduled": "2016-10-04T02:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "800 Griffiths Way",
+                "capacity": 18890,
+                "city": "Vancouver",
+                "country": "CAN",
+                "id": "3b8e1099-8050-42c9-b545-2aa74e93b2e8",
+                "name": "Rogers Arena",
+                "state": "BC",
+                "time_zone": "US/Eastern",
+                "zip": "V6B 6G1"
+            }
+        },
+        {
+            "away": {
+                "alias": "BOS",
+                "id": "4416ba1a-0f24-11e2-8525-18a905767e44",
+                "name": "Boston Bruins"
+            },
+            "broadcast": {
+                "network": "RDS"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "MTL",
+                "id": "441713b7-0f24-11e2-8525-18a905767e44",
+                "name": "Montreal Canadiens"
+            },
+            "id": "3a7a0846-f8ab-4908-82c9-77189a74b6b7",
+            "scheduled": "2016-10-04T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "250 Boulevard Wilfrid-Hamel",
+                "capacity": 18259,
+                "city": "Quebec City",
+                "country": "CAN",
+                "id": "7b0cce2c-4a8d-4fae-b288-648d22141292",
+                "name": "Videotron Centre",
+                "state": "QC",
+                "time_zone": "US/Eastern",
+                "zip": "G1L 5A7"
+            }
+        },
+        {
+            "away": {
+                "alias": "NYR",
+                "id": "441781b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Rangers"
+            },
+            "broadcast": {
+                "network": "MSG+",
+                "satellite": "635"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NYI",
+                "id": "441766b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Islanders"
+            },
+            "id": "4adb7e2f-459a-442f-af11-770058e4279e",
+            "scheduled": "2016-10-04T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "620 Atlantic Ave.",
+                "capacity": 15813,
+                "city": "Brooklyn",
+                "country": "USA",
+                "id": "a675f98f-4d98-4586-baab-a7ca05904870",
+                "name": "Barclays Center",
+                "state": "NY",
+                "time_zone": "US/Eastern",
+                "zip": "11217"
+            }
+        },
+        {
+            "away": {
+                "alias": "CAR",
+                "id": "44182a9d-0f24-11e2-8525-18a905767e44",
+                "name": "Carolina Hurricanes"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "BUF",
+                "id": "4416d559-0f24-11e2-8525-18a905767e44",
+                "name": "Buffalo Sabres"
+            },
+            "id": "832fe647-4243-4338-b94f-1b45dff84faa",
+            "scheduled": "2016-10-04T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "401 East Fair Avenue",
+                "capacity": 3100,
+                "city": "Marquette",
+                "country": "USA",
+                "id": "76e1c89c-74ff-4ffa-8889-ee426361ce47",
+                "name": "Lakeview Arena",
+                "state": "MI",
+                "time_zone": "US/Eastern",
+                "zip": "49855"
+            }
+        },
+        {
+            "away": {
+                "alias": "CBJ",
+                "id": "44167db4-0f24-11e2-8525-18a905767e44",
+                "name": "Columbus Blue Jackets"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NSH",
+                "id": "441643b7-0f24-11e2-8525-18a905767e44",
+                "name": "Nashville Predators"
+            },
+            "id": "62cf0519-97ab-4eb8-896d-2e7006af81cc",
+            "scheduled": "2016-10-05T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "501 Broadway",
+                "capacity": 17113,
+                "city": "Nashville",
+                "country": "USA",
+                "id": "cc4e7a62-fae8-4ebb-9a64-f4384385d0b6",
+                "name": "Bridgestone Arena",
+                "state": "TN",
+                "time_zone": "US/Eastern",
+                "zip": "37203"
+            }
+        },
+        {
+            "away": {
+                "alias": "DET",
+                "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+                "name": "Detroit Red Wings"
+            },
+            "broadcast": {
+                "network": "CSN-CH",
+                "satellite": "665"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CHI",
+                "id": "4416272f-0f24-11e2-8525-18a905767e44",
+                "name": "Chicago Blackhawks"
+            },
+            "id": "2d8e4226-ae03-4946-9d6f-bf08eeb2c3d1",
+            "scheduled": "2016-10-05T00:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1901 W. Madison St.",
+                "capacity": 19717,
+                "city": "Chicago",
+                "country": "USA",
+                "id": "bbdf58db-fd65-44de-90b9-fcf523c2d764",
+                "name": "United Center",
+                "state": "IL",
+                "time_zone": "US/Eastern",
+                "zip": "60612"
+            }
+        },
+        {
+            "away": {
+                "alias": "FLA",
+                "id": "4418464d-0f24-11e2-8525-18a905767e44",
+                "name": "Florida Panthers"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "DAL",
+                "id": "44157522-0f24-11e2-8525-18a905767e44",
+                "name": "Dallas Stars"
+            },
+            "id": "ef7bdb14-17e4-4e37-accc-d80842c26455",
+            "scheduled": "2016-10-05T00:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "2500 Victory Ave.",
+                "capacity": 18532,
+                "city": "Dallas",
+                "country": "USA",
+                "id": "adbd1acb-a053-4944-ba15-383eda91c12e",
+                "name": "American Airlines Center",
+                "state": "TX",
+                "time_zone": "US/Eastern",
+                "zip": "75219"
+            }
+        },
+        {
+            "away": {
+                "alias": "MIN",
+                "id": "4416091c-0f24-11e2-8525-18a905767e44",
+                "name": "Minnesota Wild"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "COL",
+                "id": "4415ce44-0f24-11e2-8525-18a905767e44",
+                "name": "Colorado Avalanche"
+            },
+            "id": "162091ef-f201-4456-b41b-50e9b8c347b9",
+            "scheduled": "2016-10-05T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1000 Chopper Circle",
+                "capacity": 18007,
+                "city": "Denver",
+                "country": "USA",
+                "id": "a75eea49-c384-4edb-99f1-d5252773ec83",
+                "name": "Pepsi Center",
+                "state": "CO",
+                "time_zone": "US/Eastern",
+                "zip": "80204"
+            }
+        },
+        {
+            "away": {
+                "alias": "ANA",
+                "id": "441862de-0f24-11e2-8525-18a905767e44",
+                "name": "Anaheim Ducks"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "EDM",
+                "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+                "name": "Edmonton Oilers"
+            },
+            "id": "f2c72e75-7610-4b97-a807-f9e1f9ffae77",
+            "scheduled": "2016-10-05T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "10220 104 Avenue NW",
+                "capacity": 18641,
+                "city": "Edmonton",
+                "country": "CAN",
+                "id": "5d6670d2-01ea-4bc2-ae88-93563620328d",
+                "name": "Rogers Place",
+                "state": "AB",
+                "time_zone": "US/Eastern",
+                "zip": "T5J 4Y8"
+            }
+        },
+        {
+            "away": {
+                "alias": "TOR",
+                "id": "441730a9-0f24-11e2-8525-18a905767e44",
+                "name": "Toronto Maple Leafs"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "OTT",
+                "id": "4416f5e2-0f24-11e2-8525-18a905767e44",
+                "name": "Ottawa Senators"
+            },
+            "id": "e24810cc-a7cf-4af5-ab01-8aa138876cfb",
+            "scheduled": "2016-10-05T01:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "3515 Thatcher Ave.",
+                "capacity": 7800,
+                "city": "Saskatoon",
+                "country": "CAN",
+                "id": "3543cd5f-c731-4ce8-b0c8-4d8c47cde0a0",
+                "name": "SaskTel Centre",
+                "state": "SK",
+                "time_zone": "US/Eastern",
+                "zip": "S7R 1C4"
+            }
+        },
+        {
+            "away": {
+                "alias": "DET",
+                "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+                "name": "Detroit Red Wings"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "PIT",
+                "id": "4417b7d7-0f24-11e2-8525-18a905767e44",
+                "name": "Pittsburgh Penguins"
+            },
+            "id": "4635cd7d-c0c1-418f-ad55-98ab7448e6af",
+            "scheduled": "2016-10-05T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1001 Fifth Ave.",
+                "capacity": 18387,
+                "city": "Pittsburgh",
+                "country": "USA",
+                "id": "09cab1a6-16ee-4ed9-aefa-c6cc24681b3b",
+                "name": "PPG Paints Arena",
+                "state": "PA",
+                "time_zone": "US/Eastern",
+                "zip": "15219"
+            }
+        },
+        {
+            "away": {
+                "alias": "NYI",
+                "id": "441766b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Islanders"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NJ",
+                "id": "44174b0c-0f24-11e2-8525-18a905767e44",
+                "name": "New Jersey Devils"
+            },
+            "id": "68e39930-fb33-44c3-824e-39131abc5229",
+            "scheduled": "2016-10-05T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "165 Mulberry St.",
+                "capacity": 17625,
+                "city": "Newark",
+                "country": "USA",
+                "id": "c970f791-c3bf-411e-89c6-952695afd414",
+                "name": "Prudential Center",
+                "state": "NJ",
+                "time_zone": "US/Eastern",
+                "zip": "07102"
+            }
+        },
+        {
+            "away": {
+                "alias": "BUF",
+                "id": "4416d559-0f24-11e2-8525-18a905767e44",
+                "name": "Buffalo Sabres"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "CAR",
+                "id": "44182a9d-0f24-11e2-8525-18a905767e44",
+                "name": "Carolina Hurricanes"
+            },
+            "id": "9811c84e-9fdb-4d6a-8d67-ba6bc8122f32",
+            "scheduled": "2016-10-05T23:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "269 Queen Street East",
+                "capacity": 4928,
+                "city": "Sault Ste. Marie",
+                "country": "CAN",
+                "id": "a3fb57c3-36e3-4534-b6b0-2b7b4233c9f1",
+                "name": "Essar Centre",
+                "state": "ON",
+                "time_zone": "US/Eastern",
+                "zip": "P6A 1Y9"
+            }
+        },
+        {
+            "away": {
+                "alias": "WSH",
+                "id": "4417eede-0f24-11e2-8525-18a905767e44",
+                "name": "Washington Capitals"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "STL",
+                "id": "441660ea-0f24-11e2-8525-18a905767e44",
+                "name": "St. Louis Blues"
+            },
+            "id": "eb1f34ae-04cd-46be-b6fc-d96bec434339",
+            "scheduled": "2016-10-06T00:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "1407 Grand Boulevard",
+                "capacity": 17544,
+                "city": "Kansas City",
+                "country": "USA",
+                "id": "896f508c-e843-40e8-ac9d-a49fbe8b803c",
+                "name": "Sprint Center",
+                "state": "MO",
+                "time_zone": "US/Eastern",
+                "zip": "64106"
+            }
+        },
+        {
+            "away": {
+                "alias": "COL",
+                "id": "4415ce44-0f24-11e2-8525-18a905767e44",
+                "name": "Colorado Avalanche"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "DAL",
+                "id": "44157522-0f24-11e2-8525-18a905767e44",
+                "name": "Dallas Stars"
+            },
+            "id": "f8f04b2e-036d-41f4-b5ea-796437931543",
+            "scheduled": "2016-10-06T00:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "2500 Victory Ave.",
+                "capacity": 18532,
+                "city": "Dallas",
+                "country": "USA",
+                "id": "adbd1acb-a053-4944-ba15-383eda91c12e",
+                "name": "American Airlines Center",
+                "state": "TX",
+                "time_zone": "US/Eastern",
+                "zip": "75219"
+            }
+        },
+        {
+            "away": {
+                "alias": "ARI",
+                "id": "44153da1-0f24-11e2-8525-18a905767e44",
+                "name": "Arizona Coyotes"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CGY",
+                "id": "44159241-0f24-11e2-8525-18a905767e44",
+                "name": "Calgary Flames"
+            },
+            "id": "ccb7b58d-c034-42bf-a95f-a07a4e60f648",
+            "scheduled": "2016-10-06T01:00:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "555 Saddledome Rise S.E.",
+                "capacity": 19289,
+                "city": "Calgary",
+                "country": "CAN",
+                "id": "152d63d2-825f-4928-a08a-70564268b405",
+                "name": "Scotiabank Saddledome",
+                "state": "AB",
+                "time_zone": "US/Eastern",
+                "zip": "T2G 2W1"
+            }
+        },
+        {
+            "away": {
+                "alias": "ANA",
+                "id": "441862de-0f24-11e2-8525-18a905767e44",
+                "name": "Anaheim Ducks"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "SJ",
+                "id": "44155909-0f24-11e2-8525-18a905767e44",
+                "name": "San Jose Sharks"
+            },
+            "id": "420b7eb2-e93a-4ca9-9f3d-34d10277ec52",
+            "scheduled": "2016-10-06T02:30:00+00:00",
+            "status": "closed",
+            "venue": {
+                "address": "525 W. Santa Clara St.",
+                "capacity": 17562,
+                "city": "San Jose",
+                "country": "USA",
+                "id": "1da65282-af4c-4b81-a9de-344b76bb20b0",
+                "name": "SAP Center at San Jose",
+                "state": "CA",
+                "time_zone": "US/Eastern",
+                "zip": "95113"
+            }
+        },
+        {
+            "away": {
+                "alias": "PHI",
+                "id": "44179d47-0f24-11e2-8525-18a905767e44",
+                "name": "Philadelphia Flyers"
+            },
+            "broadcast": {
+                "network": "MSG",
+                "satellite": "634"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "NYR",
+                "id": "441781b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Rangers"
+            },
+            "id": "63d3ffe2-2dd0-45d5-8615-23ef358b7323",
+            "scheduled": "2016-10-06T23:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "Four Pennsylvania Plaza",
+                "capacity": 18200,
+                "city": "New York",
+                "country": "USA",
+                "id": "bd8053e4-3bdf-4a70-914f-9f6d0051d66d",
+                "name": "Madison Square Garden",
+                "state": "NY",
+                "time_zone": "US/Eastern",
+                "zip": "10001"
+            }
+        },
+        {
+            "away": {
+                "alias": "BOS",
+                "id": "4416ba1a-0f24-11e2-8525-18a905767e44",
+                "name": "Boston Bruins"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CBJ",
+                "id": "44167db4-0f24-11e2-8525-18a905767e44",
+                "name": "Columbus Blue Jackets"
+            },
+            "id": "addb1e33-d2c6-4802-9ea0-5fba83992282",
+            "scheduled": "2016-10-06T23:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "200 W. Nationwide Blvd.",
+                "capacity": 18144,
+                "city": "Columbus",
+                "country": "USA",
+                "id": "41a57fc9-a04b-43db-b1f8-87f34f21459b",
+                "name": "Nationwide Arena",
+                "state": "OH",
+                "time_zone": "US/Eastern",
+                "zip": "43215"
+            }
+        },
+        {
+            "away": {
+                "alias": "TB",
+                "id": "4417d3cb-0f24-11e2-8525-18a905767e44",
+                "name": "Tampa Bay Lightning"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "FLA",
+                "id": "4418464d-0f24-11e2-8525-18a905767e44",
+                "name": "Florida Panthers"
+            },
+            "id": "96fc1d26-4a5e-4a69-825c-74481e9faf3d",
+            "scheduled": "2016-10-06T23:30:00+00:00",
+            "status": "cancelled",
+            "venue": {
+                "address": "One Panther Parkway",
+                "capacity": 17040,
+                "city": "Sunrise",
+                "country": "USA",
+                "id": "7cc8e88f-9196-4dbc-aa6a-d6f1a0550673",
+                "name": "BB&T Center",
+                "state": "FL",
+                "time_zone": "US/Eastern",
+                "zip": "33323"
+            }
+        },
+        {
+            "away": {
+                "alias": "TOR",
+                "id": "441730a9-0f24-11e2-8525-18a905767e44",
+                "name": "Toronto Maple Leafs"
+            },
+            "broadcast": {
+                "network": "RDS"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "MTL",
+                "id": "441713b7-0f24-11e2-8525-18a905767e44",
+                "name": "Montreal Canadiens"
+            },
+            "id": "9ac40df6-93fb-48d7-95ae-1aa3ac014307",
+            "scheduled": "2016-10-06T23:30:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "1909 Avenue des Canadiens-de-Montreal",
+                "capacity": 21273,
+                "city": "Montreal",
+                "country": "CAN",
+                "id": "2ee8c0bf-dfd1-480c-80df-4d5f66a9dc76",
+                "name": "Bell Centre",
+                "state": "QC",
+                "time_zone": "US/Eastern",
+                "zip": "H3B 5E8"
+            }
+        },
+        {
+            "away": {
+                "alias": "WPG",
+                "id": "44180e55-0f24-11e2-8525-18a905767e44",
+                "name": "Winnipeg Jets"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "EDM",
+                "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+                "name": "Edmonton Oilers"
+            },
+            "id": "42faf252-e7f9-488d-acb4-6ab66720c607",
+            "scheduled": "2016-10-07T01:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "10220 104 Avenue NW",
+                "capacity": 18641,
+                "city": "Edmonton",
+                "country": "CAN",
+                "id": "5d6670d2-01ea-4bc2-ae88-93563620328d",
+                "name": "Rogers Place",
+                "state": "AB",
+                "time_zone": "US/Eastern",
+                "zip": "T5J 4Y8"
+            }
+        },
+        {
+            "away": {
+                "alias": "CGY",
+                "id": "44159241-0f24-11e2-8525-18a905767e44",
+                "name": "Calgary Flames"
+            },
+            "broadcast": {
+                "network": "SD360"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "VAN",
+                "id": "4415b0a7-0f24-11e2-8525-18a905767e44",
+                "name": "Vancouver Canucks"
+            },
+            "id": "a13b60a5-8bb0-4f00-af16-4f60357d9a95",
+            "scheduled": "2016-10-07T02:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "800 Griffiths Way",
+                "capacity": 18890,
+                "city": "Vancouver",
+                "country": "CAN",
+                "id": "3b8e1099-8050-42c9-b545-2aa74e93b2e8",
+                "name": "Rogers Arena",
+                "state": "BC",
+                "time_zone": "US/Eastern",
+                "zip": "V6B 6G1"
+            }
+        },
+        {
+            "away": {
+                "alias": "DET",
+                "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+                "name": "Detroit Red Wings"
+            },
+            "broadcast": {
+                "network": "SN360"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "TOR",
+                "id": "441730a9-0f24-11e2-8525-18a905767e44",
+                "name": "Toronto Maple Leafs"
+            },
+            "id": "290cd05a-6c19-48fa-959d-899eec34ccff",
+            "scheduled": "2016-10-07T23:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "101 York Boulevard",
+                "capacity": 17383,
+                "city": "Hamilton",
+                "country": "CAN",
+                "id": "d7e1f64a-73c9-42fb-b57d-8aaef0aae982",
+                "name": "FirstOntario Centre",
+                "state": "ON",
+                "time_zone": "US/Eastern",
+                "zip": "L8R 3L4"
+            }
+        },
+        {
+            "away": {
+                "alias": "WSH",
+                "id": "4417eede-0f24-11e2-8525-18a905767e44",
+                "name": "Washington Capitals"
+            },
+            "broadcast": {
+                "network": "CSN-DC",
+                "satellite": "642"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "CAR",
+                "id": "44182a9d-0f24-11e2-8525-18a905767e44",
+                "name": "Carolina Hurricanes"
+            },
+            "id": "5c89232f-8ff9-4ed8-a366-37c342216dd3",
+            "scheduled": "2016-10-07T23:30:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "1400 Edwards Mill Road",
+                "capacity": 18680,
+                "city": "Raleigh",
+                "country": "USA",
+                "id": "1ea58cb6-6a28-4619-b010-747ecbc30aa7",
+                "name": "PNC Arena",
+                "state": "NC",
+                "time_zone": "US/Eastern",
+                "zip": "27607"
+            }
+        },
+        {
+            "away": {
+                "alias": "BUF",
+                "id": "4416d559-0f24-11e2-8525-18a905767e44",
+                "name": "Buffalo Sabres"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "OTT",
+                "id": "4416f5e2-0f24-11e2-8525-18a905767e44",
+                "name": "Ottawa Senators"
+            },
+            "id": "a90f5712-b87a-4dec-a226-90be53091fea",
+            "scheduled": "2016-10-07T23:30:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "1000 Palladium Drive",
+                "capacity": 19153,
+                "city": "Ottawa",
+                "country": "CAN",
+                "id": "e1e675a3-9c13-48b3-9e22-4c063dd9905d",
+                "name": "Canadian Tire Centre",
+                "state": "ON",
+                "time_zone": "US/Eastern",
+                "zip": "K2V 1A5"
+            }
+        },
+        {
+            "away": {
+                "alias": "DAL",
+                "id": "44157522-0f24-11e2-8525-18a905767e44",
+                "name": "Dallas Stars"
+            },
+            "broadcast": {
+                "network": "PRIME",
+                "satellite": "693"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "LA",
+                "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+                "name": "Los Angeles Kings"
+            },
+            "id": "c63e3754-feb3-40be-b41e-4885114ed58a",
+            "scheduled": "2016-10-08T02:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "3780 South Las Vegas Boulevard",
+                "capacity": 17368,
+                "city": "Las Vegas",
+                "country": "USA",
+                "id": "17d90f56-d6fc-4d73-9cc7-4991d6da72f4",
+                "name": "T-Mobile Arena",
+                "state": "NV",
+                "time_zone": "US/Eastern",
+                "zip": "89158"
+            }
+        },
+        {
+            "away": {
+                "alias": "SJ",
+                "id": "44155909-0f24-11e2-8525-18a905767e44",
+                "name": "San Jose Sharks"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "ARI",
+                "id": "44153da1-0f24-11e2-8525-18a905767e44",
+                "name": "Arizona Coyotes"
+            },
+            "id": "ce3f9df5-f70c-473e-a7e8-00a048d18ed7",
+            "scheduled": "2016-10-08T02:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "9400 W. Maryland Ave.",
+                "capacity": 17125,
+                "city": "Glendale",
+                "country": "USA",
+                "id": "71ca386d-fbaa-479f-b9b6-7858ef2d3cc7",
+                "name": "Gila River Arena",
+                "state": "AZ",
+                "time_zone": "US/Eastern",
+                "zip": "85305"
+            }
+        },
+        {
+            "away": {
+                "alias": "CBJ",
+                "id": "44167db4-0f24-11e2-8525-18a905767e44",
+                "name": "Columbus Blue Jackets"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "PIT",
+                "id": "4417b7d7-0f24-11e2-8525-18a905767e44",
+                "name": "Pittsburgh Penguins"
+            },
+            "id": "adf3f1b1-0cb3-4410-b0e8-dc0a3fce7891",
+            "scheduled": "2016-10-08T19:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "1001 Fifth Ave.",
+                "capacity": 18387,
+                "city": "Pittsburgh",
+                "country": "USA",
+                "id": "09cab1a6-16ee-4ed9-aefa-c6cc24681b3b",
+                "name": "PPG Paints Arena",
+                "state": "PA",
+                "time_zone": "US/Eastern",
+                "zip": "15219"
+            }
+        },
+        {
+            "away": {
+                "alias": "PHI",
+                "id": "44179d47-0f24-11e2-8525-18a905767e44",
+                "name": "Philadelphia Flyers"
+            },
+            "broadcast": {
+                "network": "NESN",
+                "satellite": "628"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "BOS",
+                "id": "4416ba1a-0f24-11e2-8525-18a905767e44",
+                "name": "Boston Bruins"
+            },
+            "id": "26eee78c-7b8d-4aea-888a-4244d0617605",
+            "scheduled": "2016-10-08T21:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "100 Legends Way",
+                "capacity": 17565,
+                "city": "Boston",
+                "country": "USA",
+                "id": "854ca968-b25f-44f9-abc5-52bcf8825f15",
+                "name": "TD Garden",
+                "state": "MA",
+                "time_zone": "US/Eastern",
+                "zip": "02114"
+            }
+        },
+        {
+            "away": {
+                "alias": "TOR",
+                "id": "441730a9-0f24-11e2-8525-18a905767e44",
+                "name": "Toronto Maple Leafs"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "DET",
+                "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+                "name": "Detroit Red Wings"
+            },
+            "id": "93a25a44-d2a4-47f8-92bb-ad4a2ca2fc01",
+            "scheduled": "2016-10-08T23:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "600 Civic Center Drive",
+                "capacity": 20066,
+                "city": "Detroit",
+                "country": "USA",
+                "id": "ab7ddf4d-77aa-44cf-aaf9-9566218af38d",
+                "name": "Joe Louis Arena",
+                "state": "MI",
+                "time_zone": "US/Eastern",
+                "zip": "48226"
+            }
+        },
+        {
+            "away": {
+                "alias": "NJ",
+                "id": "44174b0c-0f24-11e2-8525-18a905767e44",
+                "name": "New Jersey Devils"
+            },
+            "broadcast": {
+                "network": "FS-FL",
+                "satellite": "653"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "FLA",
+                "id": "4418464d-0f24-11e2-8525-18a905767e44",
+                "name": "Florida Panthers"
+            },
+            "id": "b5487266-1044-4dee-b2e9-9ddc22d6409f",
+            "scheduled": "2016-10-08T23:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "Fenton Place",
+                "capacity": 2746,
+                "city": "West Point",
+                "country": "USA",
+                "id": "d2c66c1a-fbbf-4457-a97a-f7ed46ab6fa5",
+                "name": "Tate Rink",
+                "state": "NY",
+                "time_zone": "US/Eastern",
+                "zip": "10996"
+            }
+        },
+        {
+            "away": {
+                "alias": "NSH",
+                "id": "441643b7-0f24-11e2-8525-18a905767e44",
+                "name": "Nashville Predators"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "TB",
+                "id": "4417d3cb-0f24-11e2-8525-18a905767e44",
+                "name": "Tampa Bay Lightning"
+            },
+            "id": "caac645b-a1d3-43ef-b54b-bfcaa0169f56",
+            "scheduled": "2016-10-08T23:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "401 Channelside Drive",
+                "capacity": 19204,
+                "city": "Tampa",
+                "country": "USA",
+                "id": "05aa49b2-f72d-4d42-ab30-f219d32ed97b",
+                "name": "Amalie Arena",
+                "state": "FL",
+                "time_zone": "US/Eastern",
+                "zip": "33602"
+            }
+        },
+        {
+            "away": {
+                "alias": "CHI",
+                "id": "4416272f-0f24-11e2-8525-18a905767e44",
+                "name": "Chicago Blackhawks"
+            },
+            "broadcast": {
+                "network": "CSN-CH",
+                "satellite": "665"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "STL",
+                "id": "441660ea-0f24-11e2-8525-18a905767e44",
+                "name": "St. Louis Blues"
+            },
+            "id": "48302533-5b8e-457e-a10e-a43cb0586667",
+            "scheduled": "2016-10-09T00:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "1401 Clark Ave.",
+                "capacity": 19150,
+                "city": "St. Louis",
+                "country": "USA",
+                "id": "14e923b7-a636-476f-b810-b15967787e3c",
+                "name": "Scottrade Center",
+                "state": "MO",
+                "time_zone": "US/Eastern",
+                "zip": "63103"
+            }
+        },
+        {
+            "away": {
+                "alias": "WPG",
+                "id": "44180e55-0f24-11e2-8525-18a905767e44",
+                "name": "Winnipeg Jets"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "MIN",
+                "id": "4416091c-0f24-11e2-8525-18a905767e44",
+                "name": "Minnesota Wild"
+            },
+            "id": "599281d6-8b23-4c7e-a124-6f5e30b963d9",
+            "scheduled": "2016-10-09T00:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "199 W. Kellogg Blvd.",
+                "capacity": 18064,
+                "city": "St. Paul",
+                "country": "USA",
+                "id": "7e6f808b-eff8-42fd-a8e2-d35219f565bd",
+                "name": "Xcel Energy Center",
+                "state": "MN",
+                "time_zone": "US/Eastern",
+                "zip": "55102"
+            }
+        },
+        {
+            "away": {
+                "alias": "VAN",
+                "id": "4415b0a7-0f24-11e2-8525-18a905767e44",
+                "name": "Vancouver Canucks"
+            },
+            "broadcast": {
+                "network": "SN630"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "EDM",
+                "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+                "name": "Edmonton Oilers"
+            },
+            "id": "13e738eb-d13f-4b77-8a18-0814876d6471",
+            "scheduled": "2016-10-09T01:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "10220 104 Avenue NW",
+                "capacity": 18641,
+                "city": "Edmonton",
+                "country": "CAN",
+                "id": "5d6670d2-01ea-4bc2-ae88-93563620328d",
+                "name": "Rogers Place",
+                "state": "AB",
+                "time_zone": "US/Eastern",
+                "zip": "T5J 4Y8"
+            }
+        },
+        {
+            "away": {
+                "alias": "COL",
+                "id": "4415ce44-0f24-11e2-8525-18a905767e44",
+                "name": "Colorado Avalanche"
+            },
+            "broadcast": {
+                "network": "PRIME",
+                "satellite": "693"
+            },
+            "coverage": "boxscore",
+            "home": {
+                "alias": "LA",
+                "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+                "name": "Los Angeles Kings"
+            },
+            "id": "b66ebe88-28be-4510-badb-ba10370935ef",
+            "scheduled": "2016-10-09T02:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "3780 South Las Vegas Boulevard",
+                "capacity": 17368,
+                "city": "Las Vegas",
+                "country": "USA",
+                "id": "17d90f56-d6fc-4d73-9cc7-4991d6da72f4",
+                "name": "T-Mobile Arena",
+                "state": "NV",
+                "time_zone": "US/Eastern",
+                "zip": "89158"
+            }
+        },
+        {
+            "away": {
+                "alias": "NYI",
+                "id": "441766b9-0f24-11e2-8525-18a905767e44",
+                "name": "New York Islanders"
+            },
+            "broadcast": {
+                "network": "CSN-DC",
+                "satellite": "642"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "WSH",
+                "id": "4417eede-0f24-11e2-8525-18a905767e44",
+                "name": "Washington Capitals"
+            },
+            "id": "e19604a6-e196-41aa-8f9c-698e58ba2db8",
+            "scheduled": "2016-10-09T21:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "601 F St. N.W.",
+                "capacity": 18506,
+                "city": "Washington",
+                "country": "USA",
+                "id": "48f092ed-ce49-4a08-97c6-def284ba6721",
+                "name": "Verizon Center",
+                "state": "DC",
+                "time_zone": "US/Eastern",
+                "zip": "20004"
+            }
+        },
+        {
+            "away": {
+                "alias": "SJ",
+                "id": "44155909-0f24-11e2-8525-18a905767e44",
+                "name": "San Jose Sharks"
+            },
+            "coverage": "full",
+            "home": {
+                "alias": "ANA",
+                "id": "441862de-0f24-11e2-8525-18a905767e44",
+                "name": "Anaheim Ducks"
+            },
+            "id": "ffdb9008-b659-4f4f-bfd7-94b007001f6d",
+            "scheduled": "2016-10-10T00:00:00+00:00",
+            "status": "scheduled",
+            "venue": {
+                "address": "2695 E. Katella Ave.",
+                "capacity": 17174,
+                "city": "Anaheim",
+                "country": "USA",
+                "id": "eb3866a7-4163-4517-bd42-d24e8c2522fe",
+                "name": "Honda Center",
+                "state": "CA",
+                "time_zone": "US/Eastern",
+                "zip": "92806"
+            }
+        }
+    ],
+    "league": {
+        "alias": "NHL",
+        "id": "fd560107-a85b-4388-ab0d-655ad022aff7",
+        "name": "NHL"
+    },
+    "season": {
+        "id": "a06e4baf-c43d-40d7-982f-8e54c4f9c382",
+        "type": "PRE",
+        "year": 2016
+    }
+}

@@ -1,0 +1,561 @@
+{
+    "conferences": [
+        {
+            "alias": "WESTERN",
+            "divisions": [
+                {
+                    "alias": "PACIFIC",
+                    "id": "17101b65-e8b9-4cda-a963-eea874aed81f",
+                    "name": "Pacific",
+                    "teams": [
+                        {
+                            "alias": "LA",
+                            "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+                            "market": "Los Angeles",
+                            "name": "Kings",
+                            "venue": {
+                                "address": "1111 S. Figueroa St.",
+                                "capacity": 18118,
+                                "city": "Los Angeles",
+                                "country": "USA",
+                                "id": "dec253d4-68df-470b-b8fc-d663a7fa4704",
+                                "name": "Staples Center",
+                                "state": "CA",
+                                "time_zone": "US/Eastern",
+                                "zip": "90015"
+                            }
+                        },
+                        {
+                            "alias": "ARI",
+                            "id": "44153da1-0f24-11e2-8525-18a905767e44",
+                            "market": "Arizona",
+                            "name": "Coyotes",
+                            "venue": {
+                                "address": "9400 W. Maryland Ave.",
+                                "capacity": 17125,
+                                "city": "Glendale",
+                                "country": "USA",
+                                "id": "71ca386d-fbaa-479f-b9b6-7858ef2d3cc7",
+                                "name": "Gila River Arena",
+                                "state": "AZ",
+                                "time_zone": "US/Eastern",
+                                "zip": "85305"
+                            }
+                        },
+                        {
+                            "alias": "SJ",
+                            "id": "44155909-0f24-11e2-8525-18a905767e44",
+                            "market": "San Jose",
+                            "name": "Sharks",
+                            "venue": {
+                                "address": "525 W. Santa Clara St.",
+                                "capacity": 17562,
+                                "city": "San Jose",
+                                "country": "USA",
+                                "id": "1da65282-af4c-4b81-a9de-344b76bb20b0",
+                                "name": "SAP Center at San Jose",
+                                "state": "CA",
+                                "time_zone": "US/Eastern",
+                                "zip": "95113"
+                            }
+                        },
+                        {
+                            "alias": "CGY",
+                            "id": "44159241-0f24-11e2-8525-18a905767e44",
+                            "market": "Calgary",
+                            "name": "Flames",
+                            "venue": {
+                                "address": "555 Saddledome Rise S.E.",
+                                "capacity": 19289,
+                                "city": "Calgary",
+                                "country": "CAN",
+                                "id": "152d63d2-825f-4928-a08a-70564268b405",
+                                "name": "Scotiabank Saddledome",
+                                "state": "AB",
+                                "time_zone": "US/Eastern",
+                                "zip": "T2G 2W1"
+                            }
+                        },
+                        {
+                            "alias": "VAN",
+                            "id": "4415b0a7-0f24-11e2-8525-18a905767e44",
+                            "market": "Vancouver",
+                            "name": "Canucks",
+                            "venue": {
+                                "address": "800 Griffiths Way",
+                                "capacity": 18890,
+                                "city": "Vancouver",
+                                "country": "CAN",
+                                "id": "3b8e1099-8050-42c9-b545-2aa74e93b2e8",
+                                "name": "Rogers Arena",
+                                "state": "BC",
+                                "time_zone": "US/Eastern",
+                                "zip": "V6B 6G1"
+                            }
+                        },
+                        {
+                            "alias": "EDM",
+                            "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+                            "market": "Edmonton",
+                            "name": "Oilers",
+                            "venue": {
+                                "address": "10220 104 Avenue NW",
+                                "capacity": 18641,
+                                "city": "Edmonton",
+                                "country": "CAN",
+                                "id": "5d6670d2-01ea-4bc2-ae88-93563620328d",
+                                "name": "Rogers Place",
+                                "state": "AB",
+                                "time_zone": "US/Eastern",
+                                "zip": "T5J 4Y8"
+                            }
+                        },
+                        {
+                            "alias": "ANA",
+                            "id": "441862de-0f24-11e2-8525-18a905767e44",
+                            "market": "Anaheim",
+                            "name": "Ducks",
+                            "venue": {
+                                "address": "2695 E. Katella Ave.",
+                                "capacity": 17174,
+                                "city": "Anaheim",
+                                "country": "USA",
+                                "id": "eb3866a7-4163-4517-bd42-d24e8c2522fe",
+                                "name": "Honda Center",
+                                "state": "CA",
+                                "time_zone": "US/Eastern",
+                                "zip": "92806"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "alias": "CENTRAL",
+                    "id": "5e868c4d-c6a3-4901-bc3c-3b7a4509e402",
+                    "name": "Central",
+                    "teams": [
+                        {
+                            "alias": "DAL",
+                            "id": "44157522-0f24-11e2-8525-18a905767e44",
+                            "market": "Dallas",
+                            "name": "Stars",
+                            "venue": {
+                                "address": "2500 Victory Ave.",
+                                "capacity": 18532,
+                                "city": "Dallas",
+                                "country": "USA",
+                                "id": "adbd1acb-a053-4944-ba15-383eda91c12e",
+                                "name": "American Airlines Center",
+                                "state": "TX",
+                                "time_zone": "US/Eastern",
+                                "zip": "75219"
+                            }
+                        },
+                        {
+                            "alias": "COL",
+                            "id": "4415ce44-0f24-11e2-8525-18a905767e44",
+                            "market": "Colorado",
+                            "name": "Avalanche",
+                            "venue": {
+                                "address": "1000 Chopper Circle",
+                                "capacity": 18007,
+                                "city": "Denver",
+                                "country": "USA",
+                                "id": "a75eea49-c384-4edb-99f1-d5252773ec83",
+                                "name": "Pepsi Center",
+                                "state": "CO",
+                                "time_zone": "US/Eastern",
+                                "zip": "80204"
+                            }
+                        },
+                        {
+                            "alias": "MIN",
+                            "id": "4416091c-0f24-11e2-8525-18a905767e44",
+                            "market": "Minnesota",
+                            "name": "Wild",
+                            "venue": {
+                                "address": "199 W. Kellogg Blvd.",
+                                "capacity": 18064,
+                                "city": "St. Paul",
+                                "country": "USA",
+                                "id": "7e6f808b-eff8-42fd-a8e2-d35219f565bd",
+                                "name": "Xcel Energy Center",
+                                "state": "MN",
+                                "time_zone": "US/Eastern",
+                                "zip": "55102"
+                            }
+                        },
+                        {
+                            "alias": "CHI",
+                            "id": "4416272f-0f24-11e2-8525-18a905767e44",
+                            "market": "Chicago",
+                            "name": "Blackhawks",
+                            "venue": {
+                                "address": "1901 W. Madison St.",
+                                "capacity": 19717,
+                                "city": "Chicago",
+                                "country": "USA",
+                                "id": "bbdf58db-fd65-44de-90b9-fcf523c2d764",
+                                "name": "United Center",
+                                "state": "IL",
+                                "time_zone": "US/Eastern",
+                                "zip": "60612"
+                            }
+                        },
+                        {
+                            "alias": "NSH",
+                            "id": "441643b7-0f24-11e2-8525-18a905767e44",
+                            "market": "Nashville",
+                            "name": "Predators",
+                            "venue": {
+                                "address": "501 Broadway",
+                                "capacity": 17113,
+                                "city": "Nashville",
+                                "country": "USA",
+                                "id": "cc4e7a62-fae8-4ebb-9a64-f4384385d0b6",
+                                "name": "Bridgestone Arena",
+                                "state": "TN",
+                                "time_zone": "US/Eastern",
+                                "zip": "37203"
+                            }
+                        },
+                        {
+                            "alias": "STL",
+                            "id": "441660ea-0f24-11e2-8525-18a905767e44",
+                            "market": "St. Louis",
+                            "name": "Blues",
+                            "venue": {
+                                "address": "1401 Clark Ave.",
+                                "capacity": 19150,
+                                "city": "St. Louis",
+                                "country": "USA",
+                                "id": "14e923b7-a636-476f-b810-b15967787e3c",
+                                "name": "Scottrade Center",
+                                "state": "MO",
+                                "time_zone": "US/Eastern",
+                                "zip": "63103"
+                            }
+                        },
+                        {
+                            "alias": "WPG",
+                            "id": "44180e55-0f24-11e2-8525-18a905767e44",
+                            "market": "Winnipeg",
+                            "name": "Jets",
+                            "venue": {
+                                "address": "300 Portage Ave.",
+                                "capacity": 15015,
+                                "city": "Winnipeg",
+                                "country": "CAN",
+                                "id": "900327b2-73d0-4e44-a138-fbf4fcbb058f",
+                                "name": "MTS Centre",
+                                "state": "MB",
+                                "time_zone": "US/Eastern",
+                                "zip": "R3C 5S5"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "64901512-9ca9-4bea-aa80-16dbcbdae230",
+            "name": "WESTERN CONFERENCE"
+        },
+        {
+            "alias": "EASTERN",
+            "divisions": [
+                {
+                    "alias": "ATLANTIC",
+                    "id": "1fad71d8-5b9e-4159-921b-9b98d0573f51",
+                    "name": "Atlantic",
+                    "teams": [
+                        {
+                            "alias": "DET",
+                            "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+                            "market": "Detroit",
+                            "name": "Red Wings",
+                            "venue": {
+                                "address": "600 Civic Center Drive",
+                                "capacity": 20066,
+                                "city": "Detroit",
+                                "country": "USA",
+                                "id": "ab7ddf4d-77aa-44cf-aaf9-9566218af38d",
+                                "name": "Joe Louis Arena",
+                                "state": "MI",
+                                "time_zone": "US/Eastern",
+                                "zip": "48226"
+                            }
+                        },
+                        {
+                            "alias": "BOS",
+                            "id": "4416ba1a-0f24-11e2-8525-18a905767e44",
+                            "market": "Boston",
+                            "name": "Bruins",
+                            "venue": {
+                                "address": "100 Legends Way",
+                                "capacity": 17565,
+                                "city": "Boston",
+                                "country": "USA",
+                                "id": "854ca968-b25f-44f9-abc5-52bcf8825f15",
+                                "name": "TD Garden",
+                                "state": "MA",
+                                "time_zone": "US/Eastern",
+                                "zip": "02114"
+                            }
+                        },
+                        {
+                            "alias": "BUF",
+                            "id": "4416d559-0f24-11e2-8525-18a905767e44",
+                            "market": "Buffalo",
+                            "name": "Sabres",
+                            "venue": {
+                                "address": "One Seymour H. Knox III Plaza",
+                                "capacity": 18690,
+                                "city": "Buffalo",
+                                "country": "USA",
+                                "id": "bd7b42fa-19bb-4b91-8615-214ccc3ff987",
+                                "name": "KeyBank Center",
+                                "state": "NY",
+                                "time_zone": "US/Eastern",
+                                "zip": "14203"
+                            }
+                        },
+                        {
+                            "alias": "OTT",
+                            "id": "4416f5e2-0f24-11e2-8525-18a905767e44",
+                            "market": "Ottawa",
+                            "name": "Senators",
+                            "venue": {
+                                "address": "1000 Palladium Drive",
+                                "capacity": 19153,
+                                "city": "Ottawa",
+                                "country": "CAN",
+                                "id": "e1e675a3-9c13-48b3-9e22-4c063dd9905d",
+                                "name": "Canadian Tire Centre",
+                                "state": "ON",
+                                "time_zone": "US/Eastern",
+                                "zip": "K2V 1A5"
+                            }
+                        },
+                        {
+                            "alias": "MTL",
+                            "id": "441713b7-0f24-11e2-8525-18a905767e44",
+                            "market": "Montreal",
+                            "name": "Canadiens",
+                            "venue": {
+                                "address": "1909 Avenue des Canadiens-de-Montreal",
+                                "capacity": 21273,
+                                "city": "Montreal",
+                                "country": "CAN",
+                                "id": "2ee8c0bf-dfd1-480c-80df-4d5f66a9dc76",
+                                "name": "Bell Centre",
+                                "state": "QC",
+                                "time_zone": "US/Eastern",
+                                "zip": "H3B 5E8"
+                            }
+                        },
+                        {
+                            "alias": "TOR",
+                            "id": "441730a9-0f24-11e2-8525-18a905767e44",
+                            "market": "Toronto",
+                            "name": "Maple Leafs",
+                            "venue": {
+                                "address": "40 Bay St.",
+                                "capacity": 18819,
+                                "city": "Toronto",
+                                "country": "CAN",
+                                "id": "a84c7004-18b2-4c5d-a036-f0c368c08bc5",
+                                "name": "Air Canada Centre",
+                                "state": "ON",
+                                "time_zone": "US/Eastern",
+                                "zip": "M5J 2X2"
+                            }
+                        },
+                        {
+                            "alias": "TB",
+                            "id": "4417d3cb-0f24-11e2-8525-18a905767e44",
+                            "market": "Tampa Bay",
+                            "name": "Lightning",
+                            "venue": {
+                                "address": "401 Channelside Drive",
+                                "capacity": 19204,
+                                "city": "Tampa",
+                                "country": "USA",
+                                "id": "05aa49b2-f72d-4d42-ab30-f219d32ed97b",
+                                "name": "Amalie Arena",
+                                "state": "FL",
+                                "time_zone": "US/Eastern",
+                                "zip": "33602"
+                            }
+                        },
+                        {
+                            "alias": "FLA",
+                            "id": "4418464d-0f24-11e2-8525-18a905767e44",
+                            "market": "Florida",
+                            "name": "Panthers",
+                            "venue": {
+                                "address": "One Panther Parkway",
+                                "capacity": 17040,
+                                "city": "Sunrise",
+                                "country": "USA",
+                                "id": "7cc8e88f-9196-4dbc-aa6a-d6f1a0550673",
+                                "name": "BB&T Center",
+                                "state": "FL",
+                                "time_zone": "US/Eastern",
+                                "zip": "33323"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "alias": "METROPOLITAN",
+                    "id": "d5ec45c4-a691-43ac-9e6d-92de92e763e7",
+                    "name": "Metropolitan",
+                    "teams": [
+                        {
+                            "alias": "CBJ",
+                            "id": "44167db4-0f24-11e2-8525-18a905767e44",
+                            "market": "Columbus",
+                            "name": "Blue Jackets",
+                            "venue": {
+                                "address": "200 W. Nationwide Blvd.",
+                                "capacity": 18144,
+                                "city": "Columbus",
+                                "country": "USA",
+                                "id": "41a57fc9-a04b-43db-b1f8-87f34f21459b",
+                                "name": "Nationwide Arena",
+                                "state": "OH",
+                                "time_zone": "US/Eastern",
+                                "zip": "43215"
+                            }
+                        },
+                        {
+                            "alias": "NJ",
+                            "id": "44174b0c-0f24-11e2-8525-18a905767e44",
+                            "market": "New Jersey",
+                            "name": "Devils",
+                            "venue": {
+                                "address": "165 Mulberry St.",
+                                "capacity": 17625,
+                                "city": "Newark",
+                                "country": "USA",
+                                "id": "c970f791-c3bf-411e-89c6-952695afd414",
+                                "name": "Prudential Center",
+                                "state": "NJ",
+                                "time_zone": "US/Eastern",
+                                "zip": "07102"
+                            }
+                        },
+                        {
+                            "alias": "NYI",
+                            "id": "441766b9-0f24-11e2-8525-18a905767e44",
+                            "market": "New York",
+                            "name": "Islanders",
+                            "venue": {
+                                "address": "620 Atlantic Ave.",
+                                "capacity": 15813,
+                                "city": "Brooklyn",
+                                "country": "USA",
+                                "id": "a675f98f-4d98-4586-baab-a7ca05904870",
+                                "name": "Barclays Center",
+                                "state": "NY",
+                                "time_zone": "US/Eastern",
+                                "zip": "11217"
+                            }
+                        },
+                        {
+                            "alias": "NYR",
+                            "id": "441781b9-0f24-11e2-8525-18a905767e44",
+                            "market": "New York",
+                            "name": "Rangers",
+                            "venue": {
+                                "address": "Four Pennsylvania Plaza",
+                                "capacity": 18200,
+                                "city": "New York",
+                                "country": "USA",
+                                "id": "bd8053e4-3bdf-4a70-914f-9f6d0051d66d",
+                                "name": "Madison Square Garden",
+                                "state": "NY",
+                                "time_zone": "US/Eastern",
+                                "zip": "10001"
+                            }
+                        },
+                        {
+                            "alias": "PHI",
+                            "id": "44179d47-0f24-11e2-8525-18a905767e44",
+                            "market": "Philadelphia",
+                            "name": "Flyers",
+                            "venue": {
+                                "address": "3601 S. Broad St.",
+                                "capacity": 19537,
+                                "city": "Philadelphia",
+                                "country": "USA",
+                                "id": "0a162e5b-8d59-42d8-b173-a131bf632ffb",
+                                "name": "Wells Fargo Center",
+                                "state": "PA",
+                                "time_zone": "US/Eastern",
+                                "zip": "19148"
+                            }
+                        },
+                        {
+                            "alias": "PIT",
+                            "id": "4417b7d7-0f24-11e2-8525-18a905767e44",
+                            "market": "Pittsburgh",
+                            "name": "Penguins",
+                            "venue": {
+                                "address": "1001 Fifth Ave.",
+                                "capacity": 18387,
+                                "city": "Pittsburgh",
+                                "country": "USA",
+                                "id": "09cab1a6-16ee-4ed9-aefa-c6cc24681b3b",
+                                "name": "PPG Paints Arena",
+                                "state": "PA",
+                                "time_zone": "US/Eastern",
+                                "zip": "15219"
+                            }
+                        },
+                        {
+                            "alias": "WSH",
+                            "id": "4417eede-0f24-11e2-8525-18a905767e44",
+                            "market": "Washington",
+                            "name": "Capitals",
+                            "venue": {
+                                "address": "601 F St. N.W.",
+                                "capacity": 18506,
+                                "city": "Washington",
+                                "country": "USA",
+                                "id": "48f092ed-ce49-4a08-97c6-def284ba6721",
+                                "name": "Verizon Center",
+                                "state": "DC",
+                                "time_zone": "US/Eastern",
+                                "zip": "20004"
+                            }
+                        },
+                        {
+                            "alias": "CAR",
+                            "id": "44182a9d-0f24-11e2-8525-18a905767e44",
+                            "market": "Carolina",
+                            "name": "Hurricanes",
+                            "venue": {
+                                "address": "1400 Edwards Mill Road",
+                                "capacity": 18680,
+                                "city": "Raleigh",
+                                "country": "USA",
+                                "id": "1ea58cb6-6a28-4619-b010-747ecbc30aa7",
+                                "name": "PNC Arena",
+                                "state": "NC",
+                                "time_zone": "US/Eastern",
+                                "zip": "27607"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "7ab1c9c0-4ffa-4f27-bcb6-be54d6ca6127",
+            "name": "EASTERN CONFERENCE"
+        }
+    ],
+    "league": {
+        "alias": "NHL",
+        "id": "fd560107-a85b-4388-ab0d-655ad022aff7",
+        "name": "NHL"
+    }
+}

@@ -14,20 +14,25 @@ module Sportradar
           json['period'].to_i
         end
 
-        def clock
-          json['clock']
+        def scheduled_at
+          json['scheduled'] && json['scheduled'].to_datetime
         end
 
-        def duration
-          json['total_game_duration']
+        def started_at
+          json['start_time'] && json['start_time'].to_datetime
         end
 
         def ended_at
           json['end_time'] && json['end_time'].to_datetime
         end
+        alias_method :completed, :ended_at
 
         def status
           json['status']
+        end
+
+        def clock
+          json['clock']
         end
 
         def clock_attributes
@@ -54,15 +59,20 @@ module Sportradar
           end
         end
 
+        def duration
+          json['total_game_duration']
+        end
+
         def duration_secs
           begin
-            if total_game_duration && total_game_duration.include?(':')
-              mins, secs = total_game_duration.split(':').map(&:to_i)
-              Time.parse("00:#{mins}:#{secs}").
+            if duration && duration.include?(':')
+              mins, secs = duration.split(':').map(&:to_i)
+              hours = mins / 60
+              mins = mins % 60
+              Time.parse("#{hours}:#{mins}:#{secs}").
                  seconds_since_midnight.to_i
             end
           rescue => e
-            puts e
             return 0
           end
         end
@@ -81,7 +91,7 @@ module Sportradar
 
         def home_team_scoring
           {
-            points: home_team_json['points'],
+            goals: home_team_json['points'],
           }.merge(home_team_scoring_periods).
             compact
         end
@@ -104,7 +114,7 @@ module Sportradar
 
         def away_team_scoring
           {
-            points: away_team_json['points'],
+            goals: away_team_json['points'],
           }.merge(away_team_scoring_periods).
             compact
         end
@@ -116,17 +126,27 @@ module Sportradar
         def team_scoring_periods(data:)
           {}.tap do |scoring_periods|
             overtime_points = 0
+            scoring_periods[:overtime] = overtime_points
+            scoring_periods[:shootout] = 0
+
             data.map do |scoring_data|
-              if period = scoring_data['period'].to_i
+              if period = scoring_data['sequence'].to_i
                 if period > 0 && period <= 3
                   key = "goals_period_#{period}".to_sym
                   scoring_periods[key] =
                     scoring_data['points'].to_i
                 elsif period > 3
-                  key = "goals_overtime_#{period - 3}".to_sym
-                  scoring_periods[key] =
-                    scoring_data['points'].to_i
-                  overtime_points += scoring_data['points'].to_i
+                  period_type = (scoring_data['type'] || 'period').downcase
+                  if period_type == 'overtime'
+                    key = "goals_#{period_type}_#{scoring_data['number'].to_i}".to_sym
+                    scoring_periods[key] =
+                      scoring_data['points'].to_i
+                    overtime_points += scoring_data['points'].to_i
+                  elsif period_type == 'shootout'
+                    key = "goals_#{period_type}".to_sym
+                    scoring_periods[key] =
+                      scoring_data['points'].to_i
+                  end
                 end
               end
             end
