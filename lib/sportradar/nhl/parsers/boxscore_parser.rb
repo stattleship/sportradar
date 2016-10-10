@@ -134,8 +134,8 @@ module Sportradar
         def team_scoring_periods(data:)
           {}.tap do |scoring_periods|
             overtime_points = 0
-            scoring_periods[:overtime] = overtime_points
-            scoring_periods[:shootout] = 0
+            scoring_periods[:goals_overtime] = overtime_points
+            scoring_periods[:goals_shootout] = 0
 
             data.map do |scoring_data|
               if period = scoring_data['sequence'].to_i
@@ -150,6 +150,7 @@ module Sportradar
                     scoring_periods[key] =
                       scoring_data['points'].to_i
                     overtime_points += scoring_data['points'].to_i
+                    scoring_periods[:goals_overtime] = overtime_points
                   elsif period_type == 'shootout'
                     key = "goals_#{period_type}".to_sym
                     scoring_periods[key] =
