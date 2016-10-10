@@ -98,9 +98,12 @@ require 'sportradar/nfl/rankings'
 require 'sportradar/nfl/standings'
 require 'sportradar/nfl/season_statistics'
 
-require 'sportradar/nhl/models/period'
 require 'sportradar/nhl/models/event'
+require 'sportradar/nhl/models/period'
 require 'sportradar/nhl/models/play_player_stat'
+require 'sportradar/nhl/models/scoring_player'
+require 'sportradar/nhl/models/scoring_play'
+require 'sportradar/nhl/models/penalty'
 
 require 'sportradar/nhl/parsers/boxscore_parser'
 require 'sportradar/nhl/parsers/play_by_play_parser'

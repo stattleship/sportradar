@@ -13,7 +13,7 @@ module Sportradar
         end
 
         it 'parses penalties' do
-          puts nhl_play_by_play.penalties
+          puts nhl_play_by_play.penalties.first.to_h
         end
 
         it 'parses plays' do
@@ -22,6 +22,9 @@ module Sportradar
 
         it 'parses scoring_plays' do
           puts nhl_play_by_play.scoring_plays
+          nhl_play_by_play.scoring_plays.each do |p|
+            puts p.to_h
+          end
         end
 
         it 'parses stoppages' do
@@ -36,7 +39,7 @@ module Sportradar
 
         it 'parses scoring play stats' do
           nhl_play_by_play.scoring_plays.map do |play|
-            puts play.play_player_stats.map(&:to_s)
+            puts play.scoring_players.map(&:to_s)
           end
         end
 

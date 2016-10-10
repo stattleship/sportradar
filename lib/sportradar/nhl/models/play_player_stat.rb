@@ -18,6 +18,10 @@ module Sportradar
           ].join(' ')
         end
 
+        def event
+          @event
+        end
+
         def event_id
           @event.id
         end
@@ -85,8 +89,16 @@ module Sportradar
           @attributes.dig('goal') && (@attributes.dig('goal') == true)
         end
 
+        def penalty?
+          @attributes.dig('penalty') && (@attributes.dig('penalty') == true)
+        end
+
         def saved?
           @attributes.dig('saved') && (@attributes.dig('saved') == true)
+        end
+
+        def shootout?
+          @attributes.dig('shootout') && (@attributes.dig('shootout') == true)
         end
 
         def strength

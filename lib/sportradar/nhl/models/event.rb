@@ -12,6 +12,7 @@ module Sportradar
         def initialize(period:, attributes:)
           @period = period
           @attributes = attributes
+          build_statistics
         end
 
         def to_s
@@ -20,6 +21,14 @@ module Sportradar
           else
             "#{period_number} - #{clock} - #{event_type}: #{description}"
           end
+        end
+
+        def id
+          @attributes['id']
+        end
+
+        def game_id
+          period.game_id
         end
 
         def team
@@ -46,9 +55,27 @@ module Sportradar
           @period.number
         end
 
+        def time_code
+          min, sec = clock.split(':').map(&:to_i)
+          "PT#{min}M#{sec}S"
+        end
+
         def clock
           @attributes['clock'] || '0'
         end
+
+        def clock_secs
+          begin
+            if clock && clock.include?(':')
+              mins, secs = clock.split(':').map(&:to_i)
+              Time.parse("00:#{mins}:#{secs}").
+                 seconds_since_midnight.to_i
+            end
+          rescue => e
+            return 0
+          end
+        end
+        alias_method :period_seconds, :clock_secs
 
         def id
           @attributes['id']
@@ -103,7 +130,11 @@ module Sportradar
         end
 
         def play_player_stats
-          @play_player_stats ||= build_statistics || []
+          @play_player_stats ||= []
+        end
+
+        def scoring_players
+          @scoring_players ||= []
         end
 
         def penalty?
@@ -125,8 +156,9 @@ module Sportradar
         private
 
         def build_statistics
-          statistics.each_with_object([]) do |action, statistic|
-            statistic << Models::PlayPlayerStat.new(event: self, attributes: action)
+          statistics.each do |statistic|
+            play_player_stats << Models::PlayPlayerStat.new(event: self, attributes: statistic)
+            scoring_players << Models::ScoringPlayer.new(event: self, attributes: statistic) if scoring_play?
           end
         end
       end

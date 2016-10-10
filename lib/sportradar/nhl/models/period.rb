@@ -58,10 +58,10 @@ module Sportradar
           events_data.each do |event_data|
             event = Models::Event.new(period: self, attributes: event_data)
             events << event
-            penalties << event if event.penalty?
             plays << event if event.play?
             stoppages << event if event.stoppage?
-            scoring_plays << event if event.scoring_play?
+            penalties << Models::Penalty.new(period: self, attributes: event_data) if event.penalty?
+            scoring_plays << Models::ScoringPlay.new(period: self, attributes: event_data) if event.scoring_play?
           end
         end
       end
