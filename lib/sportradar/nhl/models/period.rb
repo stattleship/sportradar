@@ -5,6 +5,7 @@ module Sportradar
         def initialize(game_id:, attributes:)
           @game_id = game_id
           @attributes = attributes
+          build_events
         end
 
         def to_s
@@ -28,20 +29,39 @@ module Sportradar
         end
 
         def events
-          @events ||= build_events || []
+          @events ||= []
         end
 
-        def actions
+        def events_data
           @actions ||= @attributes.dig('events') || []
+        end
+
+        def penalties
+          @penalties ||= []
+        end
+
+        def plays
+          @plays ||= []
+        end
+
+        def scoring_plays
+          @scoring_plays ||= []
+        end
+
+        def stoppages
+          @stoppages ||= []
         end
 
         private
 
         def build_events
-          actions.each_with_object([]) do |action, _events|
-            if action['event_type'] != 'gamesetup'
-              _events << Models::Event.new(period: self, attributes: action)
-            end
+          events_data.each do |event_data|
+            event = Models::Event.new(period: self, attributes: event_data)
+            events << event
+            penalties << event if event.penalty?
+            plays << event if event.play?
+            stoppages << event if event.stoppage?
+            scoring_plays << event if event.scoring_play?
           end
         end
       end

@@ -34,6 +34,22 @@ module Sportradar
           (periods || []).map(&:events).flatten
         end
 
+        def penalties
+          (periods || []).map(&:penalties).flatten
+        end
+
+        def plays
+          (periods || []).map(&:plays).flatten
+        end
+
+        def scoring_plays
+          (periods || []).map(&:scoring_plays).flatten
+        end
+
+        def stoppages
+          (periods || []).map(&:stoppages).flatten
+        end
+
         private
 
         attr_reader :game_play_by_play

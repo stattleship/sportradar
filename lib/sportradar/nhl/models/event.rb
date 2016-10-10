@@ -2,6 +2,13 @@ module Sportradar
   module Nhl
     module Models
       class Event
+
+        EVENT_TYPES = %w(emptynetgoal endperiod endshootoutperiod evenstrength faceoff giveaway goal goaliechange hit penalty penaltygoal penaltyshotmissed penaltyshotsaved powerplay shootoutgoal shootoutshotmissed shootoutshotsaved shotmissed shotsaved startshootoutperiod stoppage takeaway teamtimeout tvtimeout)
+        PLAY_TYPES = %w(emptynetgoal faceoff giveaway goal hit penalty penaltygoal penaltyshotmissed penaltyshotsaved powerplay shootoutgoal shootoutshotmissed shootoutshotsaved shotmissed shotsaved takeaway)
+        STOPPAGE_TYPES = %w(stoppage teamtimeout tvtimeout endperiod)
+        SCORING_PLAY_TYPES = %w(goal penaltygoal shootoutgoal)
+        PENALTY_TYPES = %w(penalty)
+
         def initialize(period:, attributes:)
           @period = period
           @attributes = attributes
@@ -97,6 +104,22 @@ module Sportradar
 
         def play_player_stats
           @play_player_stats ||= build_statistics || []
+        end
+
+        def penalty?
+          PENALTY_TYPES.include?(event_type)
+        end
+
+        def play?
+          PLAY_TYPES.include?(event_type)
+        end
+
+        def scoring_play?
+          SCORING_PLAY_TYPES.include?(event_type)
+        end
+
+        def stoppage?
+          STOPPAGE_TYPES.include?(event_type)
         end
 
         private
