@@ -78,7 +78,9 @@ module Sportradar
           {
             player_id: player_id,
             goal: goal?,
+            penalty: penalty?,
             saved: saved?,
+            shootout: shootout?,
             strength: strength,
             type: type,
             zone: zone,
@@ -90,7 +92,7 @@ module Sportradar
         end
 
         def penalty?
-          @attributes.dig('penalty') == true
+          type == 'penalty'
         end
 
         def saved?

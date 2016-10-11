@@ -24,7 +24,13 @@ module Sportradar
         alias_method :label, :penalty_type
 
         def player_id
-          # penalty on
+          play_player_stats.each do |stat|
+            if stat.penalty? && !stat.player_id.nil?
+              return stat.player_id
+            end
+          end
+
+          nil
         end
 
         def seconds

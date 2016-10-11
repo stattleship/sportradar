@@ -39,6 +39,10 @@ module Sportradar
           team.dig('id')
         end
 
+        def team_goal_side
+          team.dig('team_goal')
+        end
+
         def has_team?
           !team_id.nil?
         end
