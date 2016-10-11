@@ -11,7 +11,7 @@ module Sportradar
         end
 
         def scoring_method
-          if empty_net? || penalty_goal?
+          if empty_net? || penalty_goal? || shootout_goal?
             'goal'
           else
             event_type
@@ -27,8 +27,16 @@ module Sportradar
           when 'shorthanded'
             'sh'
           else
-            strength
+            if shootout_goal?
+              'so'
+            else
+              strength
+            end
           end
+        end
+
+        def scoring_how
+          event_type
         end
 
         def empty_net
@@ -45,6 +53,10 @@ module Sportradar
 
         def penalty_goal?
           penalty_goal
+        end
+
+        def shootout_goal?
+          event_type == 'shootoutgoal'
         end
 
         def to_h

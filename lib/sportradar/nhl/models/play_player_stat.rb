@@ -86,19 +86,19 @@ module Sportradar
         end
 
         def goal?
-          @attributes.dig('goal') && (@attributes.dig('goal') == true)
+          @attributes.dig('goal') == true
         end
 
         def penalty?
-          @attributes.dig('penalty') && (@attributes.dig('penalty') == true)
+          @attributes.dig('penalty') == true
         end
 
         def saved?
-          @attributes.dig('saved') && (@attributes.dig('saved') == true)
+          @attributes.dig('saved') == true
         end
 
         def shootout?
-          @attributes.dig('shootout') && (@attributes.dig('shootout') == true)
+          @attributes.dig('shootout') == true
         end
 
         def strength
@@ -110,7 +110,7 @@ module Sportradar
         end
 
         def win?
-          @attributes.dig('win') && (@attributes.dig('win') == true)
+          @attributes.dig('win') == true
         end
 
         def zone
