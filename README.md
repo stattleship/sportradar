@@ -103,9 +103,18 @@ Defaults to and supports NBA Classic API feed version 3 only (not Official).
 
 #### API Requests
 
+* `Sportradar::Nba::DailySchedule.new(date: Date.today).fetch`
 * `Sportradar::Nba::LeagueHierarchy.new().fetch`
 * `Sportradar::Nba::LeagueSchedule.new(year: '2016', interval_type: <reg|pre|pst>).fetch`
 * `Sportradar::Nba::PlayByPlay.new(event_id: '<game_guid>').fetch`
+* `Sportradar::Nba::Boxscore.new(event_id: '<game_guid>').fetch`
+* `Sportradar::Nba::GameSummary.new(event_id: '<game_guid>').fetch`
+
+
+
+* `Sportradar::Nba::TeamRosters.perform`
+* `Sportradar::Nba::TeamRoster.new(team_id: '44151f7a-0f24-11e2-8525-18a905767e44').fetch`
+* `Sportradar::Nba::Injuries.new().fetch`
 
 ### Football/NFL
 
@@ -187,7 +196,7 @@ Defaults to and supports NHL Classic API feed version 3 only (not Official).
 * `Sportradar::Nhl::Boxscore.new(event_id: '<game_guid>').fetch`
 * `Sportradar::Nhl::GameSummary.new(event_id: '<game_guid>').fetch`
 * `Sportradar::Nhl::PlayByPlay.new(event_id: '<game_guid>').fetch`
-* `Sportradar::Nhl::TeamRoster.perform`
+* `Sportradar::Nhl::TeamRosters.perform`
 * `Sportradar::Nhl::TeamRoster.new(team_id: '44151f7a-0f24-11e2-8525-18a905767e44').fetch`
 * `Sportradar::Nhl::Injuries.new().fetch`
 
