@@ -189,6 +189,7 @@ Defaults to and supports NHL Classic API feed version 3 only (not Official).
 * `Sportradar::Nhl::PlayByPlay.new(event_id: '<game_guid>').fetch`
 * `Sportradar::Nhl::TeamRoster.perform`
 * `Sportradar::Nhl::TeamRoster.new(team_id: '44151f7a-0f24-11e2-8525-18a905767e44').fetch`
+* `Sportradar::Nhl::Injuries.new().fetch`
 
 #### Bulk Saves
 
