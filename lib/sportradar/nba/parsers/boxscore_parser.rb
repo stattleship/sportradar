@@ -14,10 +14,9 @@ module Sportradar
           json['attendance']
         end
 
-        def quarter
+        def period
           json['quarter'].to_i
         end
-        alias_method :period, :quarter
 
         def scheduled_at
           json['scheduled'] && json['scheduled'].to_datetime
@@ -56,7 +55,7 @@ module Sportradar
             clock: clock,
             clock_secs: clock_secs,
             duration: duration_secs,
-            quarter: quarter,
+            period: period,
             ended_at: ended_at,
             status: status,
             lead_changes: lead_changes,
@@ -107,7 +106,7 @@ module Sportradar
 
         def home_team_scoring
           {
-            points: home_team_json['points'],
+            points_scored_total: home_team_json['points'],
           }.merge(home_team_scoring_quarters).
             compact
         end
@@ -130,7 +129,7 @@ module Sportradar
 
         def away_team_scoring
           {
-            points: away_team_json['points'],
+            points_scored_total: away_team_json['points'],
           }.merge(away_team_scoring_quarters).
             compact
         end
@@ -177,7 +176,7 @@ module Sportradar
         end
 
         def home_team_score
-          home_team_scoring[:points] || 0
+          home_team_scoring[:points_scored_total] || 0
         end
 
         def home_team_outcome
@@ -195,7 +194,7 @@ module Sportradar
         end
 
         def away_team_score
-          away_team_scoring[:points] || 0
+          away_team_scoring[:points_scored_total] || 0
         end
 
         def away_team_outcome

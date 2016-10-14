@@ -13,8 +13,8 @@ module Sportradar
           expect(nba_boxscore.clock_secs).to eq(0)
         end
 
-        it 'has a quarter' do
-          expect(nba_boxscore.quarter).to eq(4)
+        it 'has a period' do
+          expect(nba_boxscore.period).to eq(4)
         end
 
         it 'has a times_tied' do
@@ -52,7 +52,7 @@ module Sportradar
         it 'has home team scoring' do
           scoring = nba_boxscore.home_team_scoring
 
-          expect(scoring[:points]).to eq 92
+          expect(scoring[:points_scored_total]).to eq 92
           expect(scoring[:points_quarter_1]).to eq 15
           expect(scoring[:points_quarter_2]).to eq 16
           expect(scoring[:points_quarter_3]).to eq 30
@@ -67,7 +67,7 @@ module Sportradar
         it 'has away team scoring' do
           scoring = nba_boxscore.away_team_scoring
 
-          expect(scoring[:points]).to eq 89
+          expect(scoring[:points_scored_total]).to eq 89
           expect(scoring[:points_quarter_1]).to eq 25
           expect(scoring[:points_quarter_2]).to eq 18
           expect(scoring[:points_quarter_3]).to eq 20
