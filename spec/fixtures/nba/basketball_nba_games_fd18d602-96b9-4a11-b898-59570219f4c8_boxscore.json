@@ -1,0 +1,306 @@
+{
+    "attendance": 4532,
+    "away": {
+        "id": "583eccfa-fb46-11e1-82cb-f4ce4684ea4c",
+        "leaders": {
+            "assists": [
+                {
+                    "full_name": "Avery Bradley",
+                    "id": "b23917d2-bb0d-49fa-a384-80d994561d0c",
+                    "jersey_number": "0",
+                    "position": "G",
+                    "primary_position": "SG",
+                    "statistics": {
+                        "assists": 6,
+                        "assists_turnover_ratio": 6.0,
+                        "blocked_att": 1,
+                        "blocks": 0,
+                        "defensive_rebounds": 3,
+                        "field_goals_att": 10,
+                        "field_goals_made": 4,
+                        "field_goals_pct": 40.0,
+                        "flagrant_fouls": 0,
+                        "free_throws_att": 0,
+                        "free_throws_made": 0,
+                        "free_throws_pct": 0.0,
+                        "minutes": "18:10",
+                        "offensive_rebounds": 0,
+                        "personal_fouls": 1,
+                        "pls_min": 14,
+                        "points": 11,
+                        "rebounds": 3,
+                        "steals": 0,
+                        "tech_fouls": 0,
+                        "three_points_att": 7,
+                        "three_points_made": 3,
+                        "three_points_pct": 42.899999999999999,
+                        "turnovers": 1,
+                        "two_points_att": 3,
+                        "two_points_made": 1,
+                        "two_points_pct": 33.332999999999998
+                    }
+                }
+            ],
+            "points": [
+                {
+                    "full_name": "Terry Rozier",
+                    "id": "d1ee8ac8-f550-4269-ab4f-604b7bba441a",
+                    "jersey_number": "12",
+                    "position": "G",
+                    "primary_position": "PG",
+                    "statistics": {
+                        "assists": 2,
+                        "assists_turnover_ratio": 0,
+                        "blocked_att": 1,
+                        "blocks": 0,
+                        "defensive_rebounds": 3,
+                        "field_goals_att": 12,
+                        "field_goals_made": 5,
+                        "field_goals_pct": 41.700000000000003,
+                        "flagrant_fouls": 0,
+                        "free_throws_att": 2,
+                        "free_throws_made": 1,
+                        "free_throws_pct": 50.0,
+                        "minutes": "25:33",
+                        "offensive_rebounds": 0,
+                        "personal_fouls": 0,
+                        "pls_min": -4,
+                        "points": 12,
+                        "rebounds": 3,
+                        "steals": 1,
+                        "tech_fouls": 0,
+                        "three_points_att": 2,
+                        "three_points_made": 1,
+                        "three_points_pct": 50.0,
+                        "turnovers": 0,
+                        "two_points_att": 10,
+                        "two_points_made": 4,
+                        "two_points_pct": 40.0
+                    }
+                }
+            ],
+            "rebounds": [
+                {
+                    "full_name": "Al Horford",
+                    "id": "cf3a87ec-c2f7-42e8-9698-6f8b2ba916a9",
+                    "jersey_number": "42",
+                    "position": "F-C",
+                    "primary_position": "PF",
+                    "statistics": {
+                        "assists": 0,
+                        "assists_turnover_ratio": 0.0,
+                        "blocked_att": 0,
+                        "blocks": 0,
+                        "defensive_rebounds": 7,
+                        "field_goals_att": 8,
+                        "field_goals_made": 4,
+                        "field_goals_pct": 50.0,
+                        "flagrant_fouls": 0,
+                        "free_throws_att": 0,
+                        "free_throws_made": 0,
+                        "free_throws_pct": 0.0,
+                        "minutes": "15:22",
+                        "offensive_rebounds": 1,
+                        "personal_fouls": 1,
+                        "pls_min": 19,
+                        "points": 8,
+                        "rebounds": 8,
+                        "steals": 1,
+                        "tech_fouls": 0,
+                        "three_points_att": 2,
+                        "three_points_made": 0,
+                        "three_points_pct": 0.0,
+                        "turnovers": 2,
+                        "two_points_att": 6,
+                        "two_points_made": 4,
+                        "two_points_pct": 66.667000000000002
+                    }
+                }
+            ]
+        },
+        "market": "Boston",
+        "name": "Celtics",
+        "points": 89,
+        "scoring": [
+            {
+                "number": 1,
+                "points": 25,
+                "sequence": 1,
+                "type": "quarter"
+            },
+            {
+                "number": 2,
+                "points": 18,
+                "sequence": 2,
+                "type": "quarter"
+            },
+            {
+                "number": 3,
+                "points": 20,
+                "sequence": 3,
+                "type": "quarter"
+            },
+            {
+                "number": 4,
+                "points": 26,
+                "sequence": 4,
+                "type": "quarter"
+            }
+        ]
+    },
+    "clock": "00:00",
+    "coverage": "extended_boxscore",
+    "duration": "2:13",
+    "home": {
+        "id": "583ec87d-fb46-11e1-82cb-f4ce4684ea4c",
+        "leaders": {
+            "assists": [
+                {
+                    "full_name": "Sergio Rodriguez",
+                    "id": "4f38f864-706e-434a-980a-0660e15ff084",
+                    "position": "G",
+                    "primary_position": "PG",
+                    "statistics": {
+                        "assists": 6,
+                        "assists_turnover_ratio": 1.5,
+                        "blocked_att": 0,
+                        "blocks": 0,
+                        "defensive_rebounds": 1,
+                        "field_goals_att": 4,
+                        "field_goals_made": 1,
+                        "field_goals_pct": 25.0,
+                        "flagrant_fouls": 0,
+                        "free_throws_att": 2,
+                        "free_throws_made": 2,
+                        "free_throws_pct": 100.0,
+                        "minutes": "22:09",
+                        "offensive_rebounds": 0,
+                        "personal_fouls": 2,
+                        "pls_min": 10,
+                        "points": 5,
+                        "rebounds": 1,
+                        "steals": 0,
+                        "tech_fouls": 0,
+                        "three_points_att": 4,
+                        "three_points_made": 1,
+                        "three_points_pct": 25.0,
+                        "turnovers": 4,
+                        "two_points_att": 0,
+                        "two_points_made": 0,
+                        "two_points_pct": 0.0
+                    }
+                }
+            ],
+            "points": [
+                {
+                    "full_name": "Brandon Paul",
+                    "id": "09e2f4e8-4519-47a0-849b-10a257205e5a",
+                    "position": "G",
+                    "primary_position": "SG",
+                    "statistics": {
+                        "assists": 0,
+                        "assists_turnover_ratio": 0.0,
+                        "blocked_att": 1,
+                        "blocks": 0,
+                        "defensive_rebounds": 2,
+                        "field_goals_att": 10,
+                        "field_goals_made": 6,
+                        "field_goals_pct": 60.0,
+                        "flagrant_fouls": 0,
+                        "free_throws_att": 1,
+                        "free_throws_made": 1,
+                        "free_throws_pct": 100.0,
+                        "minutes": "12:53",
+                        "offensive_rebounds": 2,
+                        "personal_fouls": 1,
+                        "pls_min": 12,
+                        "points": 15,
+                        "rebounds": 4,
+                        "steals": 2,
+                        "tech_fouls": 0,
+                        "three_points_att": 4,
+                        "three_points_made": 2,
+                        "three_points_pct": 50.0,
+                        "turnovers": 1,
+                        "two_points_att": 6,
+                        "two_points_made": 4,
+                        "two_points_pct": 66.667000000000002
+                    }
+                }
+            ],
+            "rebounds": [
+                {
+                    "full_name": "Robert Covington",
+                    "id": "3e512d9e-ff9c-4f23-a4fd-a88128ee3af2",
+                    "jersey_number": "33",
+                    "position": "F",
+                    "primary_position": "SF",
+                    "statistics": {
+                        "assists": 1,
+                        "assists_turnover_ratio": 1.0,
+                        "blocked_att": 0,
+                        "blocks": 0,
+                        "defensive_rebounds": 6,
+                        "field_goals_att": 7,
+                        "field_goals_made": 2,
+                        "field_goals_pct": 28.600000000000001,
+                        "flagrant_fouls": 0,
+                        "free_throws_att": 2,
+                        "free_throws_made": 1,
+                        "free_throws_pct": 50.0,
+                        "minutes": "23:04",
+                        "offensive_rebounds": 1,
+                        "personal_fouls": 0,
+                        "pls_min": -5,
+                        "points": 7,
+                        "rebounds": 7,
+                        "steals": 2,
+                        "tech_fouls": 0,
+                        "three_points_att": 7,
+                        "three_points_made": 2,
+                        "three_points_pct": 28.600000000000001,
+                        "turnovers": 1,
+                        "two_points_att": 0,
+                        "two_points_made": 0,
+                        "two_points_pct": 0.0
+                    }
+                }
+            ]
+        },
+        "market": "Philadelphia",
+        "name": "76ers",
+        "points": 92,
+        "scoring": [
+            {
+                "number": 1,
+                "points": 15,
+                "sequence": 1,
+                "type": "quarter"
+            },
+            {
+                "number": 2,
+                "points": 16,
+                "sequence": 2,
+                "type": "quarter"
+            },
+            {
+                "number": 3,
+                "points": 30,
+                "sequence": 3,
+                "type": "quarter"
+            },
+            {
+                "number": 4,
+                "points": 31,
+                "sequence": 4,
+                "type": "quarter"
+            }
+        ]
+    },
+    "id": "fd18d602-96b9-4a11-b898-59570219f4c8",
+    "lead_changes": 3,
+    "quarter": 4,
+    "scheduled": "2016-10-04T23:00:00+00:00",
+    "status": "closed",
+    "times_tied": 1
+}

@@ -52,6 +52,8 @@ require 'sportradar/mlb/team_rosters'
 require 'sportradar/mlb/team_statistics'
 require 'sportradar/mlb/venues'
 
+require 'sportradar/nba/parsers/boxscore_parser'
+
 require 'sportradar/nba/daily_schedule'
 require 'sportradar/nba/league_hierarchy'
 require 'sportradar/nba/league_schedule'
