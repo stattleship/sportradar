@@ -54,10 +54,13 @@ module Sportradar
 
         attr_reader :game_play_by_play
 
+        def game_play_by_play_periods
+          game_play_by_play.dig('periods') || []
+        end
+
         def build_periods
-          game_play_by_play.
-            dig('periods').
-              map { |attributes| Models::Period.new(game_id: game_id, attributes: attributes) }
+          game_play_by_play_periods.
+            map { |attributes| Models::Period.new(game_id: game_id, attributes: attributes) }
         end
       end
     end
