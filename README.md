@@ -14,7 +14,7 @@ Currently supports
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sportradar', '>= 0.0.11'
+gem 'sportradar', '>= 0.0.17'
 ```
 
 And then execute:
@@ -115,6 +115,18 @@ Defaults to and supports NBA Classic API feed version 3 only (not Official).
 * `Sportradar::Nba::TeamRosters.perform`
 * `Sportradar::Nba::TeamRoster.new(team_id: '44151f7a-0f24-11e2-8525-18a905767e44').fetch`
 * `Sportradar::Nba::Injuries.new().fetch`
+
+#### Bulk Saves
+
+To fetch and save all Play by Play for a season, one can:
+
+```
+json = Sportradar::Nba::LeagueSchedule.new(year: '2016', interval_type: 'pre').fetch
+
+Sportradar::Nba::LeagueSchedule.games(json: json).each do |g|
+  Sportradar::Nba::PlayByPlay.new(event_id: g['id']).save
+end
+```
 
 ### Football/NFL
 
