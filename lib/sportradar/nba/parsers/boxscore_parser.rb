@@ -101,7 +101,7 @@ module Sportradar
         end
 
         def home_team_scoring_data
-          home_team_json['scoring'] || {}
+          home_team_json['scoring'] || []
         end
 
         def home_team_scoring
@@ -124,7 +124,7 @@ module Sportradar
         end
 
         def away_team_scoring_data
-          away_team_json['scoring'] || {}
+          away_team_json['scoring'] || []
         end
 
         def away_team_scoring
@@ -144,7 +144,7 @@ module Sportradar
             scoring_quarters[:points_overtime] = overtime_points
 
             data.map do |scoring_data|
-              if quarter = scoring_data['sequence'].to_i
+              if quarter = scoring_data['number'].to_i
                 if quarter > 0 && quarter <= 4
                   key = "points_quarter_#{quarter}".to_sym
                   scoring_quarters[key] =
