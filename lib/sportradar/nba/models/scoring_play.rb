@@ -26,6 +26,7 @@ module Sportradar
             scored_at: scored_at,
             scoring_method: scoring_method,
             scoring_type: scoring_type,
+            scoring_how: scoring_how,
           }.compact
         end
       end

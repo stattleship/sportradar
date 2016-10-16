@@ -16,8 +16,12 @@ module Sportradar
             sentence_parts << team_basket if has_team?
             sentence_parts << event_type
             sentence_parts << description
+            sentence_parts << free_throw_attempt
+            sentence_parts << free_throw_attempt_of
+            sentence_parts << turnover_type
             sentence_parts << "[#{coordinate_x}, #{coordinate_y}]" if coordinates?
-          end.join(' - ')
+          end.compact.
+            join(' - ')
         end
 
         def id
@@ -102,6 +106,26 @@ module Sportradar
           @attributes['id']
         end
 
+        def attempt_in_words
+          @attributes['attempt']
+        end
+
+        def attempt_matches
+          /(\d) of (\d)/.match(attempt_in_words)
+        end
+
+        def free_throw_attempt
+          if matches = attempt_matches
+            matches[0].to_i
+          end
+        end
+
+        def free_throw_attempt_of
+          if matches = attempt_matches
+            matches[1].to_i
+          end
+        end
+
         def description
           @attributes['description'] || 0
         end
@@ -126,20 +150,8 @@ module Sportradar
           coordinates['coord_y']
         end
 
-        def official
-          @attributes['official']
-        end
-
-        def strength
-          @attributes['strength']
-        end
-
-        def wall_clock
-          @attributes['wall_clock']
-        end
-
-        def zone
-          @attributes['zone']
+        def turnover_type
+          @attributes['turnover_type']
         end
 
         def updated_at
@@ -150,12 +162,28 @@ module Sportradar
           @attributes['statistics'] || []
         end
 
+        def field_goal?
+          event_type.include?('field_goal')
+        end
+
+        def field_goal
+          self if foul?
+        end
+
         def foul?
           event_type.include?('foul') || event_type.include?('flagrant')
         end
 
         def foul
           self if foul?
+        end
+
+        def made?
+          event_type.include?('made')
+        end
+
+        def miss?
+          event_type.include?('miss')
         end
 
         def scoring_play?
@@ -172,6 +200,14 @@ module Sportradar
 
         def stoppage
           self if stoppage?
+        end
+
+        def turnover?
+          event_type.include?('turnover')
+        end
+
+        def turnover
+          self if turnover?
         end
 
         def play_player_stats

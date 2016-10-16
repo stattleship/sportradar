@@ -145,6 +145,26 @@ module Sportradar
         def type
           @attributes.dig('type')
         end
+
+        def jump_shot?
+          shot_type == 'jump shot'
+        end
+
+        def layup?
+          shot_type == 'layup'
+        end
+
+        def dunk?
+          shot_type == 'dunk'
+        end
+
+        def hook?
+          shot_type == 'hook'
+        end
+
+        def tip?
+          shot_type == 'tip'
+        end
       end
     end
   end
