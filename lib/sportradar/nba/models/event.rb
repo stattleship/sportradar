@@ -41,7 +41,7 @@ module Sportradar
         end
 
         def possession_team_id
-          possession_team.dig('id')
+          possession.dig('id')
         end
 
         def possession_team_name
@@ -163,11 +163,27 @@ module Sportradar
         end
 
         def field_goal?
-          event_type.include?('field_goal')
+          two_pointer? || three_pointer?
         end
 
         def field_goal
           self if field_goal?
+        end
+
+        def three_pointer?
+          event_type.include?('threepoint')
+        end
+
+        def three_pointer
+          self if three_pointer?
+        end
+
+        def two_pointer?
+          event_type.include?('twopoint')
+        end
+
+        def two_pointer
+          self if two_pointer?
         end
 
         def foul?
