@@ -44,6 +44,17 @@ module Sportradar
           end
         end
 
+        it 'parses on_court_players for an event' do
+          event = nba_play_by_play.events.first
+          puts event.on_court_players
+        end
+
+        it 'parses on_court_players' do
+          nba_play_by_play.on_court_players.map do |player|
+            puts player
+          end
+        end
+
         private
 
         def nba_play_by_play

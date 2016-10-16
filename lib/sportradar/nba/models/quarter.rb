@@ -48,6 +48,10 @@ module Sportradar
           events.collect(&:stoppage).compact
         end
 
+        def on_court_players
+          events.map(&:on_court_players).flatten
+        end
+
         private
 
         def build_events

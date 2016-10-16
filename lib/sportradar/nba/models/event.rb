@@ -150,10 +150,6 @@ module Sportradar
           @attributes['statistics'] || []
         end
 
-        def play_player_stats
-          @play_player_stats ||= []
-        end
-
         def foul?
           event_type.include?('foul') || event_type.include?('flagrant')
         end
@@ -178,15 +174,66 @@ module Sportradar
           self if stoppage?
         end
 
-        private
-
-        def build_on_court
+        def play_player_stats
+          @play_player_stats ||= []
         end
+
+        def scoring_players
+          @scoring_players ||= []
+        end
+
+        def on_court_players
+          @on_court_players ||= on_court_away_players + on_court_home_players
+        end
+
+        def on_court_away_team_id
+          @on_court_away_team_id ||= @attributes.dig('on_court', 'away', 'id')
+        end
+
+        def on_court_away_team_name
+          @on_court_away_team_name ||= @attributes.dig('on_court', 'away', 'name')
+        end
+
+        def on_court_away_players
+          (@attributes.dig('on_court', 'away', 'players') || {}).map do |player|
+            Models::OnCourtPlayer.new(
+              player.reverse_merge({
+                                     'event_id' => id,
+                                     'player_id' => player['id'],
+                                     'team_id' => on_court_away_team_id,
+                                     'team_name' =>  on_court_away_team_name,
+                                    })
+              )
+          end
+        end
+
+        def on_court_home_team_id
+          @on_court_home_team_id ||= @attributes.dig('on_court', 'home', 'id')
+        end
+
+        def on_court_home_team_name
+          @on_court_home_team_name ||= @attributes.dig('on_court', 'home', 'name')
+        end
+
+        def on_court_home_players
+          (@attributes.dig('on_court', 'home', 'players') || {}).map do |player|
+            Models::OnCourtPlayer.new(
+              player.reverse_merge({
+                                     'event_id' => id,
+                                     'player_id' => player['id'],
+                                     'team_id' => on_court_home_team_id,
+                                     'team_name' =>  on_court_home_team_name,
+                                    })
+              )
+          end
+        end
+
+        private
 
         def build_statistics
           statistics.each do |statistic|
             play_player_stats << Models::PlayPlayerStat.new(event: self, attributes: statistic)
-            # scoring_players << Models::ScoringPlayer.new(event: self, attributes: statistic) if scoring_play?
+            scoring_players << Models::ScoringPlayer.new(event: self, attributes: statistic) if scoring_play?
           end
         end
       end

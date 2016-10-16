@@ -46,6 +46,10 @@ module Sportradar
           (quarters || []).map(&:stoppages).flatten
         end
 
+        def on_court_players
+          (quarters || []).map(&:on_court_players).flatten
+        end
+
         private
 
         attr_reader :game_play_by_play

@@ -3,13 +3,7 @@ module Sportradar
     module Models
       class ScoringPlayer < PlayPlayerStat
         def role
-          if goal? && type == 'shot'
-            'scorer'
-          elsif goal? && type == 'shotagainst' && !saved?
-            'goalie'
-          else
-            type
-          end
+          type
         end
 
         def scoring_play_id

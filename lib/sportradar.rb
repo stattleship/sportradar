@@ -54,9 +54,10 @@ require 'sportradar/mlb/venues'
 
 require 'sportradar/nba/models/event'
 require 'sportradar/nba/models/quarter'
+require 'sportradar/nba/models/on_court_player'
 require 'sportradar/nba/models/play_player_stat'
-# require 'sportradar/nba/models/scoring_player'
-# require 'sportradar/nba/models/scoring_play'
+require 'sportradar/nba/models/scoring_player'
+require 'sportradar/nba/models/scoring_play'
 
 require 'sportradar/nba/parsers/boxscore_parser'
 require 'sportradar/nba/parsers/play_by_play_parser'
