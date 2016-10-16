@@ -1,0 +1,16 @@
+{
+    "away": {
+        "alias": "MIN",
+        "id": "583eca2f-fb46-11e1-82cb-f4ce4684ea4c",
+        "name": "Minnesota Timberwolves"
+    },
+    "coverage": "extended_boxscore",
+    "home": {
+        "alias": "MIA",
+        "id": "583ecea6-fb46-11e1-82cb-f4ce4684ea4c",
+        "name": "Miami Heat"
+    },
+    "id": "558105d3-f58a-47c0-8232-e2d3693b091f",
+    "scheduled": "2016-10-15T23:30:00+00:00",
+    "status": "scheduled"
+}
