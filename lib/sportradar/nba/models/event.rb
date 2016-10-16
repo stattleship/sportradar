@@ -167,7 +167,7 @@ module Sportradar
         end
 
         def field_goal
-          self if foul?
+          self if field_goal?
         end
 
         def foul?
@@ -176,6 +176,14 @@ module Sportradar
 
         def foul
           self if foul?
+        end
+
+        def free_throw?
+          event_type.include?('free_throw')
+        end
+
+        def free_throw
+          self if free_throw?
         end
 
         def made?
