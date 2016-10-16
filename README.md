@@ -4,9 +4,9 @@ Simple API client for [Sportradar API](http://developer.sportradar.us/).
 
 Currently supports
 
-* a subset of [Major League Baseball API](http://developer.sportradar.us/docs/MLB_API) endpoints
-* a subset of [NBA Feed API](http://developer.sportradar.us/docs/read/NBA_API) endpoints
-* a subset of [NHL Classic Feed API](http://developer.sportradar.us/docs/read/NHL_Classic) endpoints
+* a major set of [Major League Baseball API](http://developer.sportradar.us/docs/MLB_API) endpoints
+* a major set of [NBA Feed API](http://developer.sportradar.us/docs/read/NBA_API) endpoints
+* a major set of [NHL Classic Feed API](http://developer.sportradar.us/docs/read/NHL_Classic) endpoints
 * complete set of [NFL Classic Feed API](http://developer.sportradar.us/docs/read/NFL_Classic) endpoints
 
 ## Installation
@@ -101,6 +101,8 @@ Some helpers will call .save for each response as separate items.
 
 Defaults to and supports NBA Classic API feed version 3 only (not Official).
 
+Models and parsers can get plays, scoring plays, players on court, stoppages from NBA Play by Play json data.
+
 #### API Requests
 
 * `Sportradar::Nba::DailySchedule.new(date: Date.today).fetch`
@@ -109,8 +111,6 @@ Defaults to and supports NBA Classic API feed version 3 only (not Official).
 * `Sportradar::Nba::PlayByPlay.new(event_id: '<game_guid>').fetch`
 * `Sportradar::Nba::Boxscore.new(event_id: '<game_guid>').fetch`
 * `Sportradar::Nba::GameSummary.new(event_id: '<game_guid>').fetch`
-
-
 
 * `Sportradar::Nba::TeamRosters.perform`
 * `Sportradar::Nba::TeamRoster.new(team_id: '44151f7a-0f24-11e2-8525-18a905767e44').fetch`
@@ -199,6 +199,8 @@ Some helpers will call `.save` for each response as separate items.
 ### Hockey/NHL
 
 Defaults to and supports NHL Classic API feed version 3 only (not Official).
+
+Models and parsers can get plays, scoring plays, players on court, stoppages from NHL Play by Play json data.
 
 #### API Requests
 
@@ -771,6 +773,18 @@ Given game NFL Play by Play JSON, makes it easy to get the drives, quarters, and
  * drives - game, quarter, clock, team, plays
 
  * plays - game, drive, team, participants, summary, yardage, etc.
+
+#### Hockey Play by Play
+
+* `Sportradar::Nhl::Parsers::PlayByPlayParser.new(game_play_by_play: {})`
+
+Given game NHL Play by Play JSON, makes it easy to get the periods, events, plays (with player stat), stoppages and scoring plays via a set of convenience methods.
+
+#### Basketball Play by Play
+
+* `Sportradar::Nba::Parsers::PlayByPlayParser.new(game_play_by_play: {})`
+
+Given game NBA Play by Play JSON, makes it easy to get the quarters, events, plays (with player stat), stoppages, players on court for each play, and scoring plays via a set of convenience methods.
 
 #### Play Summary Model
 
