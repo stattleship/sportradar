@@ -139,23 +139,24 @@ module Sportradar
 
             data.map do |scoring_data|
               if period = scoring_data['number'].to_i
-                if period > 0 && period <= 3
+                period_type = (scoring_data['type'] || 'period').downcase
+
+                if (period > 0 && period <= 3) && (period_type == 'period')
                   key = "goals_period_#{period}".to_sym
                   scoring_periods[key] =
                     scoring_data['points'].to_i
                 elsif period > 3
-                  period_type = (scoring_data['type'] || 'period').downcase
                   if period_type == 'overtime'
                     key = "goals_#{period_type}_#{scoring_data['number'].to_i}".to_sym
                     scoring_periods[key] =
                       scoring_data['points'].to_i
                     overtime_points += scoring_data['points'].to_i
                     scoring_periods[:goals_overtime] = overtime_points
-                  elsif period_type == 'shootout'
-                    key = "goals_#{period_type}".to_sym
-                    scoring_periods[key] =
-                      scoring_data['points'].to_i
                   end
+                elsif period_type == 'shootout'
+                  key = "goals_#{period_type}".to_sym
+                  scoring_periods[key] =
+                    scoring_data['points'].to_i
                 end
               end
             end
