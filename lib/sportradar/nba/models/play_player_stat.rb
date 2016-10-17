@@ -103,7 +103,7 @@ module Sportradar
         end
 
         def free_throw?
-          type == 'free_throw'
+          type == 'freethrow'
         end
 
         def regular_free_throw?
@@ -159,11 +159,11 @@ module Sportradar
         end
 
         def hook?
-          shot_type == 'hook'
+          shot_type == 'hook shot'
         end
 
         def tip?
-          shot_type == 'tip'
+          shot_type == 'tip shot'
         end
       end
     end
