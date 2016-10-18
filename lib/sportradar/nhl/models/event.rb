@@ -17,9 +17,9 @@ module Sportradar
 
         def to_s
           if coordinates?
-            "#{period_number} - #{clock} - #{event_type}: #{description} [#{coordinate_x}, #{coordinate_y}]"
+            "#{period_abbreviation} - #{clock} - #{event_type}: #{description} [#{coordinate_x}, #{coordinate_y}]"
           else
-            "#{period_number} - #{clock} - #{event_type}: #{description}"
+            "#{period_abbreviation} - #{clock} - #{event_type}: #{description}"
           end
         end
 
@@ -55,8 +55,20 @@ module Sportradar
           @period.id
         end
 
+        def period_abbreviation
+          @period.abbreviation
+        end
+
         def period_number
           @period.number
+        end
+
+        def period_sequence
+          @period.sequence
+        end
+
+        def period_type
+          @period.type
         end
 
         def time_code

@@ -138,7 +138,8 @@ module Sportradar
             scoring_periods[:goals_shootout] = 0
 
             data.map do |scoring_data|
-              if period = scoring_data['number'].to_i
+              puts scoring_data
+              if period = scoring_data['sequence'].to_i
                 period_type = (scoring_data['type'] || 'period').downcase
 
                 if (period > 0 && period <= 3) && (period_type == 'period')

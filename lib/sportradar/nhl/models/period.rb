@@ -9,11 +9,20 @@ module Sportradar
         end
 
         def to_s
-          "Period #{number}"
+          "#{type.titleize} #{number}"
         end
 
         def abbreviation
-          "#{number}"
+          case type
+          when 'period'
+            "#{number}P"
+          when 'overtime'
+            "#{number}OT"
+          when 'shootout'
+            'SO'
+          else
+            "#{number}"
+          end
         end
 
         def game_id
@@ -26,6 +35,14 @@ module Sportradar
 
         def number
           @attributes['number'] || 0
+        end
+
+        def sequence
+          @attributes['sequence'] || 0
+        end
+
+        def type
+          @attributes['type']
         end
 
         def events

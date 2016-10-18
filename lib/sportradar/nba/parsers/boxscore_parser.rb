@@ -144,7 +144,7 @@ module Sportradar
             scoring_quarters[:points_overtime] = overtime_points
 
             data.map do |scoring_data|
-              if quarter = scoring_data['number'].to_i
+              if quarter = scoring_data['sequence'].to_i
                 if quarter > 0 && quarter <= 4
                   key = "points_quarter_#{quarter}".to_sym
                   scoring_quarters[key] =

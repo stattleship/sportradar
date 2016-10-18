@@ -9,7 +9,7 @@ module Sportradar
 
         def to_s
           [
-            period_number,
+            period_abbreviation,
             clock,
             description,
             team_name,
@@ -34,8 +34,20 @@ module Sportradar
           @event.period
         end
 
+        def period_abbreviation
+          period.abbreviation
+        end
+
         def period_number
           period.number
+        end
+
+        def period_sequence
+          period.sequence
+        end
+
+        def period_type
+          period.type
         end
 
         def clock
@@ -77,6 +89,8 @@ module Sportradar
         def stat
           {
             player_id: player_id,
+            period_number: period_number,
+            period_type: period_type,
             goal: goal?,
             penalty: penalty?,
             saved: saved?,
