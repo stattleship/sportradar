@@ -9,7 +9,7 @@ module Sportradar
 
         def to_s
           [
-            quarter_number,
+            quarter_abbreviation,
             clock,
             description,
             team_name,
@@ -34,8 +34,24 @@ module Sportradar
           @event.quarter
         end
 
+        def quarter_id
+          quarter.id
+        end
+
+        def quarter_abbreviation
+          quarter.abbreviation
+        end
+
         def quarter_number
           quarter.number
+        end
+
+        def quarter_sequence
+          quarter.sequence
+        end
+
+        def quarter_type
+          quarter.type
         end
 
         def clock

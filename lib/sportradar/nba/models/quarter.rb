@@ -9,11 +9,18 @@ module Sportradar
         end
 
         def to_s
-          "Quarter #{number}"
+          "#{type.titleize} #{number}"
         end
 
         def abbreviation
-          "#{number}"
+          case type
+          when 'quarter'
+            "#{number}Q"
+          when 'overtime'
+            "#{number}OT"
+          else
+            "#{number}"
+          end
         end
 
         def game_id
@@ -26,6 +33,14 @@ module Sportradar
 
         def number
           @attributes['number'] || 0
+        end
+
+        def sequence
+          @attributes['sequence'] || 0
+        end
+
+        def type
+          @attributes['type']
         end
 
         def events

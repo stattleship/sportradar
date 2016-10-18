@@ -10,7 +10,7 @@ module Sportradar
 
         def to_s
           [].tap do |sentence_parts|
-            sentence_parts << quarter_number
+            sentence_parts << quarter_abbreviation
             sentence_parts << clock
             sentence_parts << team_name if has_team?
             sentence_parts << team_basket if has_team?
@@ -76,8 +76,20 @@ module Sportradar
           @quarter.id
         end
 
+        def quarter_abbreviation
+          @quarter.abbreviation
+        end
+
         def quarter_number
           @quarter.number
+        end
+
+        def quarter_sequence
+          @quarter.sequence
+        end
+
+        def quarter_type
+          @quarter.type
         end
 
         def time_code
