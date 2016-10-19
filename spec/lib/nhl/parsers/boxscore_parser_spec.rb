@@ -135,25 +135,51 @@ module Sportradar
 
             puts scoring
 
-            # expect(scoring[:goals]).to eq 3
-            # expect(scoring[:goals_period_1]).to eq 0
-            # expect(scoring[:goals_period_2]).to eq 2
-            # expect(scoring[:goals_period_3]).to eq 0
-            # expect(scoring[:goals_overtime]).to eq 0
-            # expect(scoring[:goals_shootout]).to eq 1
+            expect(scoring[:goals]).to eq 2
+            expect(scoring[:goals_period_1]).to eq 0
+            expect(scoring[:goals_period_2]).to eq 0
+            expect(scoring[:goals_period_3]).to eq 2
+            expect(scoring[:goals_overtime]).to eq 0
+            expect(scoring[:goals_shootout]).to eq 0
           end
 
           it 'has home team scoring' do
-            scoring = nhl_ot_boxscore.home_team_scoring_data
+            scoring = nhl_ot_boxscore.home_team_scoring
 
-            puts scoring.select { |p| p['type'].downcase == 'overtime' }
+            expect(scoring[:goals]).to eq 3
+            expect(scoring[:goals_period_1]).to eq 1
+            expect(scoring[:goals_period_2]).to eq 0
+            expect(scoring[:goals_period_3]).to eq 1
+            expect(scoring[:goals_overtime]).to eq 1
+            expect(scoring[:goals_shootout]).to eq 0
+          end
+        end
 
-            # expect(scoring[:goals]).to eq 3
-            # expect(scoring[:goals_period_1]).to eq 0
-            # expect(scoring[:goals_period_2]).to eq 2
-            # expect(scoring[:goals_period_3]).to eq 0
-            # expect(scoring[:goals_overtime]).to eq 0
-            # expect(scoring[:goals_shootout]).to eq 1
+        context 'with a shootout game' do
+          it 'has away team scoring' do
+            scoring = nhl_shootout_boxscore.away_team_scoring
+
+            puts scoring
+
+            expect(scoring[:goals]).to eq 3
+            expect(scoring[:goals_period_1]).to eq 0
+            expect(scoring[:goals_period_2]).to eq 1
+            expect(scoring[:goals_period_3]).to eq 2
+            expect(scoring[:goals_overtime]).to eq 0
+            expect(scoring[:goals_shootout]).to eq 0
+          end
+
+          it 'has home team scoring' do
+            scoring = nhl_shootout_boxscore.home_team_scoring
+
+            puts scoring
+
+            expect(scoring[:goals]).to eq 4
+            expect(scoring[:goals_period_1]).to eq 0
+            expect(scoring[:goals_period_2]).to eq 2
+            expect(scoring[:goals_period_3]).to eq 1
+            expect(scoring[:goals_overtime]).to eq 0
+            expect(scoring[:goals_shootout]).to eq 1
           end
         end
 
@@ -173,6 +199,14 @@ module Sportradar
 
         def nhl_ot_game_boxscore_json
           Oj.load(File.read('spec/fixtures/nhl/nhl_overtime_game.json'))
+        end
+
+        def nhl_shootout_boxscore
+          BoxscoreParser.new(json: nhl_shootout_game_boxscore_json)
+        end
+
+        def nhl_shootout_game_boxscore_json
+          Oj.load(File.read('spec/fixtures/nhl/nhl_shootout.json'))
         end
       end
     end

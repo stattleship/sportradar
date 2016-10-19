@@ -2,6 +2,9 @@ module Sportradar
   module Nba
     module Models
       class Event
+        BASKET_CENTER_X = 57
+        BASKET_CENTER_Y = 300
+
         def initialize(quarter:, attributes:)
           @quarter = quarter
           @attributes = attributes
@@ -20,6 +23,8 @@ module Sportradar
             sentence_parts << free_throw_attempt_of
             sentence_parts << turnover_type
             sentence_parts << "[#{coordinate_x}, #{coordinate_y}]" if coordinates?
+            sentence_parts << distance_from_basket
+            sentence_parts << distance_to_basket
           end.compact.
             join(' - ')
         end
@@ -140,6 +145,26 @@ module Sportradar
 
         def description
           @attributes['description'] || 0
+        end
+
+        def distance_from_basket
+          if coordinates?
+            if team_basket
+              Math.hypot(coordinate_x - BASKET_CENTER_X,
+                         (coordinate_y  - BASKET_CENTER_Y).abs).
+                round(3)
+            end
+          end
+        end
+
+        def distance_to_basket
+          if coordinates?
+            if team_basket
+              Math.hypot(coordinate_x - BASKET_CENTER_X,
+                         (coordinate_y  - BASKET_CENTER_Y).abs).
+                round(3)
+            end
+          end
         end
 
         def event_type

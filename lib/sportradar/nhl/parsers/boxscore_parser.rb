@@ -152,11 +152,11 @@ module Sportradar
                       scoring_data['points'].to_i
                     overtime_points += scoring_data['points'].to_i
                     scoring_periods[:goals_overtime] = overtime_points
+                  elsif period_type == 'shootout'
+                    key = "goals_#{period_type}".to_sym
+                    scoring_periods[key] =
+                      scoring_data['points'].to_i
                   end
-                elsif period_type == 'shootout'
-                  key = "goals_#{period_type}".to_sym
-                  scoring_periods[key] =
-                    scoring_data['points'].to_i
                 end
               end
             end

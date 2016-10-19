@@ -1,0 +1,553 @@
+{
+    "attendance": 19092,
+    "away": {
+        "id": "4418464d-0f24-11e2-8525-18a905767e44",
+        "leaders": {
+            "assists": [
+                {
+                    "first_name": "Jussi",
+                    "full_name": "Jussi Jokinen",
+                    "handedness": "L",
+                    "id": "435bd0d8-0f24-11e2-8525-18a905767e44",
+                    "jersey_number": "36",
+                    "last_name": "Jokinen",
+                    "position": "F",
+                    "primary_position": "LW",
+                    "statistics": {
+                        "evenstrength": {
+                            "assists": 1,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 2
+                        },
+                        "penalty": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "powerplay": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "shootout": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 1
+                        },
+                        "shorthanded": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "total": {
+                            "assists": 1,
+                            "blocked_att": 1,
+                            "blocked_shots": 0,
+                            "faceoff_win_pct": 60.0,
+                            "faceoffs": 5,
+                            "faceoffs_lost": 2,
+                            "faceoffs_won": 3,
+                            "giveaways": 0,
+                            "goals": 0,
+                            "hits": 2,
+                            "missed_shots": 0,
+                            "penalties": 0,
+                            "penalty_minutes": 0,
+                            "plus_minus": -2,
+                            "points": 1,
+                            "shooting_pct": 0.0,
+                            "shots": 2,
+                            "takeaways": 0
+                        }
+                    },
+                    "time_on_ice": {
+                        "avg": "00:46",
+                        "evenstrength": "15:33",
+                        "powerplay": "2:13",
+                        "shifts": 25,
+                        "shorthanded": "1:40",
+                        "total": "19:26"
+                    }
+                }
+            ],
+            "goals": [
+                {
+                    "first_name": "Michael",
+                    "full_name": "Michael Matheson",
+                    "handedness": "L",
+                    "id": "e0990e42-1d77-4469-bd40-86e8d92f516d",
+                    "jersey_number": "19",
+                    "last_name": "Matheson",
+                    "position": "D",
+                    "primary_position": "D",
+                    "statistics": {
+                        "evenstrength": {
+                            "assists": 0,
+                            "goals": 1,
+                            "missed_shots": 1,
+                            "shots": 3
+                        },
+                        "penalty": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "powerplay": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "shootout": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "shorthanded": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "total": {
+                            "assists": 0,
+                            "blocked_att": 0,
+                            "blocked_shots": 1,
+                            "faceoff_win_pct": 0.0,
+                            "faceoffs": 0,
+                            "faceoffs_lost": 0,
+                            "faceoffs_won": 0,
+                            "giveaways": 2,
+                            "goals": 1,
+                            "hits": 1,
+                            "missed_shots": 1,
+                            "penalties": 0,
+                            "penalty_minutes": 0,
+                            "plus_minus": 1,
+                            "points": 1,
+                            "shooting_pct": 33.299999999999997,
+                            "shots": 3,
+                            "takeaways": 0
+                        }
+                    },
+                    "time_on_ice": {
+                        "avg": "00:55",
+                        "evenstrength": "18:19",
+                        "powerplay": "00:02",
+                        "shifts": 22,
+                        "shorthanded": "1:56",
+                        "total": "20:17"
+                    }
+                }
+            ],
+            "points": [
+                {
+                    "first_name": "Jussi",
+                    "full_name": "Jussi Jokinen",
+                    "handedness": "L",
+                    "id": "435bd0d8-0f24-11e2-8525-18a905767e44",
+                    "jersey_number": "36",
+                    "last_name": "Jokinen",
+                    "position": "F",
+                    "primary_position": "LW",
+                    "statistics": {
+                        "evenstrength": {
+                            "assists": 1,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 2
+                        },
+                        "penalty": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "powerplay": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "shootout": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 1
+                        },
+                        "shorthanded": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "total": {
+                            "assists": 1,
+                            "blocked_att": 1,
+                            "blocked_shots": 0,
+                            "faceoff_win_pct": 60.0,
+                            "faceoffs": 5,
+                            "faceoffs_lost": 2,
+                            "faceoffs_won": 3,
+                            "giveaways": 0,
+                            "goals": 0,
+                            "hits": 2,
+                            "missed_shots": 0,
+                            "penalties": 0,
+                            "penalty_minutes": 0,
+                            "plus_minus": -2,
+                            "points": 1,
+                            "shooting_pct": 0.0,
+                            "shots": 2,
+                            "takeaways": 0
+                        }
+                    },
+                    "time_on_ice": {
+                        "avg": "00:46",
+                        "evenstrength": "15:33",
+                        "powerplay": "2:13",
+                        "shifts": 25,
+                        "shorthanded": "1:40",
+                        "total": "19:26"
+                    }
+                }
+            ]
+        },
+        "market": "Florida",
+        "name": "Panthers",
+        "points": 3,
+        "scoring": [
+            {
+                "number": 1,
+                "points": 0,
+                "sequence": 1,
+                "type": "Period"
+            },
+            {
+                "number": 2,
+                "points": 1,
+                "sequence": 2,
+                "type": "Period"
+            },
+            {
+                "number": 3,
+                "points": 2,
+                "sequence": 3,
+                "type": "Period"
+            },
+            {
+                "number": 1,
+                "points": 0,
+                "sequence": 4,
+                "type": "Overtime"
+            },
+            {
+                "number": 1,
+                "points": 0,
+                "sequence": 5,
+                "type": "Shootout"
+            }
+        ],
+        "strength": "even"
+    },
+    "clock": "00:00",
+    "coverage": "full",
+    "end_time": "2016-10-19T02:32:24+00:00",
+    "entry_mode": "INGEST",
+    "home": {
+        "id": "4417d3cb-0f24-11e2-8525-18a905767e44",
+        "leaders": {
+            "assists": [
+                {
+                    "first_name": "Victor",
+                    "full_name": "Victor Hedman",
+                    "handedness": "L",
+                    "id": "434956c9-0f24-11e2-8525-18a905767e44",
+                    "jersey_number": "77",
+                    "last_name": "Hedman",
+                    "position": "D",
+                    "primary_position": "D",
+                    "statistics": {
+                        "evenstrength": {
+                            "assists": 1,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 2
+                        },
+                        "penalty": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "powerplay": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "shootout": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 1
+                        },
+                        "shorthanded": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "total": {
+                            "assists": 1,
+                            "blocked_att": 1,
+                            "blocked_shots": 0,
+                            "faceoff_win_pct": 0.0,
+                            "faceoffs": 0,
+                            "faceoffs_lost": 0,
+                            "faceoffs_won": 0,
+                            "giveaways": 0,
+                            "goals": 0,
+                            "hits": 1,
+                            "missed_shots": 0,
+                            "penalties": 0,
+                            "penalty_minutes": 0,
+                            "plus_minus": 2,
+                            "points": 1,
+                            "shooting_pct": 0.0,
+                            "shots": 2,
+                            "takeaways": 0
+                        }
+                    },
+                    "time_on_ice": {
+                        "avg": "00:47",
+                        "evenstrength": "18:55",
+                        "powerplay": "2:59",
+                        "shifts": 32,
+                        "shorthanded": "3:41",
+                        "total": "25:35"
+                    }
+                }
+            ],
+            "goals": [
+                {
+                    "first_name": "Alex",
+                    "full_name": "Alex Killorn",
+                    "handedness": "L",
+                    "id": "9786d7ed-73de-11e2-a3e0-f4ce4684ea4c",
+                    "jersey_number": "17",
+                    "last_name": "Killorn",
+                    "position": "NA",
+                    "primary_position": "LW",
+                    "statistics": {
+                        "evenstrength": {
+                            "assists": 0,
+                            "goals": 1,
+                            "missed_shots": 1,
+                            "shots": 1
+                        },
+                        "penalty": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "powerplay": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "shootout": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "shorthanded": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "total": {
+                            "assists": 0,
+                            "blocked_att": 0,
+                            "blocked_shots": 0,
+                            "faceoff_win_pct": 0.0,
+                            "faceoffs": 0,
+                            "faceoffs_lost": 0,
+                            "faceoffs_won": 0,
+                            "giveaways": 1,
+                            "goals": 1,
+                            "hits": 0,
+                            "missed_shots": 1,
+                            "penalties": 0,
+                            "penalty_minutes": 0,
+                            "plus_minus": 0,
+                            "points": 1,
+                            "shooting_pct": 100.0,
+                            "shots": 1,
+                            "takeaways": 0
+                        }
+                    },
+                    "time_on_ice": {
+                        "avg": "00:46",
+                        "evenstrength": "15:10",
+                        "powerplay": "2:49",
+                        "shifts": 23,
+                        "shorthanded": "00:00",
+                        "total": "17:59"
+                    }
+                }
+            ],
+            "points": [
+                {
+                    "first_name": "Steven",
+                    "full_name": "Steven Stamkos",
+                    "handedness": "R",
+                    "id": "4345603e-0f24-11e2-8525-18a905767e44",
+                    "jersey_number": "91",
+                    "last_name": "Stamkos",
+                    "position": "NA",
+                    "primary_position": "C",
+                    "statistics": {
+                        "evenstrength": {
+                            "assists": 1,
+                            "goals": 1,
+                            "missed_shots": 1,
+                            "shots": 4
+                        },
+                        "penalty": {
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "powerplay": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "shootout": {
+                            "goals": 0,
+                            "missed_shots": 1,
+                            "shots": 0
+                        },
+                        "shorthanded": {
+                            "assists": 0,
+                            "goals": 0,
+                            "missed_shots": 0,
+                            "shots": 0
+                        },
+                        "total": {
+                            "assists": 1,
+                            "blocked_att": 0,
+                            "blocked_shots": 0,
+                            "faceoff_win_pct": 27.300000000000001,
+                            "faceoffs": 11,
+                            "faceoffs_lost": 8,
+                            "faceoffs_won": 3,
+                            "giveaways": 0,
+                            "goals": 1,
+                            "hits": 1,
+                            "missed_shots": 1,
+                            "penalties": 0,
+                            "penalty_minutes": 0,
+                            "plus_minus": 1,
+                            "points": 2,
+                            "shooting_pct": 25.0,
+                            "shots": 4,
+                            "takeaways": 1
+                        }
+                    },
+                    "time_on_ice": {
+                        "avg": "00:54",
+                        "evenstrength": "16:33",
+                        "powerplay": "3:29",
+                        "shifts": 23,
+                        "shorthanded": "00:50",
+                        "total": "20:52"
+                    }
+                }
+            ]
+        },
+        "market": "Tampa Bay",
+        "name": "Lightning",
+        "points": 4,
+        "scoring": [
+            {
+                "number": 1,
+                "points": 0,
+                "sequence": 1,
+                "type": "Period"
+            },
+            {
+                "number": 2,
+                "points": 2,
+                "sequence": 2,
+                "type": "Period"
+            },
+            {
+                "number": 3,
+                "points": 1,
+                "sequence": 3,
+                "type": "Period"
+            },
+            {
+                "number": 1,
+                "points": 0,
+                "sequence": 4,
+                "type": "Overtime"
+            },
+            {
+                "number": 1,
+                "points": 1,
+                "sequence": 5,
+                "type": "Shootout"
+            }
+        ],
+        "strength": "even"
+    },
+    "id": "e1ad8290-481c-4a29-9910-3dc3bcdff084",
+    "officials": [
+        {
+            "assignment": "Referee",
+            "experience": "0",
+            "first_name": "Garrett",
+            "full_name": "Garrett Rank",
+            "id": "3ab232c0-c64f-4874-9ff3-8abbdd8e5c6f",
+            "last_name": "Rank",
+            "number": "48"
+        },
+        {
+            "assignment": "Linesmen",
+            "experience": "13",
+            "first_name": "Jonny",
+            "full_name": "Jonny Murray",
+            "id": "7799afe7-6c78-464d-9b95-831c5bbaaf46",
+            "last_name": "Murray",
+            "number": "95"
+        },
+        {
+            "assignment": "Linesmen",
+            "experience": "15",
+            "first_name": "Tony",
+            "full_name": "Tony Sericolo",
+            "id": "d365bf8c-9646-40b5-aee3-58386cacce6a",
+            "last_name": "Sericolo",
+            "number": "84"
+        },
+        {
+            "assignment": "Referee",
+            "experience": "10",
+            "first_name": "Gord",
+            "full_name": "Gord Dwyer",
+            "id": "dd4055b0-1fff-4ad8-8444-4eb275eabe5b",
+            "last_name": "Dwyer",
+            "number": "19"
+        }
+    ],
+    "period": 5,
+    "scheduled": "2016-10-18T23:30:00+00:00",
+    "start_time": "2016-10-18T23:42:30+00:00",
+    "status": "closed",
+    "total_game_duration": "65:00"
+}
