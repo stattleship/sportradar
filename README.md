@@ -14,7 +14,7 @@ Currently supports
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sportradar', '>= 0.0.20'
+gem 'sportradar', '>= 0.0.21'
 ```
 
 And then execute:
@@ -88,7 +88,7 @@ Note: `.save` vs `.fetch` will store in the path specified in `SPORTRADAR_FILE_P
 
 Some helpers will call `.fetch` for each response and return a collection.
 
-* `Sportradar::Mlb::SeasonStatistics.fetch(year: 2015, interval_type: 'reg').fetch`
+* `Sportradar::Mlb::SeasonStatistics.new(year: 2015, interval_type: 'reg').fetch`
 
 #### Bulk Saves
 
@@ -111,10 +111,16 @@ Models and parsers can get plays, scoring plays, players on court, stoppages fro
 * `Sportradar::Nba::PlayByPlay.new(event_id: '<game_guid>').fetch`
 * `Sportradar::Nba::Boxscore.new(event_id: '<game_guid>').fetch`
 * `Sportradar::Nba::GameSummary.new(event_id: '<game_guid>').fetch`
-
 * `Sportradar::Nba::TeamRosters.perform`
 * `Sportradar::Nba::TeamRoster.new(team_id: '44151f7a-0f24-11e2-8525-18a905767e44').fetch`
+* `Sportradar::Nba::TeamStatistics.new(year: 2016, interval_type: 'reg', team_id: '<team_uuid>').fetch`
 * `Sportradar::Nba::Injuries.new().fetch`
+
+#### Bulk Fetches
+
+Some helpers will call `.fetch` for each response and return a collection.
+
+* `Sportradar::Nba::SeasonStatistics.new(year: 2016, interval_type: 'reg').fetch`
 
 #### Bulk Saves
 
@@ -127,6 +133,8 @@ Sportradar::Nba::LeagueSchedule.games(json: json).each do |g|
   Sportradar::Nba::PlayByPlay.new(event_id: g['id']).save
 end
 ```
+
+* `Sportradar::Nba::SeasonStatistics.perform(year: 2016, interval_type: 'pre')
 
 ### Football/NFL
 
@@ -181,7 +189,7 @@ Defaults to and supports NFL Classic API feed version 1 only (not Official).
 Some helpers will call `.fetch` for each response and return a collection.
 
 * `Sportradar::Nfl::TeamRosters.fetch`
-* `Sportradar::Nfl::SeasonStatistics.fetch(year: 2015, interval_type: 'reg').fetch`
+* `Sportradar::Nfl::SeasonStatistics.new(year: 2015, interval_type: 'reg').fetch`
 
 #### Bulk Saves
 
@@ -194,7 +202,7 @@ Some helpers will call `.save` for each response as separate items.
 * `Sportradar::Nfl::WeeklyGameStatistics.perform(year: 2015, interval_type: 'reg', week: 2).perform`
 * `Sportradar::Nfl::WeeklyGameSummary.perform(year: 2015, interval_type: 'reg', week: 2).perform`
 * `Sportradar::Nfl::WeeklyPlayByPlay.perform(year: 2015, interval_type: 'reg', week: 1).perform`
-* `Sportradar::Nfl::SeasonStatistics.perform(year: 2015, interval_type: 'reg').perform`
+* `Sportradar::Nfl::SeasonStatistics.perform(year: 2015, interval_type: 'reg')`
 
 ### Hockey/NHL
 
@@ -212,13 +220,21 @@ Models and parsers can get plays, scoring plays, players on court, stoppages fro
 * `Sportradar::Nhl::PlayByPlay.new(event_id: '<game_guid>').fetch`
 * `Sportradar::Nhl::TeamRosters.perform`
 * `Sportradar::Nhl::TeamRoster.new(team_id: '44151f7a-0f24-11e2-8525-18a905767e44').fetch`
+* `Sportradar::Nhl::TeamStatistics.new(year: 2016, interval_type: 'reg', team_id: '<team_uuid>').fetch`
 * `Sportradar::Nhl::Injuries.new().fetch`
+
+#### Bulk Fetches
+
+Some helpers will call `.fetch` for each response and return a collection.
+
+* `Sportradar::Nhl::SeasonStatistics.new(year: 2016, interval_type: 'reg').fetch`
 
 #### Bulk Saves
 
 Some helpers will call `.save` for each response as separate items.
 
 * `Sportradar::Nhl::TeamRosters.perform`
+* `Sportradar::Nhl::SeasonStatistics.perform(year: 2016, interval_type: 'reg')
 
 ### Model Helpers
 

@@ -70,8 +70,10 @@ require 'sportradar/nba/game_summary'
 require 'sportradar/nba/injuries'
 require 'sportradar/nba/play_by_play'
 require 'sportradar/nba/teams_request'
+require 'sportradar/nba/season_statistics'
 require 'sportradar/nba/team_roster'
 require 'sportradar/nba/team_rosters'
+require 'sportradar/nba/team_statistics'
 
 require 'sportradar/nfl/models/quarter'
 require 'sportradar/nfl/models/drive'
@@ -133,8 +135,10 @@ require 'sportradar/nhl/league_hierarchy'
 require 'sportradar/nhl/league_schedule'
 require 'sportradar/nhl/play_by_play'
 require 'sportradar/nhl/teams_request'
+require 'sportradar/nhl/season_statistics'
 require 'sportradar/nhl/team_roster'
 require 'sportradar/nhl/team_rosters'
+require 'sportradar/nhl/team_statistics'
 
 Oj.default_options = {}
 
