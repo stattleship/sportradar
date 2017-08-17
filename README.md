@@ -14,7 +14,7 @@ Currently supports
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sportradar', '>= 0.0.21'
+gem 'sportradar', '>= 0.0.22'
 ```
 
 And then execute:
@@ -34,24 +34,26 @@ In your `.env`:
 ```
 SPORTRADAR_ACCESS_LEVEL_MLB=t
 SPORTRADAR_API_KEY_MLB=YOUR_API_KEY
+SPORTRADAR_API_VERSION_MLB=5
 
 SPORTRADAR_ACCESS_LEVEL_NBA=t
 SPORTRADAR_API_KEY_NBA=YOUR_API_KEY
+SPORTRADAR_API_VERSION_NBA=3
 
 SPORTRADAR_ACCESS_LEVEL_NFL=t
 SPORTRADAR_API_KEY_NFL=YOUR_API_KEY
+SPORTRADAR_API_VERSION_NFL=1
 
 SPORTRADAR_ACCESS_LEVEL_NHL=t
 SPORTRADAR_API_KEY_NHL=YOUR_API_KEY
+SPORTRADAR_API_VERSION_NHL=4
 
 SPORTRADAR_FILE_PATH=/path/to/save/responses
 ```
 
-`SPORTRADAR_ACCESS_LEVEL` is `t` or 'p' (or 'rt')
+`SPORTRADAR_ACCESS_LEVEL` is `t`,'p', or 'o' (or 'rt' or 'ot')
 
-Note: Currently only MLB and NFL support.
-
-Important: This is a breaking change from version 0.0.3 that had a global access level.
+Important: Version 0.0.22 allows you to set both the access level and api version per league.
 
 ### Console
 
@@ -206,7 +208,7 @@ Some helpers will call `.save` for each response as separate items.
 
 ### Hockey/NHL
 
-Defaults to and supports NHL Classic API feed version 3 only (not Official).
+Defaults to and supports NHL API feed version 4 only.
 
 Models and parsers can get plays, scoring plays, players on court, stoppages from NHL Play by Play json data.
 

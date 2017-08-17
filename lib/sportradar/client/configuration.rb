@@ -33,10 +33,19 @@ module Sportradar
 
     def access_levels
       {
-        'mlb' => ENV['SPORTRADAR_ACCESS_LEVEL_MLB'],
-        'nba' => ENV['SPORTRADAR_ACCESS_LEVEL_NBA'],
-        'nfl' => ENV['SPORTRADAR_ACCESS_LEVEL_NFL'],
-        'nhl' => ENV['SPORTRADAR_ACCESS_LEVEL_NHL'],
+        'mlb' => ENV['SPORTRADAR_ACCESS_LEVEL_MLB'] || 'p',
+        'nba' => ENV['SPORTRADAR_ACCESS_LEVEL_NBA'] || 'p',
+        'nfl' => ENV['SPORTRADAR_ACCESS_LEVEL_NFL'] || 'p',
+        'nhl' => ENV['SPORTRADAR_ACCESS_LEVEL_NHL'] || 'o',
+      }
+    end
+
+    def api_version
+      {
+        'mlb' => ENV['SPORTRADAR_API_VERSION_MLB'] || '5',
+        'nba' => ENV['SPORTRADAR_API_VERSION_NBA'] || '3',
+        'nfl' => ENV['SPORTRADAR_API_VERSION_NFL'] || '1',
+        'nhl' => ENV['SPORTRADAR_API_VERSION_NHL'] || '4',
       }
     end
 

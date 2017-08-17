@@ -93,18 +93,9 @@ module Sportradar
     end
 
     def api_version
-      case league
-      when 'mlb'
-        '5'
-      when 'nba'
-        '3'
-      when 'nfl'
-        '1'
-      when 'nhl'
-        '3'
-      else
-        '5'
-      end
+      Sportradar.configuration.
+        api_version[league].
+        freeze
     end
 
     private
